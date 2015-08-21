@@ -7,7 +7,7 @@ config](http://eslint.org/docs/developer-guide/shareable-configs).
 
     $ npm install --save-dev eslint
     $ npm install --save-dev babel-eslint
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/eslint-config-zendesk.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/eslint-config.git
 
 ## Usage
 
