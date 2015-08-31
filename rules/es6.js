@@ -54,7 +54,7 @@ module.exports = {
   },
   'rules': {
     // require parens in arrow function arguments
-    'arrow-parens': 0,
+    'arrow-parens': [2, 'as-needed'],
     // require space before/after arrow function's arrow
     'arrow-spacing': 2,
     // verify calls of `super()` in constructors
