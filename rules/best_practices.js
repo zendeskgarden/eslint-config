@@ -45,7 +45,7 @@ module.exports = {
     // disallow the use of leading or trailing decimal points in numeric literals
     'no-floating-decimal': 2,
     // disallow the type conversions with shorter notations
-    'no-implicit-coercion': 2,
+    'no-implicit-coercion': 0,
     // disallow use of `eval()`-like methods
     'no-implied-eval': 2,
     // disallow `this` keywords outside of classes or class-like objects
