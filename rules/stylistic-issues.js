@@ -30,14 +30,24 @@ module.exports = {
     'id-match': 0,
     // this option sets a specific tab width for your code
     'indent': [2, 2, { 'SwitchCase': 1 } ],
+    // specify whether double or single quotes should be used in JSX attributes
+    'jsx-quotes': 0,
     // enforces spacing between keys and values in object literal properties
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
-    // enforces empty lines around comments
-    'lines-around-comment': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     'linebreak-style': 0,
+    // enforces empty lines around comments
+    'lines-around-comment': 0,
+    // specify the maximum depth that blocks can be nested
+    'max-depth': [0, 4],
+    // specify the maximum length of a line in your program
+    'max-len': [1, 80, 2, { 'ignoreComments': true, 'ignoreUrls': true }],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
+    // limits the number of parameters that can be used in the function declaration.
+    'max-params': [0, 3],
+    // specify the maximum number of statement allowed in a function
+    'max-statements': [0, 10],
     // require a capital letter for constructors
     'new-cap': [2, { 'newIsCap': true }],
     // disallow the omission of parentheses when invoking a constructor with no arguments
@@ -46,6 +56,8 @@ module.exports = {
     'newline-after-var': 1,
     // disallow use of the `Array` constructor
     'no-array-constructor': 2,
+    // disallow use of bitwise operators
+    'no-bitwise': 0,
     // disallow use of the `continue` statement
     'no-continue': 0,
     // disallow comments inline after code
@@ -56,10 +68,16 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 2,
     // disallow multiple empty lines
     'no-multiple-empty-lines': [2, { 'max': 2 }],
+    // disallow negated conditions
+    'no-negated-condition': 2,
     // disallow nested ternary expressions
     'no-nested-ternary': 2,
     // disallow use of the `Object` constructor
     'no-new-object': 2,
+    // disallow use of unary operators, `++` and `--`
+    'no-plusplus': 0,
+    // disallow use of certain syntax in code
+    'no-restricted-syntax': 0,
     // disallow space between function identifier and application
     'no-spaced-func': 2,
     // disallow the use of ternary operators
@@ -84,6 +102,13 @@ module.exports = {
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
+    // require JSDoc comment
+    'require-jsdoc': [2, { 'require': {
+        'FunctionDeclaration': true,
+        'MethodDefinition': false,
+        'ClassDeclaration': false
+      }
+    }],
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
@@ -96,6 +121,8 @@ module.exports = {
     'space-before-blocks': 2,
     // require or disallow space before function opening parenthesis
     'space-before-function-paren': [2, 'never'],
+    // require a space before certain keywords
+    'space-before-keywords': 2,
     // require or disallow spaces inside parentheses
     'space-in-parens': 2,
     // require spaces around operators

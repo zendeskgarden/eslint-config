@@ -7,6 +7,8 @@ module.exports = {
   'rules': {
     // enforce `return` after a callback
     'callback-return': 0,
+    // enforce `require()` on top-level module scope
+    'global-require': 1,
     // enforces error handling in callbacks
     'handle-callback-err': 0,
     // disallow mixing regular variable and require declarations

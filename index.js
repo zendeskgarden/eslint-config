@@ -2,14 +2,13 @@
 
 module.exports = {
   'extends': [
-    'zendesk/rules/possible_errors',
-    'zendesk/rules/best_practices',
-    'zendesk/rules/strict_mode',
+    'zendesk/rules/possible-errors',
+    'zendesk/rules/best-practices',
+    'zendesk/rules/strict-mode',
     'zendesk/rules/variables',
     'zendesk/rules/node',
-    'zendesk/rules/stylistic_issues',
-    'zendesk/rules/es6',
-    'zendesk/rules/legacy'
+    'zendesk/rules/stylistic-issues',
+    'zendesk/rules/es6'
   ],
   'parser': 'babel-eslint',
   'env': { 'browser': true }
