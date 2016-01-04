@@ -11,7 +11,7 @@ config](http://eslint.org/docs/developer-guide/shareable-configs).
 
 ## Usage
 
-Add an `.eslintrc` to your project with an `extends` property like this:
+Add a `.eslintrc` to your project with an `extends` property like this:
 
 ```javascript
 {

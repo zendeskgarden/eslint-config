@@ -23,7 +23,7 @@ module.exports = {
     'generators': false,
     // allow `return` statements in the global scope
     'globalReturn': false,
-    //  enable JSX
+    // enable JSX
     'jsx': false,
     // enable modules and global strict mode
     'modules': true,
@@ -53,6 +53,8 @@ module.exports = {
     'unicodeCodePointEscapes': true
   },
   'rules': {
+    // require braces in arrow function body
+    'arrow-body-style': 0,
     // require parens in arrow function arguments
     'arrow-parens': [2, 'as-needed'],
     // require space before/after arrow function's arrow
@@ -61,6 +63,8 @@ module.exports = {
     'constructor-super': 2,
     // enforce the spacing around the `*` in generator functions
     'generator-star-spacing': 0,
+    // disallow arrow functions where a condition is expected
+    'no-arrow-condition': 2,
     // disallow modifying variables of class declarations
     'no-class-assign': 0,
     // disallow modifying variables that are declared using `const`
@@ -77,10 +81,10 @@ module.exports = {
     'prefer-arrow-callback': 2,
     // suggest using of `const` declaration for variables that are never modified after declared
     'prefer-const': 2,
-    // suggest using the spread operator instead of `.apply()`
-    'prefer-spread': 1,
     // suggest using Reflect methods where applicable
     'prefer-reflect': 0,
+    // suggest using the spread operator instead of `.apply()`
+    'prefer-spread': 1,
     // suggest using template literals instead of strings concatenation
     'prefer-template': 2,
     // disallow generator functions that do not have `yield`
