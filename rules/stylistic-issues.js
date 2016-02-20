@@ -24,6 +24,8 @@ module.exports = {
     'func-names': 1,
     // enforce use of function declarations or expressions
     'func-style': 0,
+    // blacklist certain identifiers to prevent them being used
+    'id-blacklist': 0,
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     'id-length': 0,
     // require identifiers to match the provided regular expression
@@ -34,6 +36,8 @@ module.exports = {
     'jsx-quotes': 0,
     // enforces spacing between keys and values in object literal properties
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
+    // enforce spacing before and after keywords
+    'keyword-spacing': 2,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     'linebreak-style': 0,
     // enforces empty lines around comments
@@ -54,6 +58,8 @@ module.exports = {
     'new-parens': 2,
     // allow/disallow an empty newline after var statement
     'newline-after-var': 1,
+    // enforce newline after each call when chaining the calls
+    'newline-per-chained-call': 0,
     // disallow use of the `Array` constructor
     'no-array-constructor': 2,
     // disallow use of bitwise operators
@@ -88,14 +94,21 @@ module.exports = {
     'no-underscore-dangle': 0,
     // disallow the use of `Boolean` literals in conditional expressions
     'no-unneeded-ternary': 2,
+    // disallow whitespace before properties
+    'no-whitespace-before-property': 2,
     // require or disallow padding inside curly braces
     'object-curly-spacing': [2, 'always'],
     // allow just one var statement per function
     'one-var': [2, 'never'],
+    // require or disallow an newline around variable declarations
+    'one-var-declaration-per-line': [2, 'initializations'],
     // require assignment operator shorthand where possible or prohibit it entirely
     'operator-assignment': 0,
     // enforce operators to be placed before or after line breaks
-    'operator-linebreak': 2,
+    'operator-linebreak': [2, 'before', { 'overrides': {
+      '?': 'after',
+      ':': 'after'
+    }}],
     // enforce padding within blocks
     'padded-blocks': [2, 'never'],
     // require quotes around object literal property names
@@ -109,26 +122,22 @@ module.exports = {
         'ClassDeclaration': false
       }
     }],
-    // enforce spacing before and after semicolons
-    'semi-spacing': [2, { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
+    // enforce spacing before and after semicolons
+    'semi-spacing': [2, { 'before': false, 'after': true }],
+    // sort import declarations within module
+    'sort-imports': 1,
     // sort variables within the same declaration block
     'sort-vars': 0,
-    // require a space after certain keywords
-    'space-after-keywords': 2,
     // require or disallow space before blocks
     'space-before-blocks': 2,
     // require or disallow space before function opening parenthesis
     'space-before-function-paren': [2, 'never'],
-    // require a space before certain keywords
-    'space-before-keywords': 2,
     // require or disallow spaces inside parentheses
     'space-in-parens': 2,
     // require spaces around operators
     'space-infix-ops': 2,
-    // require a space after `return`, `throw`, and `case`
-    'space-return-throw-case': 2,
     // Require or disallow spaces before/after unary operators
     'space-unary-ops': 0,
     // require or disallow a space immediately following the `//` or `/*` in a comment
