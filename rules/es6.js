@@ -4,53 +4,17 @@ module.exports = {
   'env': {
     'es6': false
   },
-  'ecmaFeatures': {
-    // enable arrow functions
-    'arrowFunctions': true,
-    // enable binary literals
-    'binaryLiterals': false,
-    // enable `let` and `const` (aka block bindings)
-    'blockBindings': true,
-    // enable classes
-    'classes': true,
-    // enable default function parameters
-    'defaultParams': true,
-    // enable destructuring
-    'destructuring': true,
-    // enable `for-of` loops
-    'forOf': true,
-    // enable generators
-    'generators': false,
-    // allow `return` statements in the global scope
-    'globalReturn': false,
-    // enable JSX
-    'jsx': false,
-    // enable modules and global strict mode
-    'modules': true,
-    // enable computed object literal property names
-    'objectLiteralComputedProperties': true,
-    // enable duplicate object literal properties in strict mode
-    'objectLiteralDuplicateProperties': false,
-    // enable object literal shorthand methods
-    'objectLiteralShorthandMethods': true,
-    // enable object literal shorthand properties
-    'objectLiteralShorthandProperties': true,
-    // enable octal literals
-    'octalLiterals': false,
-    // enable the regular expression `u` flag
-    'regexUFlag': true,
-    // enable the regular expression `y` flag
-    'regexYFlag': true,
-    // enable the rest parameters
-    'restParams': true,
-    // enable the spread operator for arrays
-    'spread': true,
-    // enable `super` references inside of functions
-    'superInFunctions': true,
-    // enable template strings
-    'templateStrings': true,
-    // enable code point escapes
-    'unicodeCodePointEscapes': true
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      // allow `return` statements in the global scope
+      'globalReturn': false,
+      // enable global strict mode
+      'impliedStrict': true,
+      // enable JSX
+      'jsx': false
+    }
   },
   'rules': {
     // require braces in arrow function body
@@ -98,6 +62,6 @@ module.exports = {
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': [2, 'never'],
     // enforce spacing around the `*` in `yield*` expressions
-    'yield-star-spacing': 0
+    'yield-star-spacing': [2, 'after']
   }
 };
