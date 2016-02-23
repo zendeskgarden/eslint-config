@@ -105,7 +105,7 @@ module.exports = {
     // require assignment operator shorthand where possible or prohibit it entirely
     'operator-assignment': 0,
     // enforce operators to be placed before or after line breaks
-    'operator-linebreak': 0,
+    'operator-linebreak': [2, 'after'],
     // enforce padding within blocks
     'padded-blocks': [2, 'never'],
     // require quotes around object literal property names
