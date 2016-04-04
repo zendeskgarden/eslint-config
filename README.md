@@ -6,6 +6,7 @@ config](http://eslint.org/docs/developer-guide/shareable-configs).
 ## Installation
 
     $ npm install --save-dev eslint
+    $ npm install --save-dev eslint-plugin-sort-class-members
     $ npm install --save-dev babel-eslint
     $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/eslint-config.git
 
