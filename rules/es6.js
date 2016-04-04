@@ -35,8 +35,12 @@ module.exports = {
     'no-const-assign': 2,
     // disallow duplicate name in class members
     'no-dupe-class-members': 2,
+    // disallow duplicate module imports
+    'no-duplicate-imports': [2, { 'includeExports': true }],
     // disallow use of the `new` operator with the `Symbol` object
     'no-new-symbol': 2,
+    // restrict usage of specified node imports
+    'no-restricted-imports': 0,
     // disallow to use `this`/`super` before `super()` calling in constructors
     'no-this-before-super': 2,
     // disallow unnecessary constructor
