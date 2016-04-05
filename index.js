@@ -8,7 +8,8 @@ module.exports = {
     'zendesk/rules/variables',
     'zendesk/rules/node',
     'zendesk/rules/stylistic-issues',
-    'zendesk/rules/es6'
+    'zendesk/rules/es6',
+    'zendesk/rules/sort-class-members'
   ],
   'parser': 'babel-eslint',
   'env': { 'browser': true }

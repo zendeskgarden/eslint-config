@@ -17,10 +17,10 @@ module.exports = {
     'no-new-require': 0,
     // disallow string concatenation with `__dirname` and `__filename`
     'no-path-concat': 0,
+    // disallow use of `process.env`
+    'no-process-env': 0,
     // disallow `process.exit()`
     'no-process-exit': 0,
-    // restrict usage of specified node imports
-    'no-restricted-imports': 0,
     // restrict usage of specified node modules
     'no-restricted-modules': 0,
     // disallow use of synchronous methods
