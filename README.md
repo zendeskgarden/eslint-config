@@ -20,7 +20,7 @@ Add a `.eslintrc` to your project with an `extends` property like this:
 
 ```javascript
 {
-  extends: 'zendesk'
+  extends: '@zendesk/garden'
 }
 ```
 

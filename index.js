@@ -2,14 +2,14 @@
 
 module.exports = {
   'extends': [
-    'zendesk/rules/possible-errors',
-    'zendesk/rules/best-practices',
-    'zendesk/rules/strict-mode',
-    'zendesk/rules/variables',
-    'zendesk/rules/node',
-    'zendesk/rules/stylistic-issues',
-    'zendesk/rules/es6',
-    'zendesk/rules/sort-class-members'
+    '@zendesk/garden/rules/possible-errors',
+    '@zendesk/garden/rules/best-practices',
+    '@zendesk/garden/rules/strict-mode',
+    '@zendesk/garden/rules/variables',
+    '@zendesk/garden/rules/node',
+    '@zendesk/garden/rules/stylistic-issues',
+    '@zendesk/garden/rules/es6',
+    '@zendesk/garden/rules/sort-class-members'
   ],
   'parser': 'babel-eslint',
   'env': { 'browser': true }

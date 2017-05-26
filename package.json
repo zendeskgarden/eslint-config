@@ -1,5 +1,5 @@
 {
-  "name": "@zendesk/garden-eslint-config",
+  "name": "@zendesk/eslint-config-garden",
   "version": "2.1.0",
   "repository": "zendeskgarden/eslint-config",
   "license": "UNLICENSED",

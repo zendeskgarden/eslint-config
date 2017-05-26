@@ -154,7 +154,7 @@ module.exports = {
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { 'before': false, 'after': true }],
     // require object keys to be sorted
-    'sort-keys': 1,
+    'sort-keys': 0,
     // sort variables within the same declaration block
     'sort-vars': 0,
     // require or disallow space before blocks
