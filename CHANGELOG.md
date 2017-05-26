@@ -8,7 +8,7 @@
 - Upgrade to support eslint 2.5.x.
 
 ## [2.0.1] - 2016-02-23
-### Changed (per [#5](https://github.com/zendeskgarden/eslint-config/pull/5))
+### Fixed (per [#5](https://github.com/zendeskgarden/eslint-config/pull/5))
 - Update `operator-linebreak` rule to "after".
 
 ## [2.0.0] - 2016-02-22
@@ -20,7 +20,7 @@
 - Upgrade to support eslint 1.10.x.
 
 ## [0.2.1] - 2015-09-05
-### Changed
+### Fixed
 - Allow short notation type conversions.
 
 ## [0.2.0] - 2015-08-31
