@@ -1,6 +1,6 @@
 # Zendesk Garden ESLint Config [![Build Status](https://travis-ci.com/zendeskgarden/eslint-config.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/eslint-config)
 
-The `garden-eslint-config` package exposes a [shareable ESLint
+The `eslint-config-garden` package exposes a [shareable ESLint
 config](http://eslint.org/docs/developer-guide/shareable-configs).
 
 ## Installation
@@ -8,7 +8,7 @@ config](http://eslint.org/docs/developer-guide/shareable-configs).
     npm install --save-dev eslint
     npm install --save-dev eslint-plugin-sort-class-members
     npm install --save-dev babel-eslint
-    npm install --save-dev @zendesk/garden-eslint-config
+    npm install --save-dev @zendesk/eslint-config-garden
 
 See [package registry
 documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
