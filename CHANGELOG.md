@@ -1,5 +1,12 @@
 # Change Log
 
+## [3.0.0] - 2017-05-26
+### Changed (per [#6](https://github.com/zendeskgarden/eslint-config/pull/6))
+- Prepared package for registry publish as
+  `@zendesk/eslint-config-garden`. See README for updated
+  installation and usage.
+- Upgrade to support eslint 3.x.
+
 ## [2.1.0] - 2016-04-05
 ### Added (per [#3](https://github.com/zendeskgarden/eslint-config/pull/3))
 - Rules for class member sorting.
@@ -29,6 +36,7 @@
 
 ## 0.1.0 - 2015-08-21
 
+[3.0.0]: https://github.com/zendeskgarden/eslint-config/compare/2.1.0...3.0.0
 [2.1.0]: https://github.com/zendeskgarden/eslint-config/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/zendeskgarden/eslint-config/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/eslint-config/compare/1.0.0...2.0.0
