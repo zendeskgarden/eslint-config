@@ -1,11 +1,18 @@
 {
-  "name": "eslint-config-zendesk",
+  "name": "@zendesk/eslint-config-garden",
   "version": "2.1.0",
-  "private": true,
+  "repository": "zendeskgarden/eslint-config",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^2.5.x",
+    "eslint": "^3.19.x",
     "eslint-plugin-sort-class-members": "^1.x",
-    "babel-eslint": "^6.x"
+    "babel-eslint": "^7.x"
+  },
+  "scripts": {
+    "test": "true"
   }
 }

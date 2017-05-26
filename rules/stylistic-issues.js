@@ -10,6 +10,10 @@ module.exports = {
     'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
     // require camel case names
     'camelcase': [2, { 'properties': 'never' }],
+    // enforce or disallow capitalization of the first letter of a comment
+    'capitalize-comments': 0,
+    // disallow or enforce trailing commas
+    'comma-dangle': 2,
     // enforce spacing before and after comma
     'comma-spacing': [2, { 'before': false, 'after': true }],
     // enforce one true comma style
@@ -20,6 +24,10 @@ module.exports = {
     'consistent-this': [0, 'self'],
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': 2,
+    // require or disallow spacing between function identifiers and their invocations
+    'func-call-spacing': 2,
+    // require function names to match the name of the variable or property to which they are assigned
+    'func-name-matching': 2,
     // require function expressions to have a name
     'func-names': 1,
     // enforce use of function declarations or expressions
@@ -38,14 +46,20 @@ module.exports = {
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
     // enforce spacing before and after keywords
     'keyword-spacing': 2,
+    // enforce position of line comments
+    'line-comment-position': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     'linebreak-style': 0,
     // enforces empty lines around comments
     'lines-around-comment': 0,
+    // require or disallow newlines around directives
+    'lines-around-directive': 2,
     // specify the maximum depth that blocks can be nested
     'max-depth': [0, 4],
     // specify the maximum length of a line in your program
     'max-len': [1, 80, 2, { 'ignoreComments': true, 'ignoreUrls': true }],
+    // enforce a maximum number of lines per file
+    'max-lines': 0,
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
     // limits the number of parameters that can be used in the function declaration.
@@ -54,6 +68,8 @@ module.exports = {
     'max-statements': [0, 10],
     // specify the maximum number of statements allowed per line
     'max-statements-per-line': [2, { 'max': 1 }],
+    // enforce newlines between operands of ternary expressions
+    'multiline-ternary': 0,
     // require a capital letter for constructors
     'new-cap': [2, { 'newIsCap': true }],
     // disallow the omission of parentheses when invoking a constructor with no arguments
@@ -74,8 +90,12 @@ module.exports = {
     'no-inline-comments': 0,
     // disallow `if` as the only statement in an `else` block
     'no-lonely-if': 2,
+    // disallow mixed binary operators
+    'no-mixed-operators': 2,
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 2,
+    // disallow use of chained assignment expressions
+    'no-multi-assign': 2,
     // disallow multiple empty lines
     'no-multiple-empty-lines': [2, { 'max': 2 }],
     // disallow negated conditions
@@ -88,8 +108,8 @@ module.exports = {
     'no-plusplus': 0,
     // disallow use of certain syntax in code
     'no-restricted-syntax': 0,
-    // disallow space between function identifier and application
-    'no-spaced-func': 2,
+    // disallow all tabs
+    'no-tabs': 2,
     // disallow the use of ternary operators
     'no-ternary': 0,
     // disallow trailing whitespace at the end of lines
@@ -100,8 +120,14 @@ module.exports = {
     'no-unneeded-ternary': 2,
     // disallow whitespace before properties
     'no-whitespace-before-property': 2,
+    // enforce the location of single-line statements
+    'nonblock-statement-body-position': 2,
+    // enforce consistent line breaks inside braces
+    'object-curly-newline': 0,
     // require or disallow padding inside curly braces
     'object-curly-spacing': [2, 'always'],
+    // enforce placing object properties on separate lines
+    'object-property-newline': 2,
     // allow just one var statement per function
     'one-var': [2, 'never'],
     // require or disallow an newline around variable declarations
@@ -127,8 +153,8 @@ module.exports = {
     'semi': [2, 'always'],
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { 'before': false, 'after': true }],
-    // sort import declarations within module
-    'sort-imports': 1,
+    // require object keys to be sorted
+    'sort-keys': 0,
     // sort variables within the same declaration block
     'sort-vars': 0,
     // require or disallow space before blocks
@@ -146,6 +172,10 @@ module.exports = {
       'exceptions': ['-', '+'],
       'markers': ['=', '!'] // space here to support sprockets directives
     }],
+    // require or disallow spacing between template tags and their literals
+    'template-tag-spacing': 2,
+    // require or disallow Unicode byte order mark (BOM)
+    'unicode-bom': 2,
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 0
   }

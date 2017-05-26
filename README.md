@@ -1,14 +1,18 @@
-# Zendesk Garden ESLint Config
+# Zendesk Garden ESLint Config [![Build Status](https://travis-ci.com/zendeskgarden/eslint-config.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/eslint-config)
 
-The `eslint-config` package exposes a [shareable ESLint
+The `eslint-config-garden` package exposes a [shareable ESLint
 config](http://eslint.org/docs/developer-guide/shareable-configs).
 
 ## Installation
 
-    $ npm install --save-dev eslint
-    $ npm install --save-dev eslint-plugin-sort-class-members
-    $ npm install --save-dev babel-eslint
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/eslint-config.git
+    npm install --save-dev eslint
+    npm install --save-dev eslint-plugin-sort-class-members
+    npm install --save-dev babel-eslint
+    npm install --save-dev @zendesk/eslint-config-garden
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
@@ -16,11 +20,11 @@ Add a `.eslintrc` to your project with an `extends` property like this:
 
 ```javascript
 {
-  extends: 'zendesk'
+  extends: '@zendesk/garden'
 }
 ```
 
-Now the Zendesk rules will apply to your project. See the [ESLint
+Now the Zendesk Garden rules will apply to your project. See the [ESLint
 Documentation](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more details on extending shareable configuration files.
 

@@ -8,6 +8,8 @@ module.exports = {
     'array-callback-return': 2,
     // treat `var` statements as if they were block scoped
     'block-scoped-var': 2,
+    // enforce that class methods utilize `this`
+    'class-methods-use-this': 2,
     // specify the maximum cyclomatic complexity allowed in a program
     'complexity': [0, 11],
     // require `return` statements to either always or never specify values
@@ -52,6 +54,8 @@ module.exports = {
     'no-fallthrough': 2,
     // disallow the use of leading or trailing decimal points in numeric literals
     'no-floating-decimal': 2,
+    // disallow assignments to native objects or read-only global variables
+    'no-global-assign': 2,
     // disallow the type conversions with shorter notations
     'no-implicit-coercion': 0,
     // disallow `var` and named functions in global scope
@@ -74,8 +78,6 @@ module.exports = {
     'no-multi-spaces': 2,
     // disallow use of multiline strings
     'no-multi-str': 2,
-    // disallow reassignments of native objects
-    'no-native-reassign': 2,
     // disallow use of `new` operator when not part of the assignment or comparison
     'no-new': 2,
     // disallow use of new operator for `Function` object
@@ -92,8 +94,12 @@ module.exports = {
     'no-proto': 2,
     // disallow declaring the same variable more then once
     'no-redeclare': 2,
+    // disallow certain properties on certain objects
+    'no-restricted-properties': 0,
     // disallow use of assignment in `return` statement
     'no-return-assign': 2,
+    // disallow unnecessary `return await`
+    'no-return-await': 2,
     // disallow use of `javascript:` urls.
     'no-script-url': 2,
     // disallow assignments where both sides are exactly the same
@@ -116,14 +122,20 @@ module.exports = {
     'no-useless-concat': 2,
     // disallow unnecessary usage of escape character
     'no-useless-escape': 2,
+    // disallow redundant return statements
+    'no-useless-return': 2,
     // disallow use of `void` operator
     'no-void': 0,
     // disallow usage of configurable warning terms in comments: e.g. todo
     'no-warning-comments': [0, { 'terms': ['todo', 'fixme'], 'location': 'start' }],
     // disallow use of the `with` statement
     'no-with': 2,
+    // require using Error objects as Promise rejection reasons
+    'prefer-promise-reject-errors': 2,
     // require use of the second argument for `parseInt()`
     'radix': 2,
+    // disallow async functions which have no `await` expression
+    'require-await': 2,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 2,
     // require immediate function invocation to be wrapped in parentheses
