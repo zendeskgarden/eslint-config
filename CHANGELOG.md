@@ -36,7 +36,7 @@
 
 ## 0.1.0 - 2015-08-21
 
-[3.0.0]: https://github.com/zendeskgarden/eslint-config/compare/2.1.0...3.0.0
+[3.0.0]: https://github.com/zendeskgarden/eslint-config/compare/2.1.0...v3.0.0
 [2.1.0]: https://github.com/zendeskgarden/eslint-config/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/zendeskgarden/eslint-config/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/eslint-config/compare/1.0.0...2.0.0
