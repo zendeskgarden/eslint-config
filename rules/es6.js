@@ -43,8 +43,12 @@ module.exports = {
     'no-restricted-imports': 0,
     // disallow to use `this`/`super` before `super()` calling in constructors
     'no-this-before-super': 2,
+    // disallow unnecessary computed property keys in object literals
+    'no-useless-computed-key': 2,
     // disallow unnecessary constructor
     'no-useless-constructor': 2,
+    // disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': 2,
     // require `let` or `const` instead of `var`
     'no-var': 2,
     // require method and property shorthand syntax for object literals
@@ -53,8 +57,10 @@ module.exports = {
     'prefer-arrow-callback': 2,
     // suggest using of `const` declaration for variables that are never modified after declared
     'prefer-const': 2,
-    // suggest using Reflect methods where applicable
-    'prefer-reflect': 0,
+    // require destructuring from arrays and/or objects
+    'prefer-destructuring': 0,
+    // disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
+    'prefer-numeric-literals': 2,
     // suggest using the rest parameters instead of `arguments`
     'prefer-rest-params': 2,
     // suggest using the spread operator instead of `.apply()`
@@ -63,6 +69,12 @@ module.exports = {
     'prefer-template': 2,
     // disallow generator functions that do not have `yield`
     'require-yield': 0,
+    // enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': 2,
+    // sort import declarations within module
+    'sort-imports': 1,
+    // require symbol descriptions
+    'symbol-description': 2,
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': [2, 'never'],
     // enforce spacing around the `*` in `yield*` expressions

@@ -2,8 +2,10 @@
 
 module.exports = {
   'rules': {
-    // disallow or enforce trailing commas
-    'comma-dangle': 2,
+    // disallow `await` inside of loops
+    'no-await-in-loop': 2,
+    // disallow comparing against -0
+    'no-compare-neg-zero': 2,
     // disallow assignment in conditional expressions
     'no-cond-assign': [2, 'always'],
     // disallow use of `console` in the node environment
@@ -40,18 +42,24 @@ module.exports = {
     'no-invalid-regexp': 2,
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 2,
-    // disallow negation of the left operand of an `in` expression
-    'no-negated-in-lhs': 2,
-    // disallow the use of object properties of the global object (`Math` and `JSON`) as functions
+    // disallow calling global object properties as functions
     'no-obj-calls': 2,
+    // disallow calling some `Object.prototype` methods directly on objects
+    'no-prototype-builtins': 2,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 2,
     // disallow sparse arrays
     'no-sparse-arrays': 2,
+    // disallow template literal placeholder syntax in regular strings
+    'no-template-curly-in-string': ?,
     // avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 2,
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 2,
+    // disallow control flow statements in `finally` blocks
+    'no-unsafe-finally': 2,
+    // disallow negating the left operand of relational operators
+    'no-unsafe-negation': 2,
     // disallow comparisons with the value `NaN`
     'use-isnan': 2,
     // ensure JSDoc comments are valid
