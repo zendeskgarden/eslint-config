@@ -1,6 +1,6 @@
 {
   "name": "@zendesk/eslint-config-garden",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "repository": "zendeskgarden/eslint-config",
   "license": "UNLICENSED",
   "publishConfig": {
