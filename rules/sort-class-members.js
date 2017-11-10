@@ -4,7 +4,7 @@ module.exports = {
   'plugins': [ 'sort-class-members' ],
   'rules': {
     'sort-class-members/sort-class-members': [2, {
-      'groups': {
+      'groups': [{
         'constructor': {
           'kind': 'constructor',
           'name': 'constructor'
@@ -69,7 +69,7 @@ module.exports = {
           'type': 'property',
           'name': '/[^_].+/'
         }
-      },
+      }],
       'order': [
         '[public-properties]',
         '[constructor]',
