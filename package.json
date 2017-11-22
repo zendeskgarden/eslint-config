@@ -8,9 +8,9 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.19.x",
+    "eslint": "^4.11.x",
     "eslint-plugin-sort-class-members": "^1.x",
-    "babel-eslint": "^7.x"
+    "babel-eslint": "^8.x"
   },
   "scripts": {
     "test": "true"

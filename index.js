@@ -12,5 +12,17 @@ module.exports = {
     '@zendesk/garden/rules/sort-class-members'
   ],
   'parser': 'babel-eslint',
-  'env': { 'browser': true }
+  'env': { 'browser': true },
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      // allow `return` statements in the global scope
+      'globalReturn': false,
+      // enable global strict mode
+      'impliedStrict': true,
+      // enable JSX
+      'jsx': false
+    }
+  }
 };

@@ -2,6 +2,10 @@
 
 module.exports = {
   'rules': {
+    // enforce “for” loop update clause moving the counter in the right direction
+    'for-direction': 2,
+    // enforce `return` statements in getters
+    'getter-return': [2, { 'allowImplicit': true }],
     // disallow `await` inside of loops
     'no-await-in-loop': 2,
     // disallow comparing against -0
