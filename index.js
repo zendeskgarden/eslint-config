@@ -8,8 +8,7 @@ module.exports = {
     '@zendesk/garden/rules/variables',
     '@zendesk/garden/rules/node',
     '@zendesk/garden/rules/stylistic-issues',
-    '@zendesk/garden/rules/es6',
-    '@zendesk/garden/rules/sort-class-members'
+    '@zendesk/garden/rules/es6'
   ],
   'parser': 'babel-eslint',
   'env': { 'browser': true },
