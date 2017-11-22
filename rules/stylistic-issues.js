@@ -141,15 +141,15 @@ module.exports = {
     // enforce operators to be placed before or after line breaks
     'operator-linebreak': [2, 'after'],
     // enforce padding within blocks
-    'padded-blocks': [2, 'never'],
+    'padded-blocks': [2, { 'blocks': 'never' }],
     // require or disallow padding lines between statements
     'padding-line-between-statements': [1,
-      { 'blankLine': 'any', 'prev': 'directive', 'next': 'directive' },
       { 'blankLine': 'always', 'prev': 'directive', 'next': '*' },
-      { 'blankLine': 'any', 'prev': ['const', 'let', 'var'], 'next': ['const', 'let', 'var'] },
+      { 'blankLine': 'any', 'prev': 'directive', 'next': 'directive' },
       { 'blankLine': 'always', 'prev': ['const', 'let', 'var'], 'next': '*' },
+      { 'blankLine': 'any', 'prev': ['const', 'let', 'var'], 'next': ['const', 'let', 'var'] },
       { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
-    ]
+    ],
     // require quotes around object literal property names
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
