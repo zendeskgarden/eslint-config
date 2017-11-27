@@ -1,21 +1,6 @@
 'use strict';
 
 module.exports = {
-  'env': {
-    'es6': false
-  },
-  'parserOptions': {
-    'ecmaVersion': 6,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      // allow `return` statements in the global scope
-      'globalReturn': false,
-      // enable global strict mode
-      'impliedStrict': true,
-      // enable JSX
-      'jsx': false
-    }
-  },
   'rules': {
     // require braces in arrow function body
     'arrow-body-style': 0,

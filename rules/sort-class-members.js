@@ -4,6 +4,7 @@ module.exports = {
   'plugins': [ 'sort-class-members' ],
   'rules': {
     'sort-class-members/sort-class-members': [2, {
+      'accessorPairPositioning': 'getThenSet',
       'groups': [{
         'constructor': {
           'kind': 'constructor',

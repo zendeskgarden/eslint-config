@@ -2,8 +2,12 @@
 
 module.exports = {
   'rules': {
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': [2, 'consistent'],
     // enforce spacing inside array brackets
     'array-bracket-spacing': [2, 'never'],
+    // enforce line breaks after each array element
+    'array-element-newline': 0,
     // disallow or enforce spaces inside of single line blocks
     'block-spacing': [2, 'always'],
     // enforce one true brace style
@@ -32,6 +36,8 @@ module.exports = {
     'func-names': 1,
     // enforce use of function declarations or expressions
     'func-style': 0,
+    // enforce consistent line breaks inside function parentheses
+    'function-paren-newline': 2,
     // blacklist certain identifiers to prevent them being used
     'id-blacklist': 0,
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
@@ -52,8 +58,8 @@ module.exports = {
     'linebreak-style': 0,
     // enforces empty lines around comments
     'lines-around-comment': 0,
-    // require or disallow newlines around directives
-    'lines-around-directive': 2,
+    // require or disallow an empty line between class members
+    'lines-between-class-members': 2,
     // specify the maximum depth that blocks can be nested
     'max-depth': [0, 4],
     // specify the maximum length of a line in your program
@@ -68,16 +74,14 @@ module.exports = {
     'max-statements': [0, 10],
     // specify the maximum number of statements allowed per line
     'max-statements-per-line': [2, { 'max': 1 }],
+    //enforce a particular style for multiline comments
+    'multiline-comment-style': 0,
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 0,
     // require a capital letter for constructors
     'new-cap': [2, { 'newIsCap': true }],
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 2,
-    // allow/disallow an empty newline after var statement
-    'newline-after-var': 1,
-    // require newline before return statement
-    'newline-before-return': 1,
     // enforce newline after each call when chaining the calls
     'newline-per-chained-call': 0,
     // disallow use of the `Array` constructor
@@ -137,7 +141,15 @@ module.exports = {
     // enforce operators to be placed before or after line breaks
     'operator-linebreak': [2, 'after'],
     // enforce padding within blocks
-    'padded-blocks': [2, 'never'],
+    'padded-blocks': [2, { 'blocks': 'never' }],
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': [1,
+      { 'blankLine': 'always', 'prev': 'directive', 'next': '*' },
+      { 'blankLine': 'any', 'prev': 'directive', 'next': 'directive' },
+      { 'blankLine': 'always', 'prev': ['const', 'let', 'var'], 'next': '*' },
+      { 'blankLine': 'any', 'prev': ['const', 'let', 'var'], 'next': ['const', 'let', 'var'] },
+      { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
+    ],
     // require quotes around object literal property names
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
@@ -153,6 +165,8 @@ module.exports = {
     'semi': [2, 'always'],
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { 'before': false, 'after': true }],
+    // enforce location of semicolons
+    'semi-style': 2,
     // require object keys to be sorted
     'sort-keys': 0,
     // sort variables within the same declaration block
@@ -172,6 +186,8 @@ module.exports = {
       'exceptions': ['-', '+'],
       'markers': ['=', '!'] // space here to support sprockets directives
     }],
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': 2,
     // require or disallow spacing between template tags and their literals
     'template-tag-spacing': 2,
     // require or disallow Unicode byte order mark (BOM)
