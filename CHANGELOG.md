@@ -1,5 +1,13 @@
 # Change Log
 
+## [4.0.0] - 2017-11-27
+### Changed (per [#9](https://github.com/zendeskgarden/eslint-config/pull/9))
+- Upgrade to support eslint 4.x.
+
+### Removed
+- The `eslint-plugin-sort-class-members` and rules for class member
+  sorting.
+
 ## [3.0.1] - 2017-11-10
 ### Fixed (per [#7](https://github.com/zendeskgarden/eslint-config/pull/7))
 - Update `sort-class-members` config to be compatible with newer
@@ -41,6 +49,7 @@
 
 ## 0.1.0 - 2015-08-21
 
+[4.0.0]: https://github.com/zendeskgarden/eslint-config/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/zendeskgarden/eslint-config/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/eslint-config/compare/2.1.0...v3.0.0
 [2.1.0]: https://github.com/zendeskgarden/eslint-config/compare/2.0.1...2.1.0
