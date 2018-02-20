@@ -30,8 +30,8 @@ commands are available:
 * `yarn test` to run package tests.
 * `yarn lint` to enforce consistent code conventions. Note this is run
   as a git `pre-commit` hook.
-* `yarn format` to optimize SVGs and enforce code style with opinionated
-  formats. Note this is run as a git `pre-commit` hook.
+* `yarn format` to enforce code style with opinionated formats. Note
+  this is run as a git `pre-commit` hook.
 
 ## Pull Request Workflow
 
