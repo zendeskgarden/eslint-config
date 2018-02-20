@@ -2,11 +2,18 @@ language: node_js
 node_js:
   - node
 
-sudo: false
+branches:
+  only:
+    - master
 
 cache:
+  yarn: true
   directories:
     - node_modules
+
+install: yarn --frozen-lockfile
+
+script: yarn test
 
 before_deploy:
   - npm config set _auth $ARTIFACTORY_API_KEY
