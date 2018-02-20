@@ -45,6 +45,8 @@ module.exports = {
     'id-length': 0,
     // require identifiers to match the provided regular expression
     'id-match': 0,
+    // enforce the location of arrow function bodies with implicit returns
+    'implicit-arrow-linebreak': 2,
     // this option sets a specific tab width for your code
     'indent': [2, 2, { SwitchCase: 1 }],
     // specify whether double or single quotes should be used in JSX attributes
