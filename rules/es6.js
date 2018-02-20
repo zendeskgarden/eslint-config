@@ -1,7 +1,5 @@
-'use strict';
-
 module.exports = {
-  'rules': {
+  rules: {
     // require braces in arrow function body
     'arrow-body-style': 0,
     // require parens in arrow function arguments
@@ -21,7 +19,7 @@ module.exports = {
     // disallow duplicate name in class members
     'no-dupe-class-members': 2,
     // disallow duplicate module imports
-    'no-duplicate-imports': [2, { 'includeExports': true }],
+    'no-duplicate-imports': [2, { includeExports: true }],
     // disallow use of the `new` operator with the `Symbol` object
     'no-new-symbol': 2,
     // restrict usage of specified node imports

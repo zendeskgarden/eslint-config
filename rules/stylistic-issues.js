@@ -1,7 +1,5 @@
-'use strict';
-
 module.exports = {
-  'rules': {
+  rules: {
     // enforce linebreaks after opening and before closing array brackets
     'array-bracket-newline': [2, 'consistent'],
     // enforce spacing inside array brackets
@@ -11,15 +9,18 @@ module.exports = {
     // disallow or enforce spaces inside of single line blocks
     'block-spacing': [2, 'always'],
     // enforce one true brace style
-    'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
+    'brace-style': [2, '1tbs', { allowSingleLine: true }],
     // require camel case names
-    'camelcase': [2, { 'properties': 'never' }],
+    'camelcase': [2, { properties: 'never' }],
     // enforce or disallow capitalization of the first letter of a comment
     'capitalize-comments': 0,
     // disallow or enforce trailing commas
     'comma-dangle': 2,
     // enforce spacing before and after comma
-    'comma-spacing': [2, { 'before': false, 'after': true }],
+    'comma-spacing': [2, {
+      before: false,
+      after: true
+    }],
     // enforce one true comma style
     'comma-style': [2, 'last'],
     // require or disallow padding inside computed properties
@@ -45,11 +46,14 @@ module.exports = {
     // require identifiers to match the provided regular expression
     'id-match': 0,
     // this option sets a specific tab width for your code
-    'indent': [2, 2, { 'SwitchCase': 1 } ],
+    'indent': [2, 2, { SwitchCase: 1 }],
     // specify whether double or single quotes should be used in JSX attributes
     'jsx-quotes': 0,
     // enforces spacing between keys and values in object literal properties
-    'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
+    'key-spacing': [2, {
+      beforeColon: false,
+      afterColon: true
+    }],
     // enforce spacing before and after keywords
     'keyword-spacing': 2,
     // enforce position of line comments
@@ -63,7 +67,10 @@ module.exports = {
     // specify the maximum depth that blocks can be nested
     'max-depth': [0, 4],
     // specify the maximum length of a line in your program
-    'max-len': [1, 80, 2, { 'ignoreComments': true, 'ignoreUrls': true }],
+    'max-len': [1, 80, 2, {
+      ignoreComments: true,
+      ignoreUrls: true
+    }],
     // enforce a maximum number of lines per file
     'max-lines': 0,
     // specify the maximum depth callbacks can be nested
@@ -73,13 +80,13 @@ module.exports = {
     // specify the maximum number of statement allowed in a function
     'max-statements': [0, 10],
     // specify the maximum number of statements allowed per line
-    'max-statements-per-line': [2, { 'max': 1 }],
-    //enforce a particular style for multiline comments
+    'max-statements-per-line': [2, { max: 1 }],
+    // enforce a particular style for multiline comments
     'multiline-comment-style': 0,
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 0,
     // require a capital letter for constructors
-    'new-cap': [2, { 'newIsCap': true }],
+    'new-cap': [2, { newIsCap: true }],
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 2,
     // enforce newline after each call when chaining the calls
@@ -101,7 +108,7 @@ module.exports = {
     // disallow use of chained assignment expressions
     'no-multi-assign': 2,
     // disallow multiple empty lines
-    'no-multiple-empty-lines': [2, { 'max': 2 }],
+    'no-multiple-empty-lines': [2, { max: 2 }],
     // disallow negated conditions
     'no-negated-condition': 2,
     // disallow nested ternary expressions
@@ -141,30 +148,51 @@ module.exports = {
     // enforce operators to be placed before or after line breaks
     'operator-linebreak': [2, 'after'],
     // enforce padding within blocks
-    'padded-blocks': [2, { 'blocks': 'never' }],
+    'padded-blocks': [2, { blocks: 'never' }],
     // require or disallow padding lines between statements
     'padding-line-between-statements': [1,
-      { 'blankLine': 'always', 'prev': 'directive', 'next': '*' },
-      { 'blankLine': 'any', 'prev': 'directive', 'next': 'directive' },
-      { 'blankLine': 'always', 'prev': ['const', 'let', 'var'], 'next': '*' },
-      { 'blankLine': 'any', 'prev': ['const', 'let', 'var'], 'next': ['const', 'let', 'var'] },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
-    ],
+      {
+        blankLine: 'always',
+        prev: 'directive',
+        next: '*'
+      },
+      {
+        blankLine: 'any',
+        prev: 'directive',
+        next: 'directive'
+      },
+      {
+        blankLine: 'always',
+        prev: ['const', 'let', 'var'],
+        next: '*'
+      },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var']
+      },
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: 'return'
+      }],
     // require quotes around object literal property names
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
     // require JSDoc comment
-    'require-jsdoc': [2, { 'require': {
-        'FunctionDeclaration': true,
-        'MethodDefinition': false,
-        'ClassDeclaration': false
-      }
-    }],
+    'require-jsdoc': [2, { require: {
+      FunctionDeclaration: true,
+      MethodDefinition: false,
+      ClassDeclaration: false
+    } }],
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
     // enforce spacing before and after semicolons
-    'semi-spacing': [2, { 'before': false, 'after': true }],
+    'semi-spacing': [2, {
+      before: false,
+      after: true
+    }],
     // enforce location of semicolons
     'semi-style': 2,
     // require object keys to be sorted
@@ -182,9 +210,9 @@ module.exports = {
     // Require or disallow spaces before/after unary operators
     'space-unary-ops': 0,
     // require or disallow a space immediately following the `//` or `/*` in a comment
-    'spaced-comment': [2, 'always',  {
-      'exceptions': ['-', '+'],
-      'markers': ['=', '!'] // space here to support sprockets directives
+    'spaced-comment': [2, 'always', {
+      exceptions: ['-', '+'],
+      markers: ['=', '!'] // space here to support sprockets directives
     }],
     // enforce spacing around colons of switch statements
     'switch-colon-spacing': 2,

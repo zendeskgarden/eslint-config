@@ -1,11 +1,9 @@
-'use strict';
-
 module.exports = {
-  'rules': {
+  rules: {
     // enforce “for” loop update clause moving the counter in the right direction
     'for-direction': 2,
     // enforce `return` statements in getters
-    'getter-return': [2, { 'allowImplicit': true }],
+    'getter-return': [2, { allowImplicit: true }],
     // disallow `await` inside of loops
     'no-await-in-loop': 2,
     // disallow comparing against -0
@@ -68,11 +66,9 @@ module.exports = {
     'use-isnan': 2,
     // ensure JSDoc comments are valid
     'valid-jsdoc': [1, {
-      'prefer': {
-        'return': 'returns'
-      },
-      'requireReturn': false,
-      'requireReturnDescription': false
+      prefer: { return: 'returns' },
+      requireReturn: false,
+      requireReturnDescription: false
     }],
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': 2

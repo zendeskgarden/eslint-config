@@ -1,7 +1,5 @@
-'use strict';
-
 module.exports = {
-  'extends': [
+  extends: [
     '@zendesk/garden/rules/possible-errors',
     '@zendesk/garden/rules/best-practices',
     '@zendesk/garden/rules/strict-mode',
@@ -10,18 +8,18 @@ module.exports = {
     '@zendesk/garden/rules/stylistic-issues',
     '@zendesk/garden/rules/es6'
   ],
-  'parser': 'babel-eslint',
-  'env': { 'browser': true },
-  'parserOptions': {
-    'ecmaVersion': 6,
-    'sourceType': 'module',
-    'ecmaFeatures': {
+  parser: 'babel-eslint',
+  env: { browser: true },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
       // allow `return` statements in the global scope
-      'globalReturn': false,
+      globalReturn: false,
       // enable global strict mode
-      'impliedStrict': true,
+      impliedStrict: true,
       // enable JSX
-      'jsx': false
+      jsx: false
     }
   }
 };
