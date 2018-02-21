@@ -1,5 +1,17 @@
 # Change Log
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/zendeskgarden/eslint-config/compare/v4.0.0...v4.1.0) (2018-02-21)
+
+
+### Features
+
+* upgrade to support eslint 4.18.x ([#10](https://github.com/zendeskgarden/eslint-config/issues/10)) ([b38d815](https://github.com/zendeskgarden/eslint-config/commit/b38d815))
+
+
+
 <a name="4.0.0"></a>
 ## [4.0.0] - 2017-11-27
 ### Changed (per [#9](https://github.com/zendeskgarden/eslint-config/pull/9))
