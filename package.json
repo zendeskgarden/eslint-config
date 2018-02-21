@@ -1,17 +1,47 @@
 {
   "name": "@zendesk/eslint-config-garden",
+  "description": "Garden ESLint config",
+  "author": "Zendesk Garden <garden@zendesk.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/zendeskgarden/eslint-config",
+  "bugs": {
+    "url": "https://github.com/zendeskgarden/eslint-config/issues"
+  },
   "version": "4.0.0",
-  "repository": "zendeskgarden/eslint-config",
-  "license": "UNLICENSED",
+  "main": "index.js",
+  "files": [
+    "rules"
+  ],
+  "scripts": {
+    "format": "prettier-package-json --write",
+    "lint": "eslint -c ./index.js index.js rules/*.js",
+    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
+    "test": "yarn lint && yarn format && git diff --quiet"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.x",
+    "eslint": "^4.18.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "husky": "^0.15.0-rc.8",
+    "prettier-package-json": "^1.4.0",
+    "standard-version": "^4.3.0"
+  },
+  "keywords": [
+    "eslint",
+    "garden",
+    "zendesk"
+  ],
   "publishConfig": {
     "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
-  "main": "index.js",
-  "peerDependencies": {
-    "eslint": "^4.11.x",
-    "babel-eslint": "^8.x"
-  },
-  "scripts": {
-    "test": "true"
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn format",
+      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn --pure-lockfile; fi",
+      "post-merge": "yarn --pure-lockfile"
+    }
   }
 }

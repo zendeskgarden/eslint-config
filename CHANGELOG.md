@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="4.0.0"></a>
 ## [4.0.0] - 2017-11-27
 ### Changed (per [#9](https://github.com/zendeskgarden/eslint-config/pull/9))
 - Upgrade to support eslint 4.x.

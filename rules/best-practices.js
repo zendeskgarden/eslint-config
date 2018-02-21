@@ -1,7 +1,5 @@
-'use strict';
-
 module.exports = {
-  'rules': {
+  rules: {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 2,
     // enforces return statements in callbacks of array's methods
@@ -21,7 +19,7 @@ module.exports = {
     // enforces consistent newlines before or after dots
     'dot-location': [2, 'property'],
     // encourages use of dot notation whenever possible
-    'dot-notation': [2, { 'allowKeywords': true }],
+    'dot-notation': [2, { allowKeywords: true }],
     // require the use of `===` and `!==`
     'eqeqeq': 2,
     // make sure `for-in` loops have an `if` statement
@@ -127,7 +125,10 @@ module.exports = {
     // disallow use of `void` operator
     'no-void': 0,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': [0, { 'terms': ['todo', 'fixme'], 'location': 'start' }],
+    'no-warning-comments': [0, {
+      terms: ['todo', 'fixme'],
+      location: 'start'
+    }],
     // disallow use of the `with` statement
     'no-with': 2,
     // require using Error objects as Promise rejection reasons

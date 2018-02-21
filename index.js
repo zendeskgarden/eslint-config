@@ -1,27 +1,27 @@
-'use strict';
-
 module.exports = {
-  'extends': [
-    '@zendesk/garden/rules/possible-errors',
-    '@zendesk/garden/rules/best-practices',
-    '@zendesk/garden/rules/strict-mode',
-    '@zendesk/garden/rules/variables',
-    '@zendesk/garden/rules/node',
-    '@zendesk/garden/rules/stylistic-issues',
-    '@zendesk/garden/rules/es6'
-  ],
-  'parser': 'babel-eslint',
-  'env': { 'browser': true },
-  'parserOptions': {
-    'ecmaVersion': 6,
-    'sourceType': 'module',
-    'ecmaFeatures': {
+  extends: [
+    './rules/possible-errors',
+    './rules/best-practices',
+    './rules/strict-mode',
+    './rules/variables',
+    './rules/node',
+    './rules/stylistic-issues',
+    './rules/es6'
+  ].map(require.resolve),
+  parser: 'babel-eslint',
+  env: { browser: true },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
       // allow `return` statements in the global scope
-      'globalReturn': false,
+      globalReturn: false,
       // enable global strict mode
-      'impliedStrict': true,
+      impliedStrict: true,
       // enable JSX
-      'jsx': false
+      jsx: false,
+      // enable support for the experimental object rest/spread properties
+      experimentalObjectRestSpread: false
     }
   }
 };

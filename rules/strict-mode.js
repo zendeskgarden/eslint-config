@@ -1,8 +1,6 @@
-'use strict';
-
 module.exports = {
-  'rules': {
+  rules: {
     // controls location of Use Strict directives (controlled by babel)
-    'strict': [2, 'never']
+    strict: [2, 'never']
   }
 };
