@@ -45,12 +45,11 @@ Got issues with what you find here? Please feel free to create an
 [issue](https://github.com/zendeskgarden/eslint-config/issues/new).
 
 If you'd like to take a crack at making some changes, please follow our
-[contributing](https://github.com/zendeskgarden/eslint-config/blob/master/.github/CONTRIBUTING.md)
-documentation for details needed to submit a PR.
+[contributing](.github/CONTRIBUTING.md) documentation for details needed
+to submit a PR.
 
 Community behavior is benevolently ruled by a [code of
-conduct](https://github.com/zendeskgarden/eslint-config/blob/master/.github/CODE_OF_CONDUCT.md).
-Please participate accordingly.
+conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
