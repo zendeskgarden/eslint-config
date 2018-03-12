@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "format": "prettier-package-json --write",
-    "lint": "eslint -c ./index.js index.js rules/*.js",
+    "lint": "eslint index.js rules/*.js",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
     "test": "yarn lint && yarn format && git diff --quiet"
   },
@@ -25,6 +25,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.1",
+    "eslint-plugin-notice": "^0.6.6",
     "husky": "^0.15.0-rc.8",
     "prettier-package-json": "^1.4.0",
     "standard-version": "^4.3.0"
