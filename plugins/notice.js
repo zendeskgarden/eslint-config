@@ -8,7 +8,6 @@ const TEMPLATE = `/**
 `;
 
 module.exports = {
-  // https://www.npmjs.com/package/eslint-plugin-notice
   plugins: ['notice'],
   rules: {
     // throw an error when a file doesn't have a copyright notice
