@@ -13,4 +13,4 @@ module.exports = {
     // throw an error when a file doesn't have a copyright notice
     'notice/notice': [2, { template: TEMPLATE }]
   }
-}
+};

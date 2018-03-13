@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "format": "prettier-package-json --write",
-    "lint": "eslint index.js rules/*.js",
+    "lint": "eslint index.js plugins/*.js rules/*.js",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'master' ] && standard-version --no-verify",
     "test": "yarn lint && yarn format && git diff --quiet"
   },
