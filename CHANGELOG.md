@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/zendeskgarden/eslint-config/compare/v4.1.0...v5.0.0) (2018-03-14)
+
+
+### Features
+
+* prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#12](https://github.com/zendeskgarden/eslint-config/issues/12)) ([d3130a5](https://github.com/zendeskgarden/eslint-config/commit/d3130a5))
+
+
+### BREAKING CHANGES
+
+* package location has moved to the npm registry under `@zendeskgarden/eslint-config`. See the README for installation/upgrade details.
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/zendeskgarden/eslint-config/compare/v4.0.0...v4.1.0) (2018-02-21)
 

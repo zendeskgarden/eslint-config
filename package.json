@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/eslint-config/issues"
   },
-  "version": "4.1.0",
+  "version": "5.0.0",
   "main": "index.js",
   "files": [
     "rules"
