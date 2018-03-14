@@ -581,6 +581,14 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
+eslint-plugin-notice@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.6.6.tgz#b5763e8f370c55593fa8ea6d017e708c7dc637ce"
+  dependencies:
+    find-root "^1.1.0"
+    lodash ">=2.4.0"
+    metric-lcs "^0.1.2"
+
 eslint-scope@^3.7.1, eslint-scope@~3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
@@ -592,9 +600,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.18.1:
-  version "4.18.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.1.tgz#b9138440cb1e98b2f44a0d578c6ecf8eae6150b0"
+eslint@^4.18.2:
+  version "4.18.2"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.2.tgz#0f81267ad1012e7d2051e186a9004cc2267b8d45"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -631,7 +639,7 @@ eslint@^4.18.1:
     semver "^5.3.0"
     strip-ansi "^4.0.0"
     strip-json-comments "~2.0.1"
-    table "^4.0.1"
+    table "4.0.2"
     text-table "~0.2.0"
 
 espree@^3.5.2:
@@ -729,6 +737,10 @@ file-entry-cache@^2.0.0:
   dependencies:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
+
+find-root@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -1165,7 +1177,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@^4.0.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
+lodash@>=2.4.0, lodash@^4.0.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
@@ -1217,6 +1229,10 @@ meow@^3.3.0:
     read-pkg-up "^1.0.1"
     redent "^1.0.0"
     trim-newlines "^1.0.0"
+
+metric-lcs@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/metric-lcs/-/metric-lcs-0.1.2.tgz#87913f149410e39c7c5a19037512814eaf155e11"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -1448,9 +1464,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier-package-json@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-1.4.0.tgz#ecf2ed04c5bf9cb6926900be6260f0f9a485e2f3"
+prettier-package-json@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-1.5.1.tgz#b99b63f784ffca77de58598607481b52d3bd3884"
   dependencies:
     commander "^2.9.0"
     fs-extra "^3.0.1"
@@ -1773,7 +1789,7 @@ supports-color@^5.2.0:
   dependencies:
     has-flag "^3.0.0"
 
-table@^4.0.1:
+table@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/table/-/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
   dependencies:

@@ -10,3 +10,9 @@
 <!-- a summary of the changes introduced by this PR. this description
      may populate the commit body and versioned changelog if the PR is
      merged. -->
+
+## Detail
+
+<!-- supporting details; code, etc. -->
+
+<!-- closes GITHUB_ISSUE -->

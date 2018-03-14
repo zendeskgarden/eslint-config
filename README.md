@@ -8,12 +8,8 @@ config](http://eslint.org/docs/developer-guide/shareable-configs).
 ## Installation
 
 ```sh
-npm install --save-dev eslint babel-eslint @zendesk/eslint-config-garden
+npm install --save-dev eslint babel-eslint @zendeskgarden/eslint-config
 ```
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
@@ -21,7 +17,7 @@ Add a `.eslintrc` to your project with an `extends` property like this:
 
 ```js
 {
-  extends: '@zendesk/garden'
+  extends: '@zendeskgarden'
 }
 ```
 
@@ -45,12 +41,11 @@ Got issues with what you find here? Please feel free to create an
 [issue](https://github.com/zendeskgarden/eslint-config/issues/new).
 
 If you'd like to take a crack at making some changes, please follow our
-[contributing](https://github.com/zendeskgarden/eslint-config/blob/master/.github/CONTRIBUTING.md)
-documentation for details needed to submit a PR.
+[contributing](.github/CONTRIBUTING.md) documentation for details needed
+to submit a PR.
 
 Community behavior is benevolently ruled by a [code of
-conduct](https://github.com/zendeskgarden/eslint-config/blob/master/.github/CODE_OF_CONDUCT.md).
-Please participate accordingly.
+conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 

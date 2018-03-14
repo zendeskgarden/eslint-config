@@ -14,15 +14,10 @@ cache:
 
 install: yarn --frozen-lockfile
 
-script: yarn test
-
-before_deploy:
-  - npm config set _auth $ARTIFACTORY_API_KEY
-  - npm config set email $ARTIFACTORY_EMAIL
-
 deploy:
-  provider: script
-  script: npm publish
+  provider: npm
+  email: garden@zendesk.com
+  api_key: $NPM_TOKEN
   on:
     branch: master
     tags: true
