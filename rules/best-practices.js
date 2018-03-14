@@ -5,7 +5,6 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
 module.exports = {
   rules: {
     // enforces getter/setter pairs in objects
