@@ -3,6 +3,7 @@
   "description": "Garden ESLint config",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
+  "homepage": "https://garden.zendesk.com/",
   "repository": "https://github.com/zendeskgarden/eslint-config",
   "bugs": {
     "url": "https://github.com/zendeskgarden/eslint-config/issues"
