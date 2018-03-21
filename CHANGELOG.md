@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/zendeskgarden/eslint-config/compare/v5.0.1...v5.0.2) (2018-03-21)
+
+
+### Bug Fixes
+
+* improve package metadata ([#14](https://github.com/zendeskgarden/eslint-config/issues/14)) ([a6e3e66](https://github.com/zendeskgarden/eslint-config/commit/a6e3e66))
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/zendeskgarden/eslint-config/compare/v5.0.0...v5.0.1) (2018-03-15)
 
