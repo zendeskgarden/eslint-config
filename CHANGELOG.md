@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/zendeskgarden/eslint-config/compare/v5.0.2...v6.0.0) (2018-06-11)
+
+
+### Features
+
+* upgrade to support eslint 5.x ([#15](https://github.com/zendeskgarden/eslint-config/issues/15)) ([39a386f](https://github.com/zendeskgarden/eslint-config/commit/39a386f))
+
+
+### BREAKING CHANGES
+
+* upgrade eslint peer dependency from `4.18.x` to `5.x`.
+
+* set `parserOptions: { jsx: true }`
+* add `max-classes-per-file` configured to error if there is more than one
+* add `prefer-object-spread` configured to warn when `Object.assign` is called using an object literal as the first argument
+
+
+
 <a name="5.0.2"></a>
 ## [5.0.2](https://github.com/zendeskgarden/eslint-config/compare/v5.0.1...v5.0.2) (2018-03-21)
 
