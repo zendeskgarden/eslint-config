@@ -31,6 +31,8 @@ module.exports = {
     'eqeqeq': 2,
     // make sure `for-in` loops have an `if` statement
     'guard-for-in': 2,
+    // enforce a maximum number of classes per file
+    'max-classes-per-file': 2,
     // disallow the use of `alert`, `confirm`, and `prompt`
     'no-alert': 1,
     // disallow use of `arguments.caller` or `arguments.callee`

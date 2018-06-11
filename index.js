@@ -26,9 +26,7 @@ module.exports = {
       // enable global strict mode
       impliedStrict: true,
       // enable JSX
-      jsx: false,
-      // enable support for the experimental object rest/spread properties
-      experimentalObjectRestSpread: false
+      jsx: true
     }
   }
 };

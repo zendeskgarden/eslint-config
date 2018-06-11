@@ -185,6 +185,8 @@ module.exports = {
         prev: '*',
         next: 'return'
       }],
+    // prefer use of an object spread over `Object.assign`
+    'prefer-object-spread': 1,
     // require quotes around object literal property names
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
