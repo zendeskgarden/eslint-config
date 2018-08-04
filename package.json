@@ -25,10 +25,10 @@
     "eslint": "^5.x"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.6",
     "eslint": "^5.0.0-rc.0",
     "eslint-plugin-notice": "^0.7.7",
-    "husky": "^1.0.0-rc.8",
+    "husky": "^1.0.0-rc.13",
     "prettier-package-json": "^1.6.0",
     "standard-version": "^4.4.0"
   },
