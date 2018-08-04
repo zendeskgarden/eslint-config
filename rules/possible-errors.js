@@ -11,6 +11,8 @@ module.exports = {
     'for-direction': 2,
     // enforce `return` statements in getters
     'getter-return': [2, { allowImplicit: true }],
+    // disallow using an async function as a Promise executor
+    'no-async-promise-executor': 2,
     // disallow `await` inside of loops
     'no-await-in-loop': 2,
     // disallow comparing against -0
@@ -51,6 +53,8 @@ module.exports = {
     'no-invalid-regexp': 2,
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 2,
+    // disallow characters which are made with multiple code points in character class syntax
+    'no-misleading-character-class': 2,
     // disallow calling global object properties as functions
     'no-obj-calls': 2,
     // disallow calling some `Object.prototype` methods directly on objects
@@ -69,6 +73,8 @@ module.exports = {
     'no-unsafe-finally': 2,
     // disallow negating the left operand of relational operators
     'no-unsafe-negation': 2,
+    // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
+    'require-atomic-updates': 2,
     // disallow comparisons with the value `NaN`
     'use-isnan': 2,
     // ensure JSDoc comments are valid

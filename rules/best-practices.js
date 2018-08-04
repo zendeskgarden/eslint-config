@@ -146,6 +146,8 @@ module.exports = {
     'radix': 2,
     // disallow async functions which have no `await` expression
     'require-await': 2,
+    // enforce the use of u flag on RegExp
+    'require-unicode-regexp': 2,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 2,
     // require immediate function invocation to be wrapped in parentheses
