@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/zendeskgarden/eslint-config/compare/v6.0.0...v7.0.0) (2018-08-06)
+
+
+### Features
+
+* upgrade to support eslint 5.3.x ([#17](https://github.com/zendeskgarden/eslint-config/issues/17)) ([4f47f80](https://github.com/zendeskgarden/eslint-config/commit/4f47f80))
+
+
+### BREAKING CHANGES
+
+* existing code may fail with the addition of the following new rule error checking:
+* `require-unicode-regexp`
+* `no-async-promise-executor`
+* `no-misleading-character-class`
+* `require-atomic-updates`
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/zendeskgarden/eslint-config/compare/v5.0.2...v6.0.0) (2018-06-11)
 
