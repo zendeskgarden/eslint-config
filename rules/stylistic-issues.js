@@ -82,6 +82,8 @@ module.exports = {
     }],
     // enforce a maximum number of lines per file
     'max-lines': 0,
+    // enforce a maximum number of line of code in a function
+    'max-lines-per-function': 0,
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
     // limits the number of parameters that can be used in the function declaration.
