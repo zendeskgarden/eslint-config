@@ -1594,9 +1594,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier-package-json@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-1.6.0.tgz#39ab6a4ddf806366bb70a26b6c6397d80a97c712"
+prettier-package-json@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.0.0.tgz#b520a4a246a7c4814884f32934bc56b9139dbd14"
   dependencies:
     commander "^2.9.0"
     fs-extra "^3.0.1"
