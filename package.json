@@ -21,7 +21,7 @@
     "test": "yarn lint && yarn format && git diff --quiet"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.x || ^9.0.0",
+    "babel-eslint": "^9.x",
     "eslint": "^5.3.x"
   },
   "devDependencies": {
