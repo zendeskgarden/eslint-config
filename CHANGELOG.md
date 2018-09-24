@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.6"></a>
+## [7.0.6](https://github.com/zendeskgarden/eslint-config/compare/v7.0.5...v7.0.6) (2018-09-24)
+
+
+
 <a name="7.0.5"></a>
 ## [7.0.5](https://github.com/zendeskgarden/eslint-config/compare/v7.0.4...v7.0.5) (2018-09-04)
 
