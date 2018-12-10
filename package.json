@@ -22,11 +22,11 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10.x",
-    "eslint": "^5.9.x"
+    "eslint": "^5.10.x"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
-    "eslint": "5.9.0",
+    "eslint": "5.10.0",
     "eslint-plugin-notice": "0.7.7",
     "husky": "1.2.0",
     "prettier-package-json": "2.0.1",
