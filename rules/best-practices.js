@@ -125,6 +125,8 @@ module.exports = {
     'no-unused-labels': 2,
     // disallow unnecessary `.call()` and `.apply()`
     'no-useless-call': 0,
+    // disallow unnecessary `catch` clauses
+    'no-useless-catch': 2,
     // disallow unnecessary concatenation of literals or template literals
     'no-useless-concat': 2,
     // disallow unnecessary usage of escape character
