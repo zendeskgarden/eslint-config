@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10.x",
-    "eslint": "^5.10.x"
+    "eslint": "^5.12.x"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
@@ -39,12 +39,5 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint && yarn format",
-      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn --ignore-scripts --pure-lockfile; fi",
-      "post-merge": "yarn --ignore-scripts --pure-lockfile"
-    }
   }
 }
