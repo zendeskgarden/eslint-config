@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10.x",
-    "eslint": "^5.15.x"
+    "eslint": "^5.16.x"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
