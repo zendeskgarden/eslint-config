@@ -28,7 +28,7 @@
     "babel-eslint": "10.0.2",
     "eslint": "6.0.1",
     "eslint-plugin-notice": "0.8.8",
-    "husky": "2.7.0",
+    "husky": "3.0.0",
     "prettier-package-json": "2.1.0",
     "standard-version": "6.0.1"
   },
