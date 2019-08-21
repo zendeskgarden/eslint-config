@@ -21,12 +21,12 @@
     "test": "yarn lint && yarn format && git diff --quiet"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.x",
-    "eslint": "^5.16.x || ^6.0.0"
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.2.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.2",
-    "eslint": "6.1.0",
+    "eslint": "6.2.1",
     "eslint-plugin-notice": "0.8.8",
     "husky": "3.0.4",
     "prettier-package-json": "2.1.0",

@@ -44,6 +44,8 @@ module.exports = {
     'func-names': 1,
     // enforce use of function declarations or expressions
     'func-style': 0,
+    // enforce line breaks between arguments of a function call
+    'function-call-argument-newline': [2, 'consistent'],
     // enforce consistent line breaks inside function parentheses
     'function-paren-newline': 2,
     // blacklist certain identifiers to prevent them being used
