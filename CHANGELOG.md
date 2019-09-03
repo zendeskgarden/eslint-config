@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/zendeskgarden/eslint-config/compare/v8.0.0...v9.0.0) (2019-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add new `reportUnusedDisableDirectives` configuration setting (warns if detected)
+
+* **deps:** update dependency eslint to v6.3.0 ([#73](https://github.com/zendeskgarden/eslint-config/issues/73)) ([b985a80](https://github.com/zendeskgarden/eslint-config/commit/b985a80))
+
 ## [8.0.0](https://github.com/zendeskgarden/eslint-config/compare/v7.2.2...v8.0.0) (2019-08-21)
 
 
