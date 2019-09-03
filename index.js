@@ -28,5 +28,6 @@ module.exports = {
       // enable JSX
       jsx: true
     }
-  }
+  },
+  reportUnusedDisableDirectives: true
 };
