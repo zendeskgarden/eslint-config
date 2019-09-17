@@ -1,12 +1,6 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base", "group:allNonMajor"],
   "rebaseStalePrs": true,
-  "reviewers": [
-    "austin94",
-    "ryanseddon",
-    "jzempel"
-  ],
-  "schedule": ["on Monday"]
+  "reviewers": ["team:maintainers"],
+  "schedule": ["on Sunday"]
 }
