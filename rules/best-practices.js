@@ -23,6 +23,8 @@ module.exports = {
     'curly': [2, 'multi-line'],
     // require `default` case in `switch` statements
     'default-case': 0,
+    // enforce default parameters to be last
+    'default-param-last': 2,
     // enforces consistent newlines before or after dots
     'dot-location': [2, 'property'],
     // encourages use of dot notation whenever possible
@@ -146,6 +148,8 @@ module.exports = {
     'prefer-named-capture-group': 1,
     // require using Error objects as Promise rejection reasons
     'prefer-promise-reject-errors': 2,
+    // disallow use of the `RegExp` constructor in favor of regular expression literals
+    'prefer-regex-literals': 2,
     // require use of the second argument for `parseInt()`
     'radix': 2,
     // disallow async functions which have no `await` expression

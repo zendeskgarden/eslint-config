@@ -47,6 +47,8 @@ module.exports = {
     'no-extra-semi': 2,
     // disallow overwriting functions written as function declarations
     'no-func-assign': 2,
+    // disallow assigning to imported bindings
+    'no-import-assign': 2,
     // disallow function or variable declarations in nested blocks
     'no-inner-declarations': 2,
     // disallow invalid regular expression strings in the `RegExp` constructor
