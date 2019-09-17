@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.0.0](https://github.com/zendeskgarden/eslint-config/compare/v9.0.0...v10.0.0) (2019-09-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add new rules that require eslint 6.4.0 or greater.
+
+* **deps:** update dependency eslint to v6.4.0 ([#75](https://github.com/zendeskgarden/eslint-config/issues/75)) ([db633aa](https://github.com/zendeskgarden/eslint-config/commit/db633aa))
+
 ## [9.0.0](https://github.com/zendeskgarden/eslint-config/compare/v8.0.0...v9.0.0) (2019-09-03)
 
 
