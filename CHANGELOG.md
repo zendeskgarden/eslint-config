@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.0.0](https://github.com/zendeskgarden/eslint-config/compare/v10.0.0...v11.0.0) (2019-11-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** added
+- `grouped-accessor-pairs`
+- `no-constructor-return`
+- `no-dupe-else-if`
+- `no-setter-return`
+- `prefer-exponentiation-operator`
+
+* **deps:** update all non-major dependencies ([#82](https://github.com/zendeskgarden/eslint-config/issues/82)) ([5da6506](https://github.com/zendeskgarden/eslint-config/commit/5da6506373cabde7b5f84080ee53a1467e8c09b7))
+
 ## [10.0.0](https://github.com/zendeskgarden/eslint-config/compare/v9.0.0...v10.0.0) (2019-09-17)
 
 
