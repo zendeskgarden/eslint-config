@@ -29,6 +29,8 @@ module.exports = {
     'no-debugger': 1,
     // disallow duplicate arguments in functions
     'no-dupe-args': 2,
+    // disallow duplicate conditions in if-else-if chains
+    'no-dupe-else-if': 2,
     // disallow duplicate keys when creating object literals
     'no-dupe-keys': 2,
     // disallow a duplicate case label
@@ -63,6 +65,8 @@ module.exports = {
     'no-prototype-builtins': 2,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 2,
+    // disallow returning values from setters
+    'no-setter-return': 2,
     // disallow sparse arrays
     'no-sparse-arrays': 2,
     // disallow template literal placeholder syntax in regular strings

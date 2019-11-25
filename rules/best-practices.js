@@ -31,6 +31,8 @@ module.exports = {
     'dot-notation': [2, { allowKeywords: true }],
     // require the use of `===` and `!==`
     'eqeqeq': 2,
+    // require grouped accessor pairs in object literals and classes
+    'grouped-accessor-pairs': [2, 'getBeforeSet'],
     // make sure `for-in` loops have an `if` statement
     'guard-for-in': 2,
     // enforce a maximum number of classes per file
@@ -41,6 +43,8 @@ module.exports = {
     'no-caller': 2,
     // disallow lexical declarations in case clauses
     'no-case-declarations': 2,
+    // disallow returning value from constructor
+    'no-constructor-return': 2,
     // disallow division operators explicitly at beginning of regular expression
     'no-div-regex': 0,
     // disallow `else` after a `return` in an `if`
