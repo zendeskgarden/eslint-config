@@ -189,6 +189,8 @@ module.exports = {
         prev: '*',
         next: 'return'
       }],
+    // disallow the use of `Math.pow` in favor of the `**` operator
+    'prefer-exponentiation-operator': 1,
     // prefer use of an object spread over `Object.assign`
     'prefer-object-spread': 1,
     // require quotes around object literal property names
