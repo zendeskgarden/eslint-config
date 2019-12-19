@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.0.1](https://github.com/zendeskgarden/eslint-config/compare/v11.0.0...v11.0.1) (2019-12-19)
+
+
+### Bug Fixes
+
+* eslint peer dependency version ([#85](https://github.com/zendeskgarden/eslint-config/issues/85)) ([7bd188d](https://github.com/zendeskgarden/eslint-config/commit/7bd188d96712e32b9eb7d44ab6cbc8ce8c749a62))
+
 ## [11.0.0](https://github.com/zendeskgarden/eslint-config/compare/v10.0.0...v11.0.0) (2019-11-25)
 
 
