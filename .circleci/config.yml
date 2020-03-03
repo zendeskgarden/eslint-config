@@ -1,8 +1,9 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+
 jobs:
-  build-and-test:
+  build:
     executor:
       name: node/default
     steps:
@@ -12,8 +13,32 @@ jobs:
           dir: ~/.cache/yarn
           steps:
             - run: yarn --frozen-lockfile
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
       - run: yarn test
+  publish:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run:
+        command: |
+          npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          npm publish
+
 workflows:
-  build-and-test:
+  main:
     jobs:
-      - build-and-test
+      - build
+      - test:
+          requires: build
+      - publish:
+          requires: test
+          filters:
+            branches:
+              only: master
+            tags:
+              only: /^v\d+\.\d+\.\d+(-\S*)?$/
