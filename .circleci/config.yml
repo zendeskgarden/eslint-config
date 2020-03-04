@@ -4,7 +4,8 @@ orbs:
 
 jobs:
   build:
-    executor: node/default
+    executor:
+      name: node/default
     steps:
       - checkout
       - node/with-cache:
@@ -17,14 +18,16 @@ jobs:
           paths: .
 
   test:
-    executor: node/default
+    executor:
+      name: node/default
     steps:
       - attach_workspace:
           at: ~/eslint-config
       - run: yarn test
 
   publish:
-    executor: node/default
+    executor:
+      name: node/default
     steps:
       - attach_workspace:
           at: ~/eslint-config
