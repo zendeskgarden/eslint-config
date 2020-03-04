@@ -14,15 +14,15 @@ jobs:
           steps:
             - run: yarn --frozen-lockfile
       - persist_to_workspace:
-          root: ~/
-          paths: node_modules
+          root: ~/eslint-config
+          paths: .
 
   test:
     executor:
       name: node/default
     steps:
       - attach_workspace:
-        at: ~/
+        at: ~/eslint-config
       - run: yarn test
 
   publish:
@@ -30,7 +30,7 @@ jobs:
       name: node/default
     steps:
       - attach_workspace:
-        at: ~/
+        at: ~/eslint-config
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run: npm publish
 
