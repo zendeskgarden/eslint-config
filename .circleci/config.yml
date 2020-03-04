@@ -24,10 +24,8 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - run:
-        command: |
-          npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          npm publish
+      - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      - run: npm publish
 
 workflows:
   main:
@@ -40,7 +38,7 @@ workflows:
           requires:
             - test
           filters:
-            branches:
-              only: master
             tags:
               only: /^v\d+\.\d+\.\d+(-\S*)?$/
+            branches:
+              only: master
