@@ -4,8 +4,7 @@ orbs:
 
 jobs:
   build:
-    executor:
-      name: node/default
+    executor: node/default
     steps:
       - checkout
       - node/with-cache:
@@ -18,19 +17,17 @@ jobs:
           paths: .
 
   test:
-    executor:
-      name: node/default
+    executor: node/default
     steps:
       - attach_workspace:
-        at: ~/eslint-config
+          at: ~/eslint-config
       - run: yarn test
 
   publish:
-    executor:
-      name: node/default
+    executor: node/default
     steps:
       - attach_workspace:
-        at: ~/eslint-config
+          at: ~/eslint-config
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run: npm publish
 
