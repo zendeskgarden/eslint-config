@@ -14,7 +14,7 @@ jobs:
           steps:
             - run: yarn --frozen-lockfile
       - persist_to_workspace:
-          root: $CIRCLE_WORKING_DIRECTORY
+          root: ~/project
           paths: .
 
   test:
@@ -22,7 +22,7 @@ jobs:
       name: node/default
     steps:
       - attach_workspace:
-          at: $CIRCLE_WORKING_DIRECTORY
+          at: ~/project
       - run: yarn test
 
   publish:
@@ -30,7 +30,7 @@ jobs:
       name: node/default
     steps:
       - attach_workspace:
-          at: $CIRCLE_WORKING_DIRECTORY
+          at: ~/project
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run: npm publish
 
