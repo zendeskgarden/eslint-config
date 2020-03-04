@@ -44,6 +44,7 @@ workflows:
       - publish:
           requires:
             - test
+          context: maintainer
           filters:
             tags:
               only: /^v\d+\.\d+\.\d+(-\S*)?$/
