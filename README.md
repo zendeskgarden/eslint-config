@@ -1,4 +1,11 @@
-# Garden ESLint Config [![npm version](https://img.shields.io/npm/v/@zendeskgarden/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/eslint-config) [![Build Status](https://img.shields.io/travis/zendeskgarden/eslint-config/master.svg?style=flat-square)](https://travis-ci.org/zendeskgarden/eslint-config) [![Dependency Status](https://img.shields.io/david/dev/zendeskgarden/eslint-config.svg?style=flat-square)](https://david-dm.org/zendeskgarden/eslint-config?type=dev)
+# Garden ESLint Config [![npm version][npm version badge]][npm version link] [![Build Status][build status badge]][build status link] [![Dependency Status][dependency status badge]][dependency status link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/eslint-config
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/eslint-config
+[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/eslint-config/master
+[build status link]: https://circleci.com/gh/zendeskgarden/eslint-config/tree/master
+[dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/eslint-config
+[dependency status link]: https://david-dm.org/zendeskgarden/eslint-config?type=dev
 
 > :seedling: Garden is a design system for Zendesk
 
@@ -29,8 +36,8 @@ for more details on extending shareable configuration files.
 
 Shout-outs for a mostly reasonable set of lint rules go to:
 
-* AirBnB's [JavaScript Style Guide](https://github.com/airbnb/javascript)
-* Elie Rotenberg's [ES6 Coding Style](https://github.com/elierotenberg/coding-styles/blob/master/es6.md)
+- AirBnB's [JavaScript Style Guide](https://github.com/airbnb/javascript)
+- Elie Rotenberg's [ES6 Coding Style](https://github.com/elierotenberg/coding-styles/blob/master/es6.md)
 
 ## Contribution
 
