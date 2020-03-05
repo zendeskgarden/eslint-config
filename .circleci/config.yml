@@ -37,10 +37,16 @@ jobs:
 workflows:
   main:
     jobs:
-      - build
+      - build:
+          filters:
+            tags:
+              only: /.*/
       - test:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - publish:
           requires:
             - test
