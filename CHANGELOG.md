@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.0.4](https://github.com/zendeskgarden/eslint-config/compare/v11.0.3...v11.0.4) (2020-04-15)
+
+
+### Bug Fixes
+
+* `space-before-function-paren` handling for async functions ([#100](https://github.com/zendeskgarden/eslint-config/issues/100)) ([14e5b88](https://github.com/zendeskgarden/eslint-config/commit/14e5b889e062793a915e1414472989c26a44098f))
+* use default CircleCI node_modules cache ([#97](https://github.com/zendeskgarden/eslint-config/issues/97)) ([d69416a](https://github.com/zendeskgarden/eslint-config/commit/d69416a3a967239a3d7aae00ee843c64c2a18908))
+
 ### [11.0.3](https://github.com/zendeskgarden/eslint-config/compare/v11.0.2...v11.0.3) (2020-03-05)
 
 ### [11.0.2](https://github.com/zendeskgarden/eslint-config/compare/v11.0.1...v11.0.2) (2020-03-05)
