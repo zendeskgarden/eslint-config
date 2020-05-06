@@ -729,10 +729,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-notice@0.8.10:
-  version "0.8.10"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.8.10.tgz#a9307cf42ab38c4e548e45197d4f98aaeea6b15b"
-  integrity sha512-vtUZ3FMt+SJ/2THV6mgtYS3a5Xe0EiASnSY948Z53uOhpUFYCVNyTIOSd1zDGWYe0J4L1shZevMlgPlkYJ34vw==
+eslint-plugin-notice@0.9.10:
+  version "0.9.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.9.10.tgz#89cf6377bf1c004a219c4e541321ea9125b408c8"
+  integrity sha512-rF79EuqdJKu9hhTmwUkNeSvLmmq03m/NXq/NHwUENHbdJ0wtoyOjxZBhW4QCug8v5xYE6cGe3AWkGqSIe9KUbQ==
   dependencies:
     find-root "^1.1.0"
     lodash "^4.17.15"
