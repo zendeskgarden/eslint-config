@@ -79,6 +79,8 @@ module.exports = {
     'no-unsafe-finally': 2,
     // disallow negating the left operand of relational operators
     'no-unsafe-negation': 2,
+    // disallow useless backreferences in regular expressions
+    'no-useless-backreference': 2,
     // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
     'require-atomic-updates': 2,
     // disallow comparisons with the value `NaN`

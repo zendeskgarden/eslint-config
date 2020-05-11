@@ -23,6 +23,8 @@ module.exports = {
     'curly': [2, 'multi-line'],
     // require `default` case in `switch` statements
     'default-case': 0,
+    // enforce default clauses in switch statements to be last
+    'default-case-last': 2,
     // enforce default parameters to be last
     'default-param-last': 2,
     // enforces consistent newlines before or after dots
