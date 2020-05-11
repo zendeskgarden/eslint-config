@@ -11,14 +11,19 @@ module.exports = {
     './rules/best-practices',
     './rules/strict-mode',
     './rules/variables',
-    './rules/node',
     './rules/stylistic-issues',
-    './rules/es6'
+    './rules/es6',
+    './plugins/node/possible-errors',
+    './plugins/node/best-practices',
+    './plugins/node/stylistic-issues'
   ].map(require.resolve),
   parser: 'babel-eslint',
-  env: { browser: true },
+  env: {
+    browser: true,
+    node: true
+  },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       // allow `return` statements in the global scope
