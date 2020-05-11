@@ -20,10 +20,10 @@ module.exports = {
   parser: 'babel-eslint',
   env: {
     browser: true,
+    es2020: true,
     node: true
   },
   parserOptions: {
-    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       // allow `return` statements in the global scope
