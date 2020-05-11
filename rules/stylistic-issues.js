@@ -197,12 +197,6 @@ module.exports = {
     'quote-props': [2, 'consistent-as-needed'],
     // specify whether double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
-    // require JSDoc comment
-    'require-jsdoc': [2, { require: {
-      FunctionDeclaration: true,
-      MethodDefinition: false,
-      ClassDeclaration: false
-    } }],
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
     // enforce spacing before and after semicolons
