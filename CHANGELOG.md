@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.0.0](https://github.com/zendeskgarden/eslint-config/compare/v11.0.4...v12.0.0) (2020-05-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** peer dependencies require `eslint: ^7.0.0` and `eslint-plugin-node: ^11.1.0`
+
+* **deps:** update dependency eslint to v7 ([#104](https://github.com/zendeskgarden/eslint-config/issues/104)) ([058a414](https://github.com/zendeskgarden/eslint-config/commit/058a4147832ce5974509123f09ee8ddf8e4dc899))
+
 ### [11.0.4](https://github.com/zendeskgarden/eslint-config/compare/v11.0.3...v11.0.4) (2020-04-15)
 
 
