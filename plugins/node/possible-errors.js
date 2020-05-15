@@ -15,11 +15,11 @@ module.exports = {
     // disallow the assignment to `exports`
     'node/no-exports-assign': 2,
     // disallow `import` declarations which import extraneous modules
-    'node/no-extraneous-import': 2,
+    'node/no-extraneous-import': 0,
     // disallow `require()` expressions which import extraneous modules
-    'node/no-extraneous-require': 2,
+    'node/no-extraneous-require': 0,
     // disallow `import` declarations which import non-existence modules
-    'node/no-missing-import': 2,
+    'node/no-missing-import': 0,
     // disallow `require()` expressions which import non-existence modules
     'node/no-missing-require': 2,
     // disallow `new` operators with calls to `require`
@@ -31,18 +31,18 @@ module.exports = {
     // disallow `bin` files that npm ignores
     'node/no-unpublished-bin': 2,
     // disallow `import` declarations which import private modules
-    'node/no-unpublished-import': 2,
+    'node/no-unpublished-import': 0,
     // disallow `require()` expressions which import private modules
-    'node/no-unpublished-require': 2,
+    'node/no-unpublished-require': 0,
     // disallow unsupported ECMAScript built-ins on the specified version
     'node/no-unsupported-features/es-builtins': 2,
     // disallow unsupported ECMAScript syntax on the specified version
-    'node/no-unsupported-features/es-syntax': 2,
+    'node/no-unsupported-features/es-syntax': 0,
     // disallow unsupported Node.js built-in APIs on the specified version
     'node/no-unsupported-features/node-builtins': 2,
     // make process.exit() expressions the same code path as throw
     'node/process-exit-as-throw': 2,
     // suggest correct usage of shebang
-    'node/shebang': 2
+    'node/shebang': 0
   }
 };
