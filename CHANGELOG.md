@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [12.0.1](https://github.com/zendeskgarden/eslint-config/compare/v12.0.0...v12.0.1) (2020-05-16)
+
+
+### Bug Fixes
+
+* dial back overly aggressive node plugin rules ([#106](https://github.com/zendeskgarden/eslint-config/issues/106)) ([d75d147](https://github.com/zendeskgarden/eslint-config/commit/d75d147a10b566c56569b02ec35856fed8cdd841))
+
 ## [12.0.0](https://github.com/zendeskgarden/eslint-config/compare/v11.0.4...v12.0.0) (2020-05-12)
 
 
