@@ -57,6 +57,8 @@ module.exports = {
     'no-invalid-regexp': 2,
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 2,
+    // disallow literal numbers that lose precision
+    'no-loss-of-precision': 1,
     // disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 2,
     // disallow calling global object properties as functions
