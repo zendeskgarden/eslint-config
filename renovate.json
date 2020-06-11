@@ -1,5 +1,0 @@
-{
-  "extends": ["config:base", "group:allNonMajor"],
-  "rebaseStalePrs": true,
-  "schedule": ["on Sunday"]
-}
