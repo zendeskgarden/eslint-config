@@ -37,7 +37,7 @@ for more details on extending shareable configuration files.
 Shout-outs for a mostly reasonable set of lint rules go to:
 
 - AirBnB's [JavaScript Style Guide](https://github.com/airbnb/javascript)
-- Elie Rotenberg's [ES6 Coding Style](https://github.com/elierotenberg/coding-styles/blob/main/es6.md)
+- Elie Rotenberg's [ES6 Coding Style](https://github.com/elierotenberg/coding-styles/blob/master/es6.md)
 
 ## Contribution
 
