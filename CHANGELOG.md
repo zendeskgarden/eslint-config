@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.0.0](https://github.com/zendeskgarden/eslint-config/compare/v13.0.0...v14.0.0) (2020-07-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** adds rules for `no-promise-executor-return` and `no-unreachable-loop`.
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update dependency eslint to 7.4.0 ([#112](https://github.com/zendeskgarden/eslint-config/issues/112)) ([1ebb3c8](https://github.com/zendeskgarden/eslint-config/commit/1ebb3c8e91f8b52dbc2b66105355eac73f2e16de))
+
 ## [13.0.0](https://github.com/zendeskgarden/eslint-config/compare/v12.0.1...v13.0.0) (2020-05-26)
 
 
