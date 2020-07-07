@@ -63,6 +63,8 @@ module.exports = {
     'no-misleading-character-class': 2,
     // disallow calling global object properties as functions
     'no-obj-calls': 2,
+    // disallow returning values from Promise executor functions
+    'no-promise-executor-return': 2,
     // disallow calling some `Object.prototype` methods directly on objects
     'no-prototype-builtins': 2,
     // disallow multiple spaces in a regular expression literal
@@ -77,6 +79,8 @@ module.exports = {
     'no-unexpected-multiline': 2,
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 2,
+    // disallow loops with a body that allows only one iteration
+    'no-unreachable-loop': 2,
     // disallow control flow statements in `finally` blocks
     'no-unsafe-finally': 2,
     // disallow negating the left operand of relational operators
