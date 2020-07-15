@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [14.0.1](https://github.com/zendeskgarden/eslint-config/compare/v14.0.0...v14.0.1) (2020-07-15)
+
+
+### Bug Fixes
+
+* eslint peer dependency ([#115](https://github.com/zendeskgarden/eslint-config/issues/115)) ([c786abf](https://github.com/zendeskgarden/eslint-config/commit/c786abfedc9c3be05dd6214da47e96518e69dc41))
+
 ## [14.0.0](https://github.com/zendeskgarden/eslint-config/compare/v13.0.0...v14.0.0) (2020-07-07)
 
 
