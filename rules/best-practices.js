@@ -99,6 +99,8 @@ module.exports = {
     'no-new-func': 2,
     // disallows creating new instances of `String`, `Number`, and `Boolean`
     'no-new-wrappers': 2,
+    // disallow `\8` and `\9` escape sequences in string literals
+    'no-nonoctal-decimal-escape': 2,
     // disallow use of (old style) octal literals
     'no-octal': 2,
     // disallow use of octal escape sequences in string literals, such as `var foo = 'Copyright \251';`
