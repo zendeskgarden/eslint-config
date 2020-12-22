@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.0.0](https://github.com/zendeskgarden/eslint-config/compare/v16.0.0...v17.0.0) (2020-12-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add new `no-unsafe-optional-chaining` rule
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update all non-major dependencies ([#130](https://github.com/zendeskgarden/eslint-config/issues/130)) ([8d83e36](https://github.com/zendeskgarden/eslint-config/commit/8d83e3662b68c038b8b3744d2dc0627b9f91e661))
+
 ## [16.0.0](https://github.com/zendeskgarden/eslint-config/compare/v15.0.0...v16.0.0) (2020-12-05)
 
 
