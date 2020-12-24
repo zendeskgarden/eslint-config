@@ -1,6 +1,6 @@
 {
   "extends": [
-    "./index.js",
-    "./plugins/notice.js"
+    ".",
+    "./plugins/notice"
   ]
 }
