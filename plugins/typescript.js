@@ -12,8 +12,8 @@ const stylisticIssues = require('../rules/stylistic-issues').rules;
 const variables = require('../rules/variables').rules;
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'brace-style': 0,
@@ -64,11 +64,11 @@ module.exports = {
     // require that member overloads be consecutive
     '@typescript-eslint/adjacent-overload-signatures': 2,
     // requires using either `T[]` or `Array<T>` for arrays
-    '@typescript-eslint/array-type': 2,
+    '@typescript-eslint/array-type': 1,
     // bans `@ts-<directive>` comments from being used or requires descriptions after directive
     '@typescript-eslint/ban-ts-comment': 2,
     // bans `// tslint:<rule-flag>` comments from being used
-    '@typescript-eslint/ban-tslint-comment': 2,
+    '@typescript-eslint/ban-tslint-comment': 1,
     // bans specific types from being used
     '@typescript-eslint/ban-types': 2,
     // enforce consistent brace style for blocks
@@ -84,16 +84,16 @@ module.exports = {
     // enforces consistent usage of type assertions
     '@typescript-eslint/consistent-type-assertions': 2,
     // consistent with type definition either `interface` or `type`
-    '@typescript-eslint/consistent-type-definitions': 2,
+    '@typescript-eslint/consistent-type-definitions': [2, 'interface'],
     // enforces consistent usage of type imports
-    '@typescript-eslint/consistent-type-imports': 2,
+    '@typescript-eslint/consistent-type-imports': 1,
     // enforce default parameters to be last
     '@typescript-eslint/default-param-last':
       bestPractices['default-param-last'],
     // require explicit return types on functions and class methods
-    '@typescript-eslint/explicit-function-return-type': 2,
+    '@typescript-eslint/explicit-function-return-type': 1,
     // require explicit accessibility modifiers on class properties and methods
-    '@typescript-eslint/explicit-member-accessibility': 2,
+    '@typescript-eslint/explicit-member-accessibility': 1,
     // require explicit return and argument types on exported functions' and classes' public class methods
     '@typescript-eslint/explicit-module-boundary-types': 2,
     // require or disallow spacing between function identifiers and their invocations
@@ -111,7 +111,7 @@ module.exports = {
     // require a specific member delimiter style for interfaces and type literals
     '@typescript-eslint/member-delimiter-style': 2,
     // require a consistent member declaration order
-    '@typescript-eslint/member-ordering': 2,
+    '@typescript-eslint/member-ordering': 0,
     // enforces using a particular method signature syntax
     '@typescript-eslint/method-signature-style': 2,
     // enforces naming conventions for everything across a codebase
@@ -121,6 +121,11 @@ module.exports = {
         selector: 'default',
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        prefix: ['I']
       }
     ],
     // disallow generic `Array` constructors
@@ -172,7 +177,7 @@ module.exports = {
     // disallows non-null assertions using the `!` postfix operator
     '@typescript-eslint/no-non-null-assertion': 2,
     // disallow the use of parameter properties in class constructors
-    '@typescript-eslint/no-parameter-properties': 2,
+    '@typescript-eslint/no-parameter-properties': 1,
     // disallow variable redeclaration
     '@typescript-eslint/no-redeclare': bestPractices['no-redeclare'],
     // disallows invocation of `require()`
@@ -182,7 +187,9 @@ module.exports = {
     // disallow aliasing `this`
     '@typescript-eslint/no-this-alias': 2,
     // disallow the use of type aliases
-    '@typescript-eslint/no-type-alias': 2,
+    '@typescript-eslint/no-type-alias': 0,
+    // disallows unnecessary constraints on generic type
+    '@typescript-eslint/no-unnecessary-type-constraint': 2,
     // disallow unused expressions
     '@typescript-eslint/no-unused-expressions':
       bestPractices['no-unused-expressions'],
@@ -204,13 +211,13 @@ module.exports = {
     // use function types instead of interfaces with call signatures
     '@typescript-eslint/prefer-function-type': 2,
     // require that all enum members be literal values to prevent unintended enum member name shadow issues
-    '@typescript-eslint/prefer-literal-enum-member': 2,
+    '@typescript-eslint/prefer-literal-enum-member': 1,
     // require the use of the `namespace` keyword instead of the `module` keyword to declare custom TypeScript modules
     '@typescript-eslint/prefer-namespace-keyword': 2,
     // prefer using concise optional chain expressions instead of chained logical ands
-    '@typescript-eslint/prefer-optional-chain': 2,
+    '@typescript-eslint/prefer-optional-chain': 1,
     // recommends using `@ts-expect-error` over `@ts-ignore`
-    '@typescript-eslint/prefer-ts-expect-error': 'error',
+    '@typescript-eslint/prefer-ts-expect-error': 2,
     // enforce the consistent use of either backticks, double, or single quotes
     '@typescript-eslint/quotes': stylisticIssues.quotes,
     // require or disallow semicolons instead of ASI

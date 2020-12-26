@@ -6,10 +6,11 @@
  */
 
 const bestPractices = require('../rules/best-practices').rules;
+const possibleErrors = require('../rules/possible-errors').rules;
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'dot-notation': 0,
@@ -39,15 +40,14 @@ module.exports = {
     // flags unnecessary equality comparisons against boolean literals
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 2,
     // prevents conditionals where the type is always truthy or always falsy
-    '@typescript-eslint/no-unnecessary-condition': 2,
+    '@typescript-eslint/no-unnecessary-condition':
+      possibleErrors['no-constant-condition'],
     // warns when a namespace qualifier is unnecessary
-    '@typescript-eslint/no-unnecessary-qualifier': 2,
+    '@typescript-eslint/no-unnecessary-qualifier': 1,
     // enforces that type arguments will not be used if not required
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     // warns if a type assertion does not change the type of an expression
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
-    // disallows unnecessary constraints on generic types
-    '@typescript-eslint/no-unnecessary-type-constraint': 2,
     // disallows assigning any to variables and properties
     '@typescript-eslint/no-unsafe-assignment': 2,
     // disallows calling an any type value
@@ -57,7 +57,7 @@ module.exports = {
     // disallows returning any from a function
     '@typescript-eslint/no-unsafe-return': 2,
     // prefers a non-null assertion over explicit type cast when possible
-    '@typescript-eslint/non-nullable-type-assertion-style': 2,
+    '@typescript-eslint/non-nullable-type-assertion-style': 1,
     // enforce includes method over `indexOf` method
     '@typescript-eslint/prefer-includes': 2,
     // enforce the usage of the nullish coalescing operator instead of logical chaining
@@ -65,7 +65,7 @@ module.exports = {
     // requires that private members are marked as `readonly` if they're never modified outside of the constructor
     '@typescript-eslint/prefer-readonly': 2,
     // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
-    '@typescript-eslint/prefer-readonly-parameter-types': 2,
+    '@typescript-eslint/prefer-readonly-parameter-types': 0,
     // prefer using type parameter when calling `Array#reduce` instead of casting
     '@typescript-eslint/prefer-reduce-type-parameter': 2,
     // enforce that `RegExp#exec` is used instead of `String#match` if no global flag is provided
@@ -75,7 +75,7 @@ module.exports = {
     // requires any function or method that returns a Promise to be marked async
     '@typescript-eslint/promise-function-async': 2,
     // requires `Array#sort` calls to always provide a `compareFunction`
-    '@typescript-eslint/require-array-sort-compare': 2,
+    '@typescript-eslint/require-array-sort-compare': 1,
     // disallow async functions which have no `await` expression
     '@typescript-eslint/require-await': bestPractices['require-await'],
     // when adding two variables, operands must both be of type number or of type string
