@@ -84,9 +84,9 @@ module.exports = {
     // enforces consistent usage of type assertions
     '@typescript-eslint/consistent-type-assertions': 2,
     // consistent with type definition either `interface` or `type`
-    '@typescript-eslint/consistent-type-definitions': [2, 'interface'],
+    '@typescript-eslint/consistent-type-definitions': 0,
     // enforces consistent usage of type imports
-    '@typescript-eslint/consistent-type-imports': 1,
+    '@typescript-eslint/consistent-type-imports': 0,
     // enforce default parameters to be last
     '@typescript-eslint/default-param-last':
       bestPractices['default-param-last'],
@@ -119,13 +119,26 @@ module.exports = {
       2,
       {
         selector: 'default',
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        format: ['camelCase'],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase']
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
         leadingUnderscore: 'allow'
       },
       {
         selector: 'interface',
         format: ['PascalCase'],
         prefix: ['I']
+      },
+      {
+        selector: 'objectLiteralProperty',
+        format: ['camelCase', 'snake_case']
       }
     ],
     // disallow generic `Array` constructors
@@ -154,7 +167,7 @@ module.exports = {
     // forbids the use of classes as namespaces
     '@typescript-eslint/no-extraneous-class': 2,
     // disallow usage of the implicit `any` type in catch clauses
-    '@typescript-eslint/no-implicit-any-catch': 2,
+    '@typescript-eslint/no-implicit-any-catch': 1,
     // disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
     '@typescript-eslint/no-inferrable-types': 2,
     // disallow `this` keywords outside of classes or class-like objects
@@ -215,7 +228,7 @@ module.exports = {
     // require the use of the `namespace` keyword instead of the `module` keyword to declare custom TypeScript modules
     '@typescript-eslint/prefer-namespace-keyword': 2,
     // prefer using concise optional chain expressions instead of chained logical ands
-    '@typescript-eslint/prefer-optional-chain': 1,
+    '@typescript-eslint/prefer-optional-chain': 0,
     // recommends using `@ts-expect-error` over `@ts-ignore`
     '@typescript-eslint/prefer-ts-expect-error': 2,
     // enforce the consistent use of either backticks, double, or single quotes

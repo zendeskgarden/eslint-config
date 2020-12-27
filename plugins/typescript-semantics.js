@@ -61,7 +61,7 @@ module.exports = {
     // enforce includes method over `indexOf` method
     '@typescript-eslint/prefer-includes': 2,
     // enforce the usage of the nullish coalescing operator instead of logical chaining
-    '@typescript-eslint/prefer-nullish-coalescing': 2,
+    '@typescript-eslint/prefer-nullish-coalescing': 0,
     // requires that private members are marked as `readonly` if they're never modified outside of the constructor
     '@typescript-eslint/prefer-readonly': 2,
     // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
@@ -69,7 +69,7 @@ module.exports = {
     // prefer using type parameter when calling `Array#reduce` instead of casting
     '@typescript-eslint/prefer-reduce-type-parameter': 2,
     // enforce that `RegExp#exec` is used instead of `String#match` if no global flag is provided
-    '@typescript-eslint/prefer-regexp-exec': 2,
+    '@typescript-eslint/prefer-regexp-exec': 1,
     // enforce the use of `String#startsWith` and `String#endsWith` instead of other equivalent methods of checking substrings
     '@typescript-eslint/prefer-string-starts-ends-with': 2,
     // requires any function or method that returns a Promise to be marked async
@@ -85,7 +85,7 @@ module.exports = {
     // enforces consistent returning of awaited values
     '@typescript-eslint/return-await': bestPractices['no-return-await'],
     // restricts the types allowed in boolean expressions
-    '@typescript-eslint/strict-boolean-expressions': 2,
+    '@typescript-eslint/strict-boolean-expressions': 1,
     // exhaustiveness checking in switch with union type
     '@typescript-eslint/switch-exhaustiveness-check': 2,
     // enforces unbound methods are called with their expected scope
