@@ -119,16 +119,7 @@ module.exports = {
       2,
       {
         selector: 'default',
-        format: ['camelCase'],
-        leadingUnderscore: 'allow'
-      },
-      {
-        selector: 'typeLike',
-        format: ['PascalCase']
-      },
-      {
-        selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         leadingUnderscore: 'allow'
       },
       {
@@ -138,7 +129,7 @@ module.exports = {
       },
       {
         selector: 'objectLiteralProperty',
-        format: ['camelCase', 'snake_case']
+        format: ['camelCase', 'snake_case', 'UPPER_CASE']
       }
     ],
     // disallow generic `Array` constructors
@@ -188,7 +179,7 @@ module.exports = {
     // disallows using a non-null assertion after an optional chain expression
     '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
     // disallows non-null assertions using the `!` postfix operator
-    '@typescript-eslint/no-non-null-assertion': 2,
+    '@typescript-eslint/no-non-null-assertion': 0,
     // disallow the use of parameter properties in class constructors
     '@typescript-eslint/no-parameter-properties': 1,
     // disallow variable redeclaration
