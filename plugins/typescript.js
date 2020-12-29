@@ -93,7 +93,10 @@ module.exports = {
     // require explicit return types on functions and class methods
     '@typescript-eslint/explicit-function-return-type': 1,
     // require explicit accessibility modifiers on class properties and methods
-    '@typescript-eslint/explicit-member-accessibility': 1,
+    '@typescript-eslint/explicit-member-accessibility': [
+      1,
+      { accessibility: 'no-public' }
+    ],
     // require explicit return and argument types on exported functions' and classes' public class methods
     '@typescript-eslint/explicit-module-boundary-types': 2,
     // require or disallow spacing between function identifiers and their invocations
@@ -129,7 +132,7 @@ module.exports = {
       },
       {
         selector: 'objectLiteralProperty',
-        format: ['camelCase', 'snake_case', 'UPPER_CASE']
+        format: ['camelCase', 'snake_case', 'PascalCase', 'UPPER_CASE']
       }
     ],
     // disallow generic `Array` constructors
