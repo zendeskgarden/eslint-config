@@ -1,6 +1,17 @@
 {
   "extends": [
     ".",
-    "./plugins/notice"
-  ]
+    "./plugins/jest",
+    "./plugins/notice",
+    "./plugins/react",
+    "./plugins/typescript",
+    "./plugins/typescript-semantics"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.mock.json"]
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-require-imports": 0
+  }
 }
