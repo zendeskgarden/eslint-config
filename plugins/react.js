@@ -88,7 +88,7 @@ module.exports = {
     // enforce a new line after jsx elements and expressions
     'react/jsx-newline': 0,
     // prevents usage of Function.prototype.bind and arrow functions in React component props
-    'react/jsx-no-bind': 2,
+    'react/jsx-no-bind': [2, { allowArrowFunctions: true }],
     // comments inside children section of tag should be placed inside braces
     'react/jsx-no-comment-textnodes': 2,
     // enforce no duplicate props
