@@ -14,7 +14,7 @@ module.exports = {
     // enforce assertion to be made in a test body
     'jest/expect-expect': 2,
     // enforce lowercase test names
-    'jest/lowercase-name': 1,
+    'jest/lowercase-name': [1, { ignore: ['describe'] }],
     // disallow alias methods
     'jest/no-alias-methods': 2,
     // disallow commented out tests
