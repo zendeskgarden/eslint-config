@@ -7,6 +7,7 @@
 
 module.exports = {
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
+  extends: ['plugin:jsx-a11y/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -17,7 +18,6 @@ module.exports = {
       version: 'detect'
     }
   },
-  extends: ['plugin:jsx-a11y/recommended'],
   rules: {
     // enforces consistent naming for boolean props
     'react/boolean-prop-naming': 1,

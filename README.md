@@ -7,30 +7,141 @@
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/eslint-config?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/eslint-config?type=dev
 
-> :seedling: Garden is a design system for Zendesk
+> :seedling: Garden is the design system by Zendesk
 
 This package exposes a [shareable ESLint
-config](http://eslint.org/docs/developer-guide/shareable-configs).
+config](http://eslint.org/docs/developer-guide/shareable-configs) and a
+selection of associated [plugins](#plugins).
 
 ## Installation
 
 ```sh
-npm install --save-dev eslint babel-eslint @zendeskgarden/eslint-config
+npm install eslint babel-eslint eslint-plugin-node @zendeskgarden/eslint-config
 ```
 
 ## Usage
 
-Add a `.eslintrc` to your project with an `extends` property like this:
+Add a `.eslintrc.json` to your project with an `extends` property like this:
 
-```js
+```json
 {
-  extends: '@zendeskgarden'
+  "extends": "@zendeskgarden"
 }
 ```
 
 Now Garden linting rules will apply to your project. See the [ESLint
 Documentation](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more details on extending shareable configuration files.
+
+### Plugins
+
+The following shared plugins are also available.
+
+#### Jest
+
+Install the following dependency in addition to those [listed](#installation)
+above.
+
+```sh
+npm install jest eslint-plugin-jest
+```
+
+Extend the base configuration.
+
+```json
+{
+  "extends": ["@zendeskgarden", "@zendeskgarden/eslint-config/plugins/jest"]
+}
+```
+
+In some cases, it may be useful to limit the scope of the Jest rules via
+`overrides`.
+
+```json
+{
+  "extends": "@zendeskgarden",
+  "overrides": [
+    {
+      "files": ["*.spec.*"],
+      "extends": "@zendeskgarden/eslint-config/plugins/jest"
+    }
+  ]
+}
+```
+
+#### React
+
+The React plugin bundles rules for React, React Hooks, and JSX accessibility.
+Install the following dependencies in addition to those
+[listed](#installation) above.
+
+```sh
+npm install eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+```
+
+Extend the base configuration.
+
+```json
+{
+  "extends": ["@zendeskgarden", "@zendeskgarden/eslint-config/plugins/react"]
+}
+```
+
+#### TypeScript
+
+Install the following dependencies in addition to those
+[listed](#installation) above.
+
+```sh
+npm install typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+Extend the base configuration.
+
+```json
+{
+  "extends": [
+    "@zendeskgarden",
+    "@zendeskgarden/eslint-config/plugins/typescript"
+  ]
+}
+```
+
+For mixed JS and TS codebases, it may be useful to limit the scope of the
+TypeScript rules via `overrides`.
+
+```json
+{
+  "extends": "@zendeskgarden",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": "@zendeskgarden/eslint-config/plugins/typescript"
+    }
+  ]
+}
+```
+
+The `typescript` plugin covers rules for syntax checking. An additional
+`typescript-semantics` plugin provides rules based on semantics. The
+`typescript-semantics` plugin requires type information in order to execute.
+Set `parserOptions.project` to a valid TSConfig for the project. See
+[typescript-eslint
+documentation](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md)
+for details.
+
+```json
+{
+  "extends": [
+    "@zendeskgarden",
+    "@zendeskgarden/eslint-config/plugins/typescript",
+    "@zendeskgarden/eslint-config/plugins/typescript-semantics"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  }
+}
+```
 
 ## Resources
 
@@ -56,6 +167,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2020 Zendesk
+Copyright 2021 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
