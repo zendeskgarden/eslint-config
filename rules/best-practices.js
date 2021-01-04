@@ -130,7 +130,7 @@ module.exports = {
     // disallow unmodified conditions of loops
     'no-unmodified-loop-condition': 2,
     // disallow usage of expressions in statement position
-    'no-unused-expressions': 2,
+    'no-unused-expressions': [2, { allowShortCircuit: true }],
     // disallow unused labels
     'no-unused-labels': 2,
     // disallow unnecessary `.call()` and `.apply()`
