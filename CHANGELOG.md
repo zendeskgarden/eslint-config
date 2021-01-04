@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.1.0](https://github.com/zendeskgarden/eslint-config/compare/v17.0.0...v17.1.0) (2021-01-04)
+
+
+### Features
+
+* add TypeScript, React, and Jest plugins ([#132](https://github.com/zendeskgarden/eslint-config/issues/132)) ([8762f52](https://github.com/zendeskgarden/eslint-config/commit/8762f52d0d1eeef564671e461de19fa14b0ea8f0))
+
 ## [17.0.0](https://github.com/zendeskgarden/eslint-config/compare/v16.0.0...v17.0.0) (2020-12-22)
 
 
