@@ -229,6 +229,8 @@ module.exports = {
     '@typescript-eslint/quotes': stylisticIssues.quotes,
     // require or disallow semicolons instead of ASI
     '@typescript-eslint/semi': stylisticIssues.semi,
+    // enforces that members of a type union/intersection are sorted alphabetically
+    '@typescript-eslint/sort-type-union-intersection-members': 0,
     // enforces consistent spacing before function parenthesis
     '@typescript-eslint/space-before-function-paren':
       stylisticIssues['space-before-function-paren'],
