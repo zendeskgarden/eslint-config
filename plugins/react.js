@@ -91,6 +91,8 @@ module.exports = {
     'react/jsx-no-bind': [2, { allowArrowFunctions: true }],
     // comments inside children section of tag should be placed inside braces
     'react/jsx-no-comment-textnodes': 2,
+    // prevents JSX context provider values from taking values that will cause needless rerenders
+    'react/jsx-no-constructed-context-values': 2,
     // enforce no duplicate props
     'react/jsx-no-duplicate-props': 2,
     // prevent using string literals in React component definition
