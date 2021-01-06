@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.0.0](https://github.com/zendeskgarden/eslint-config/compare/v17.1.0...v18.0.0) (2021-01-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add `react/jsx-no-constructed-context-values` and `@typescript-eslint/sort-type-union-intersection-members` rules.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^4.12.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.22.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update all non-major dependencies ([#134](https://github.com/zendeskgarden/eslint-config/issues/134)) ([d561d8b](https://github.com/zendeskgarden/eslint-config/commit/d561d8b934de2155461163f1aa6ebd1361445483))
+
 ## [17.1.0](https://github.com/zendeskgarden/eslint-config/compare/v17.0.0...v17.1.0) (2021-01-04)
 
 
