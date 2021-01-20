@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.0.0](https://github.com/zendeskgarden/eslint-config/compare/v18.0.0...v19.0.0) (2021-01-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add `@typescript-eslint/object-curly-spacing` rule.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^4.14.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.22.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update all non-major dependencies ([#135](https://github.com/zendeskgarden/eslint-config/issues/135)) ([48bc8b7](https://github.com/zendeskgarden/eslint-config/commit/48bc8b75b8516857fb92424cee629c90aede4a8a))
+
 ## [18.0.0](https://github.com/zendeskgarden/eslint-config/compare/v17.1.0...v18.0.0) (2021-01-06)
 
 
