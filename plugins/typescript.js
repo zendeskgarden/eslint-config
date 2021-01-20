@@ -55,6 +55,7 @@ module.exports = {
     'no-unsafe-negation': 0,
     'no-unused-expressions': 0,
     'no-unused-vars': 0,
+    'object-curly-spacing': 0,
     'quotes': 0,
     'semi': 0,
     'space-before-function-paren': 0,
@@ -209,6 +210,9 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': es6['no-useless-constructor'],
     // disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 2,
+    // enforce consistent spacing inside braces
+    '@typescript-eslint/object-curly-spacing':
+      stylisticIssues['object-curly-spacing'],
     // prefer usage of `as const` over literal type
     '@typescript-eslint/prefer-as-const': 2,
     // prefer initializing each enums member value
