@@ -16,8 +16,8 @@
   ],
   "scripts": {
     "format": "prettier-package-json --write",
-    "postinstall": "husky install",
     "lint": "eslint index.js plugins/*.js rules/*.js",
+    "prepare": "husky install",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "yarn lint && yarn format && git diff --quiet"
   },
