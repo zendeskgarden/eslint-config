@@ -48,6 +48,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     // warns if a type assertion does not change the type of an expression
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
+    // disallows calling an function with an any type value
+    '@typescript-eslint/no-unsafe-argument': 2,
     // disallows assigning any to variables and properties
     '@typescript-eslint/no-unsafe-assignment': 2,
     // disallows calling an any type value
