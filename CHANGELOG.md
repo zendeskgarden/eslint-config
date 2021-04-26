@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [20.0.0](https://github.com/zendeskgarden/eslint-config/compare/v19.0.0...v20.0.0) (2021-04-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* add `@typescript-eslint/no-unsafe-argument` rule.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^4.22.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.22.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+### Features
+
+* add @typescript-eslint/no-unsafe-argument rule ([#147](https://github.com/zendeskgarden/eslint-config/issues/147)) ([5255332](https://github.com/zendeskgarden/eslint-config/commit/52553326de8e0496cf66c26bf5a650a148cd038d))
+
+
+### Bug Fixes
+
+* prevent husky from running on postinstall ([#143](https://github.com/zendeskgarden/eslint-config/issues/143)) ([40d4cca](https://github.com/zendeskgarden/eslint-config/commit/40d4cca568c7cb66ab8c0042a1dfb57a86d7e4ff))
+
 ## [19.0.0](https://github.com/zendeskgarden/eslint-config/compare/v18.0.0...v19.0.0) (2021-01-20)
 
 
