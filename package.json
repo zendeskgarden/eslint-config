@@ -1,5 +1,6 @@
 {
   "name": "@zendeskgarden/eslint-config",
+  "version": "20.0.0",
   "description": "Garden ESLint config",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
@@ -8,7 +9,6 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/eslint-config/issues"
   },
-  "version": "20.0.0",
   "main": "index.js",
   "files": [
     "plugins",
