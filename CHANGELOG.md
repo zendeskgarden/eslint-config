@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.0.0](https://github.com/zendeskgarden/eslint-config/compare/v20.0.0...v21.0.0) (2021-08-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* add `@typescript-eslint/prefer-return-this-type` rule.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^4.29.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.22.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+### Features
+
+* add @typescript-eslint/prefer-return-this-type rule ([#161](https://github.com/zendeskgarden/eslint-config/issues/161)) ([d37238f](https://github.com/zendeskgarden/eslint-config/commit/d37238f8ec241ad7a48ee74ad756e50b3b23a36c))
+
 ## [20.0.0](https://github.com/zendeskgarden/eslint-config/compare/v19.0.0...v20.0.0) (2021-04-26)
 
 
