@@ -72,6 +72,8 @@ module.exports = {
     '@typescript-eslint/prefer-reduce-type-parameter': 2,
     // enforce that `RegExp#exec` is used instead of `String#match` if no global flag is provided
     '@typescript-eslint/prefer-regexp-exec': 1,
+    // enforce that `this` is used when only `this` type is returned
+    '@typescript-eslint/prefer-return-this-type': 2,
     // enforce the use of `String#startsWith` and `String#endsWith` instead of other equivalent methods of checking substrings
     '@typescript-eslint/prefer-string-starts-ends-with': 2,
     // requires any function or method that returns a Promise to be marked async
