@@ -177,6 +177,8 @@ module.exports = {
     'react/no-will-update-set-state': 2,
     // enforce ES5 or ES6 class for React Components
     'react/prefer-es6-class': 2,
+    // ensure only exact prop definitions are used
+    'react/prefer-exact-props': 0,
     // require read-only props
     'react/prefer-read-only-props': 0,
     // enforce stateless components to be written as a pure function
