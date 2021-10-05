@@ -184,6 +184,8 @@ module.exports = {
     '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
     // disallows non-null assertions using the `!` postfix operator
     '@typescript-eslint/no-non-null-assertion': 0,
+    // disallows using the non-null assertion on the left operand of the nullish coalescing operator
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
     // disallow the use of parameter properties in class constructors
     '@typescript-eslint/no-parameter-properties': 1,
     // disallow variable redeclaration
@@ -249,8 +251,6 @@ module.exports = {
     // requires type annotations to exist
     '@typescript-eslint/typedef': 2,
     // warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
-    '@typescript-eslint/unified-signatures': 2,
-    // disallows using the non-null assertion on the left operand of the nullish coalescing operator
-    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2
+    '@typescript-eslint/unified-signatures': 2
   }
 };
