@@ -190,6 +190,8 @@ module.exports = {
     '@typescript-eslint/no-redeclare': bestPractices['no-redeclare'],
     // disallows invocation of `require()`
     '@typescript-eslint/no-require-imports': 2,
+    // allows to specify new option `allowTypeImport` for path or pattern
+    '@typescript-eslint/no-restricted-imports': 0,
     // disallow variable declarations from shadowing variables declared in the outer scope
     '@typescript-eslint/no-shadow': variables['no-shadow'],
     // disallow aliasing `this`
@@ -249,11 +251,6 @@ module.exports = {
     // warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
     '@typescript-eslint/unified-signatures': 2,
     // disallows using the non-null assertion on the left operand of the nullish coalescing operator
-    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
-    // allows to specify new option `allowTypeImport` for path or pattern
-    '@typescript-eslint/no-restricted-imports': [2, {
-      paths: [],
-      patterns: []
-    }]
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2
   }
 };

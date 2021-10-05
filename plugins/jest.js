@@ -61,16 +61,16 @@ module.exports = {
     'jest/prefer-called-with': 0,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
     'jest/prefer-expect-assertions': 0,
+    // suggest `await expect(...).resolves` over `expect(await ...)` syntax
+    'jest/prefer-expect-resolves': 2,
     // suggest having hooks before any test cases
     'jest/prefer-hooks-on-top': 0,
     // suggest using `jest.spyOn()`
     'jest/prefer-spy-on': 0,
     // suggest using `toStrictEqual()`
     'jest/prefer-strict-equal': 1,
-    // Deprecated: suggest using `toBeNull()`
-    'jest/prefer-to-be-null': 2,
-    // Deprecated: suggest using `toBeUndefined()`
-    'jest/prefer-to-be-undefined': 2,
+    // suggest using `toBe()` for primitive literals
+    'jest/prefer-to-be': 2,
     // suggest using `toContain()`
     'jest/prefer-to-contain': 2,
     // suggest using `toHaveLength()`
@@ -88,10 +88,6 @@ module.exports = {
     // enforce having return statement when testing with promises
     'jest/valid-expect-in-promise': 2,
     // enforce valid titles
-    'jest/valid-title': 2,
-    // suggest `await expect(...).resolves` over `expect(await ...)` syntax
-    'jest/prefer-expect-resolves': 2,
-    // suggest using `toBe()` for primitive literals
-    'jest/prefer-to-be': 2
+    'jest/valid-title': 2
   }
 };

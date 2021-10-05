@@ -151,6 +151,8 @@ module.exports = {
     'react/no-is-mounted': 2,
     // prevent multiple component definition per file
     'react/no-multi-comp': 0,
+    // enforces the absence of a namespace in React elements (e.g. `<svg:circle />`)
+    'react/no-namespace': 2,
     // flag shouldComponentUpdate when extending PureComponent
     'react/no-redundant-should-component-update': 2,
     // prevent usage of the return value of React.render
@@ -207,8 +209,6 @@ module.exports = {
     'react/style-prop-object': 2,
     // prevent passing of children to void DOM elements (e.g. `<br />`)
     'react/void-dom-elements-no-children': 2,
-    // enforces the absence of a namespace in React elements (e.g. `<svg:circle />`)
-    'react/no-namespace': 2,
 
     // checks rules of hooks
     'react-hooks/rules-of-hooks': 2,
