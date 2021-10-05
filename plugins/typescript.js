@@ -182,10 +182,10 @@ module.exports = {
     '@typescript-eslint/no-namespace': 2,
     // disallows using a non-null assertion after an optional chain expression
     '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
-    // disallows non-null assertions using the `!` postfix operator
-    '@typescript-eslint/no-non-null-assertion': 0,
     // disallows using the non-null assertion on the left operand of the nullish coalescing operator
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
+    // disallows non-null assertions using the `!` postfix operator
+    '@typescript-eslint/no-non-null-assertion': 0,
     // disallow the use of parameter properties in class constructors
     '@typescript-eslint/no-parameter-properties': 1,
     // disallow variable redeclaration
