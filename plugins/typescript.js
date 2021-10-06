@@ -45,6 +45,7 @@ module.exports = {
     'no-new-symbol': 0,
     'no-obj-calls': 0,
     'no-redeclare': 0,
+    'no-restricted-imports': 0,
     'no-shadow': 0,
     'no-setter-return': 0,
     'no-this-before-super': 0,
