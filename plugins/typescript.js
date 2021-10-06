@@ -45,6 +45,7 @@ module.exports = {
     'no-new-symbol': 0,
     'no-obj-calls': 0,
     'no-redeclare': 0,
+    'no-restricted-imports': 0,
     'no-shadow': 0,
     'no-setter-return': 0,
     'no-this-before-super': 0,
@@ -182,6 +183,8 @@ module.exports = {
     '@typescript-eslint/no-namespace': 2,
     // disallows using a non-null assertion after an optional chain expression
     '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
+    // disallows using the non-null assertion on the left operand of the nullish coalescing operator
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
     // disallows non-null assertions using the `!` postfix operator
     '@typescript-eslint/no-non-null-assertion': 0,
     // disallow the use of parameter properties in class constructors
@@ -190,6 +193,8 @@ module.exports = {
     '@typescript-eslint/no-redeclare': bestPractices['no-redeclare'],
     // disallows invocation of `require()`
     '@typescript-eslint/no-require-imports': 2,
+    // restrict usage of specified node imports
+    '@typescript-eslint/no-restricted-imports': es6['no-restricted-imports'],
     // disallow variable declarations from shadowing variables declared in the outer scope
     '@typescript-eslint/no-shadow': variables['no-shadow'],
     // disallow aliasing `this`
