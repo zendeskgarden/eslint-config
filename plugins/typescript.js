@@ -192,8 +192,8 @@ module.exports = {
     '@typescript-eslint/no-redeclare': bestPractices['no-redeclare'],
     // disallows invocation of `require()`
     '@typescript-eslint/no-require-imports': 2,
-    // allows to specify new option `allowTypeImport` for path or pattern
-    '@typescript-eslint/no-restricted-imports': 0,
+    // restrict usage of specified node imports
+    '@typescript-eslint/no-restricted-imports': es6['no-restricted-imports'],
     // disallow variable declarations from shadowing variables declared in the outer scope
     '@typescript-eslint/no-shadow': variables['no-shadow'],
     // disallow aliasing `this`
