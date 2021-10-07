@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [22.0.0](https://github.com/zendeskgarden/eslint-config/compare/v21.0.0...v22.0.0) (2021-10-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* added
+- @typescript-eslint/no-non-null-asserted-nullish-coalescing
+- @typescript-eslint/no-restricted-imports
+- jest/prefer-expect-resolves
+- jest/prefer-to-be
+- react/no-namespace
+* add `react/prefer-exact-props` rule.
+
+Plugin dependency versions:
+    - `@typescript-eslint/eslint-plugin` ^4.30.0
+    - `eslint-plugin-jsx-a11y` ^6.4.0
+    - `eslint-plugin-react` ^7.25.0
+    - `eslint-plugin-react-hooks` ^4.2.0
+
+### Features
+
+* add new rules for jest, react, and typescript ([#171](https://github.com/zendeskgarden/eslint-config/issues/171)) ([82f34e8](https://github.com/zendeskgarden/eslint-config/commit/82f34e8fb52b850244618e2b1417bacaaeae74f6))
+* add react/prefer-exact-props rule ([#165](https://github.com/zendeskgarden/eslint-config/issues/165)) ([59964c6](https://github.com/zendeskgarden/eslint-config/commit/59964c684dbc2a998b194eb50fb84a56c45fde0e))
+
 ## [21.0.0](https://github.com/zendeskgarden/eslint-config/compare/v20.0.0...v21.0.0) (2021-08-17)
 
 
