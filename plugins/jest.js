@@ -77,6 +77,8 @@ module.exports = {
     'jest/prefer-to-have-length': 2,
     // suggest using `test.todo`
     'jest/prefer-todo': 1,
+    // require setup and teardown code to be within a hook
+    'jest/require-hook': 2,
     // require a message for `toThrow()`
     'jest/require-to-throw-message': 0,
     // require test cases and hooks to be inside a `describe` block
