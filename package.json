@@ -1,6 +1,6 @@
 {
   "name": "@zendeskgarden/eslint-config",
-  "version": "22.0.0",
+  "version": "23.0.0",
   "description": "Garden ESLint config",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",

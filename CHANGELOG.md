@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [23.0.0](https://github.com/zendeskgarden/eslint-config/compare/v22.0.0...v23.0.0) (2021-10-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** upgrade to `eslint` v8.0.0.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^5.0.0
+- `@typescript-eslint/parser` ^5.0.0
+- `eslint-plugin-jest` ^25.2.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.26.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+* **deps:** add `jest/require-hook` rule.
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^4.33.0
+- `eslint-plugin-jest` ^24.7.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.26.0
+- `eslint-plugin-react-hooks` ^4.2.0
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update all non-major dependencies ([#172](https://github.com/zendeskgarden/eslint-config/issues/172)) ([daf7799](https://github.com/zendeskgarden/eslint-config/commit/daf7799e4d8e5cccfa2982e6e5005bd4e8bb4332))
+* **deps:** update dependency eslint to v8 ([#173](https://github.com/zendeskgarden/eslint-config/issues/173)) ([c22840b](https://github.com/zendeskgarden/eslint-config/commit/c22840bfb61ea2f2ce295612538b19db67bcba91))
+
 ## [22.0.0](https://github.com/zendeskgarden/eslint-config/compare/v21.0.0...v22.0.0) (2021-10-07)
 
 
