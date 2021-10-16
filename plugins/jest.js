@@ -13,8 +13,6 @@ module.exports = {
     'jest/consistent-test-it': 0,
     // enforce assertion to be made in a test body
     'jest/expect-expect': 2,
-    // enforce lowercase test names
-    'jest/lowercase-name': [1, { ignore: ['describe'] }],
     // disallow alias methods
     'jest/no-alias-methods': 2,
     // disallow commented out tests
@@ -65,6 +63,8 @@ module.exports = {
     'jest/prefer-expect-resolves': 2,
     // suggest having hooks before any test cases
     'jest/prefer-hooks-on-top': 0,
+    // enforce lowercase test names
+    'jest/prefer-lowercase-title': [1, { ignore: ['describe'] }],
     // suggest using `jest.spyOn()`
     'jest/prefer-spy-on': 0,
     // suggest using `toStrictEqual()`
@@ -84,7 +84,7 @@ module.exports = {
     // require test cases and hooks to be inside a `describe` block
     'jest/require-top-level-describe': 2,
     // enforce valid `describe()` callback
-    'jest/valid-describe': 2,
+    'jest/valid-describe-callback': 2,
     // enforce valid `expect()` usage
     'jest/valid-expect': 2,
     // enforce having return statement when testing with promises
