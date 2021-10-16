@@ -22,14 +22,14 @@
     "test": "yarn lint && yarn format && git diff --quiet"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.0.0",
+    "@babel/eslint-parser": "^7.15.0",
     "eslint": "^8.0.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "7.15.8",
     "@typescript-eslint/eslint-plugin": "5.0.0",
     "@typescript-eslint/parser": "5.0.0",
-    "babel-eslint": "10.1.0",
     "eslint": "8.0.1",
     "eslint-plugin-jest": "25.2.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
