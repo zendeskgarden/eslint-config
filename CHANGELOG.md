@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [24.0.0](https://github.com/zendeskgarden/eslint-config/compare/v23.0.0...v24.0.0) (2021-10-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch from `babel-eslint` to `@babel/eslint-parser` (#176)
+
+* switch from `babel-eslint` to `@babel/eslint-parser` ([#176](https://github.com/zendeskgarden/eslint-config/issues/176)) ([59d9042](https://github.com/zendeskgarden/eslint-config/commit/59d904289028fbd770ef8959feb09d6db9854271))
+
 ## [23.0.0](https://github.com/zendeskgarden/eslint-config/compare/v22.0.0...v23.0.0) (2021-10-16)
 
 
