@@ -17,7 +17,7 @@ module.exports = {
     './plugins/node/best-practices',
     './plugins/node/stylistic-issues'
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   env: {
     browser: true,
     es2020: true,

@@ -8,7 +8,8 @@
     "./plugins/typescript-semantics"
   ],
   "parserOptions": {
-    "project": ["./tsconfig.mock.json"]
+    "project": ["./tsconfig.mock.json"],
+    "requireConfigFile": false
   },
   "rules": {
     "@typescript-eslint/no-var-requires": 0,
