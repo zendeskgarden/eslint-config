@@ -87,6 +87,8 @@ module.exports = {
     'no-unsafe-negation': 2,
     // disallow use of optional chaining in contexts where the `undefined` value is not allowed
     'no-unsafe-optional-chaining': 2,
+    // disallow unused private class members
+    'no-unused-private-class-members': 2,
     // disallow useless backreferences in regular expressions
     'no-useless-backreference': 2,
     // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
