@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [26.0.0](https://github.com/zendeskgarden/eslint-config/compare/v25.0.0...v26.0.0) (2021-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add new `eslint-plugin-react` v7.27.0 rules:
+- `no-unused-class-component-methods`
+- `no-arrow-function-lifecycle`
+- `no-invalid-html-attribute`
+
+Plugin dependency versions:
+- `@typescript-eslint/eslint-plugin` ^5.0.0
+- `@typescript-eslint/parser` ^5.0.0
+- `eslint-plugin-jest` ^25.2.0
+- `eslint-plugin-jsx-a11y` ^6.4.0
+- `eslint-plugin-react` ^7.27.0
+- `eslint-plugin-react-hooks` ^4.3.0
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update all non-major dependencies ([#180](https://github.com/zendeskgarden/eslint-config/issues/180)) ([ec3c4d6](https://github.com/zendeskgarden/eslint-config/commit/ec3c4d616e64e60b7b363e2c06dd02350c26a761))
+
 ## [25.0.0](https://github.com/zendeskgarden/eslint-config/compare/v24.0.0...v25.0.0) (2021-11-05)
 
 
