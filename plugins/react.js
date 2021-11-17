@@ -131,6 +131,8 @@ module.exports = {
     'react/no-adjacent-inline-elements': 2,
     // prevent usage of Array index in keys
     'react/no-array-index-key': 1,
+    // lifecycle methods should be methods on the prototype, not class fields
+    'react/no-arrow-function-lifecycle': 2,
     // prevent passing of children as props
     'react/no-children-prop': 2,
     // prevent usage of dangerous JSX props
@@ -147,6 +149,8 @@ module.exports = {
     'react/no-direct-mutation-state': 2,
     // prevent usage of findDOMNode
     'react/no-find-dom-node': 2,
+    // prevent usage of invalid attributes
+    'react/no-invalid-html-attribute': 2,
     // prevent usage of isMounted
     'react/no-is-mounted': 2,
     // prevent multiple component definition per file
@@ -171,6 +175,8 @@ module.exports = {
     'react/no-unknown-property': 2,
     // prevent usage of unsafe lifecycle methods
     'react/no-unsafe': 2,
+    // Prevent declaring unused methods of component class
+    'react/no-unused-class-component-methods': 2,
     // prevent definitions of unused prop types
     'react/no-unused-prop-types': 2,
     // prevent definition of unused state fields
