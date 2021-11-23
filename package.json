@@ -22,7 +22,6 @@
     "test": "yarn lint && yarn format && git diff --quiet"
   },
   "peerDependencies": {
-    "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.15.0",
     "@babel/preset-react": "^7.16.0",
     "eslint": "^8.1.0",
