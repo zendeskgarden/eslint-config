@@ -22,12 +22,16 @@
     "test": "yarn lint && yarn format && git diff --quiet"
   },
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.15.0",
-    "eslint": "^8.1.0",
+    "@babel/core": "7.16.0",
+    "@babel/eslint-parser": "7.16.3",
+    "@babel/plugin-transform-react-jsx-development": "7.16.0",
+    "eslint": "8.3.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
+    "@babel/core": "7.16.0",
     "@babel/eslint-parser": "7.16.3",
+    "@babel/plugin-transform-react-jsx-development": "7.16.0",
     "@typescript-eslint/eslint-plugin": "5.4.0",
     "@typescript-eslint/parser": "5.4.0",
     "eslint": "8.2.0",

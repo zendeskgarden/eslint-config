@@ -5,12 +5,23 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+const {
+  default: jsxDevTransform
+} = require('@babel/plugin-transform-react-jsx-development');
+
 module.exports = {
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
   extends: ['plugin:jsx-a11y/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
+    },
+    requireConfigFile: false,
+    babelOptions: {
+      plugins: [
+        jsxDevTransform
+      ]
     }
   },
   settings: {
