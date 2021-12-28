@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.0.0](https://github.com/zendeskgarden/eslint-config/compare/v26.0.0...v27.0.0) (2021-12-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** - sets `eslint` peer dependency to `^8.5.0`
+- adds `prefer-object-has-own` rule set to warning
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+* **deps:** update to eslint 8.5.0 ([#182](https://github.com/zendeskgarden/eslint-config/issues/182)) ([92c84f9](https://github.com/zendeskgarden/eslint-config/commit/92c84f9136652cd6ede96385cff76c08d4cdc94d))
+
 ## [26.0.0](https://github.com/zendeskgarden/eslint-config/compare/v25.0.0...v26.0.0) (2021-11-17)
 
 
