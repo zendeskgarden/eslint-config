@@ -16,7 +16,7 @@ selection of associated [plugins](#plugins).
 ## Installation
 
 ```sh
-npm install eslint @babel/eslint-parser eslint-plugin-node @zendeskgarden/eslint-config
+npm install --save-dev eslint @babel/eslint-parser eslint-plugin-node @zendeskgarden/eslint-config
 ```
 
 ## Usage
