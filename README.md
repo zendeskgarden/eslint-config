@@ -43,7 +43,7 @@ Install the following dependency in addition to those [listed](#installation)
 above.
 
 ```sh
-npm install jest eslint-plugin-jest
+npm install --save-dev jest eslint-plugin-jest
 ```
 
 Extend the base configuration.
@@ -76,7 +76,7 @@ Install the following dependencies in addition to those
 [listed](#installation) above.
 
 ```sh
-npm install eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 ```
 
 Extend the base configuration.
@@ -93,7 +93,7 @@ Install the following dependencies in addition to those
 [listed](#installation) above.
 
 ```sh
-npm install typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm install --save-dev typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 Extend the base configuration.
