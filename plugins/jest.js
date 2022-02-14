@@ -19,6 +19,8 @@ module.exports = {
     'jest/no-commented-out-tests': 2,
     // prevent calling `expect` conditionally
     'jest/no-conditional-expect': 0,
+    // disallow conditionals in test
+    'jest/no-conditional-in-test': 0,
     // disallow use of deprecated functions
     'jest/no-deprecated-functions': 2,
     // disallow disabled tests
@@ -53,8 +55,6 @@ module.exports = {
     'jest/no-test-prefixes': 2,
     // disallow explicitly returning from tests
     'jest/no-test-return-statement': 2,
-    // disallow conditionals in test
-    'jest/no-conditional-in-test': 0,
     // suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     'jest/prefer-called-with': 0,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
@@ -65,6 +65,8 @@ module.exports = {
     'jest/prefer-hooks-on-top': 0,
     // enforce lowercase test names
     'jest/prefer-lowercase-title': [1, { ignore: ['describe'] }],
+    // suggest having a hint for snapshots
+    'jest/prefer-snapshot-hint': 1,
     // suggest using `jest.spyOn()`
     'jest/prefer-spy-on': 0,
     // suggest using `toStrictEqual()`
@@ -77,8 +79,6 @@ module.exports = {
     'jest/prefer-to-have-length': 2,
     // suggest using `test.todo`
     'jest/prefer-todo': 1,
-    // suggest having a hint for snapshots
-    'jest/prefer-snapshot-hint': 1,
     // require setup and teardown code to be within a hook
     'jest/require-hook': 2,
     // require a message for `toThrow()`
