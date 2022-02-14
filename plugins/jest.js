@@ -35,8 +35,6 @@ module.exports = {
     'jest/no-hooks': 0,
     // disallow identical titles
     'jest/no-identical-title': 2,
-    // disallow conditional logic
-    'jest/no-if': 0,
     // disallow string interpolation inside snapshots
     'jest/no-interpolation-in-snapshots': 2,
     // disallow Jasmine globals
@@ -55,6 +53,8 @@ module.exports = {
     'jest/no-test-prefixes': 2,
     // disallow explicitly returning from tests
     'jest/no-test-return-statement': 2,
+    // disallow conditionals in test
+    'jest/no-conditional-in-test': 0,
     // suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     'jest/prefer-called-with': 0,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
@@ -77,6 +77,8 @@ module.exports = {
     'jest/prefer-to-have-length': 2,
     // suggest using `test.todo`
     'jest/prefer-todo': 1,
+    // suggest having a hint for snapshots
+    'jest/prefer-snapshot-hint': 1,
     // require setup and teardown code to be within a hook
     'jest/require-hook': 2,
     // require a message for `toThrow()`
