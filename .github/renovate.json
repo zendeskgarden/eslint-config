@@ -1,6 +1,8 @@
 {
   "extends": ["config:base", "group:allNonMajor"],
   "rebaseStalePrs": true,
-  "schedule": ["on Wednesday every 4 weeks of the year starting on the 1st week"],
+  "schedule": [
+    "on Wednesday every 12 weeks of the year starting on the 1st week"
+  ],
   "postUpdateOptions": ["yarnDedupeHighest"]
 }
