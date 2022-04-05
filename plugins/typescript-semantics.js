@@ -35,6 +35,8 @@ module.exports = {
     '@typescript-eslint/no-implied-eval': bestPractices['no-implied-eval'],
     // avoid using promises in places not designed to handle them
     '@typescript-eslint/no-misused-promises': 2,
+    // disallow members of unions and intersections that do nothing or override type information
+    '@typescript-eslint/no-redundant-type-constituents': 2,
     // disallow throwing literals as exceptions
     '@typescript-eslint/no-throw-literal': bestPractices['no-throw-literal'],
     // flags unnecessary equality comparisons against boolean literals

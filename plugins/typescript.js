@@ -134,7 +134,7 @@ module.exports = {
       },
       {
         selector: 'objectLiteralProperty',
-        format: ['camelCase', 'snake_case', 'PascalCase', 'UPPER_CASE']
+        format: null
       }
     ],
     // disallow generic `Array` constructors
@@ -211,6 +211,8 @@ module.exports = {
     // disallow the use of variables before they are defined
     '@typescript-eslint/no-use-before-define':
       variables['no-use-before-define'],
+    // disallow unnecessary empty export
+    '@typescript-eslint/no-useless-empty-export': 2,
     // disallow unnecessary constructors
     '@typescript-eslint/no-useless-constructor': es6['no-useless-constructor'],
     // disallows the use of require statements except in import statements

@@ -44,6 +44,10 @@ module.exports = {
       1,
       { namedComponents: 'arrow-function' }
     ],
+    // ensure destructuring and symmetric naming of useState hook value and setter variables
+    'react/hook-use-state': 1,
+    // enforce sandbox attribute on iframe elements
+    'react/iframe-missing-sandbox': 2,
     // enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 1,
     // ensures inline tags are not rendered without spaces between them
