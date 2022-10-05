@@ -75,6 +75,8 @@ module.exports = {
     'lines-around-comment': 0,
     // require or disallow an empty line between class members
     'lines-between-class-members': 2,
+    // require or disallow logical assignment logical operator shorthand
+    'logical-assignment-operators': 2,
     // specify the maximum depth that blocks can be nested
     'max-depth': [0, 4],
     // specify the maximum length of a line in your program

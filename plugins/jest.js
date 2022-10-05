@@ -57,6 +57,8 @@ module.exports = {
     'jest/no-test-return-statement': 2,
     // suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     'jest/prefer-called-with': 0,
+    // prefer using `.each` rather than manual loops
+    'jest/prefer-each': 2,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
     'jest/prefer-expect-assertions': 0,
     // suggest `await expect(...).resolves` over `expect(await ...)` syntax
