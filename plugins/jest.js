@@ -41,8 +41,6 @@ module.exports = {
     'jest/no-interpolation-in-snapshots': 2,
     // disallow Jasmine globals
     'jest/no-jasmine-globals': 2,
-    // disallow importing Jest
-    'jest/no-jest-import': 2,
     // disallow large snapshots
     'jest/no-large-snapshots': 0,
     // disallow manually importing from `__mocks__`
