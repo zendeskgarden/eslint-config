@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.0.0](https://github.com/zendeskgarden/eslint-config/compare/v28.0.0...v29.0.0) (2022-10-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** remove jest v27.0.0 `jest/no-jest-import` rule
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+* **deps:** update all non-major dependencies (#198)
+
+* **deps:** update all non-major dependencies ([#198](https://github.com/zendeskgarden/eslint-config/issues/198)) ([e870d42](https://github.com/zendeskgarden/eslint-config/commit/e870d4242aaf51d7956b5a7cac3db5c197165f30))
+* **deps:** update dependency eslint-plugin-jest to v27 ([#200](https://github.com/zendeskgarden/eslint-config/issues/200)) ([9b4d0b2](https://github.com/zendeskgarden/eslint-config/commit/9b4d0b2396a31dcdb626ea01bb71d99b4bdf942e))
+
 ## [28.0.0](https://github.com/zendeskgarden/eslint-config/compare/v27.0.1...v28.0.0) (2022-04-11)
 
 
