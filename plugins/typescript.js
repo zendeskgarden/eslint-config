@@ -203,6 +203,8 @@ module.exports = {
     '@typescript-eslint/no-type-alias': 0,
     // disallows unnecessary constraints on generic type
     '@typescript-eslint/no-unnecessary-type-constraint': 2,
+    // disallows erging between classes and interfaces
+    '@typescript-eslint/no-unsafe-declaration-merging': 2,
     // disallow unused expressions
     '@typescript-eslint/no-unused-expressions':
       bestPractices['no-unused-expressions'],

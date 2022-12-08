@@ -55,6 +55,8 @@ module.exports = {
     'no-empty-function': 2,
     // disallow use of empty destructuring patterns
     'no-empty-pattern': 2,
+    // disallows empty static blocks (ignores static blocks which contain a comment)
+    'no-empty-static-block': 2,
     // disallow comparisons to null without a type-checking operator
     'no-eq-null': 2,
     // disallow use of `eval()`
@@ -97,6 +99,8 @@ module.exports = {
     'no-new': 2,
     // disallow use of new operator for `Function` object
     'no-new-func': 2,
+    // disallow use of the new operator with global no constructor functions
+    'no-new-native-nonconstructor': 2,
     // disallows creating new instances of `String`, `Number`, and `Boolean`
     'no-new-wrappers': 2,
     // disallow `\8` and `\9` escape sequences in string literals
