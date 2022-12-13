@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [30.0.0](https://github.com/zendeskgarden/eslint-config/compare/v29.0.0...v30.0.0) (2022-12-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** deps: adds new eslint rules:
+- sets no-empty-static-block to error
+- sets no-new-native-nonconstructor to error
+
+deps: adds new typescript-eslint rules:
+- sets no-unsafe-declaration-merging to error
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: george treviranus <geowtrev@gmail.com>
+
+* **deps:** update all non-major dependencies ([#201](https://github.com/zendeskgarden/eslint-config/issues/201)) ([c5da9ea](https://github.com/zendeskgarden/eslint-config/commit/c5da9ea9ccbf0366ae6920c9fc7a3778bf374ff8))
+
 ## [29.0.0](https://github.com/zendeskgarden/eslint-config/compare/v28.0.0...v29.0.0) (2022-10-05)
 
 
