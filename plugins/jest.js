@@ -53,6 +53,8 @@ module.exports = {
     'jest/no-test-prefixes': 2,
     // disallow explicitly returning from tests
     'jest/no-test-return-statement': 2,
+    // Disallow untyped `jest.mock`/`jest.doMock` calls
+    'jest/no-untyped-mock-factory': 2,
     // suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     'jest/prefer-called-with': 0,
     // prefer using `.each` rather than manual loops
