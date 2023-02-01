@@ -7,6 +7,7 @@
 
 const bestPractices = require('../rules/best-practices').rules;
 const possibleErrors = require('../rules/possible-errors').rules;
+const stylisticIssues = require('../rules/stylistic-issues').rules;
 
 module.exports = {
   plugins: ['@typescript-eslint'],
@@ -14,21 +15,18 @@ module.exports = {
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'dot-notation': 0,
+    'key-spacing': 0,
     'no-implied-eval': 0,
     'no-return-await': 0,
     'no-throw-literal': 0,
     'require-await': 0,
-    'key-spacing': 0,
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
     // enforce dot notation whenever possible
     '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
     // enforce consistent spacing between keys and values in object literal properties
-    '@typescript-eslint/key-spacing': [2, {
-      beforeColon: false,
-      afterColon: true
-    }],
+    '@typescript-eslint/key-spacing': stylisticIssues['key-spacing'],
     // requires that `.toString()` is only called on objects which provide useful information when stringified
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position

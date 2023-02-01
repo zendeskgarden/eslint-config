@@ -20,11 +20,7 @@ module.exports = {
   },
   rules: {
     // enforces using semantic DOM elements over the ARIA role property.
-    'jsx-a11y/prefer-tag-over-role': 0,
-    // enforce that aria-hidden="true" is not set on focusable elements.
-    'jsx-a11y/no-aria-hidden-on-focusable': 2,
-    // enforces descriptive text for anchor tags.
-    'jsx-a11y/anchor-ambiguous-text': 1,
+    'jsx-a11y/prefer-tag-over-role': 2,
 
     // enforces consistent naming for boolean props
     'react/boolean-prop-naming': 1,
@@ -124,8 +120,6 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 2,
     // prevent JSX prop spreading
     'react/jsx-props-no-spreading': 0,
-    // enforce default props alphabetical sorting
-    'react/sort-default-props': 0,
     // enforce props alphabetical sorting
     'react/jsx-sort-props': 0,
     // validate whitespace in and around the JSX opening and closing brackets
@@ -218,6 +212,8 @@ module.exports = {
     'react/self-closing-comp': 2,
     // enforce component methods order
     'react/sort-comp': 0,
+    // enforce default props alphabetical sorting
+    'react/sort-default-props': 0,
     // enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': 0,
     // state initialization in an ES6 class component should be in a constructor
