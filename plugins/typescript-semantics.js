@@ -18,11 +18,17 @@ module.exports = {
     'no-return-await': 0,
     'no-throw-literal': 0,
     'require-await': 0,
+    'key-spacing': 0,
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
     // enforce dot notation whenever possible
     '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
+    // enforce consistent spacing between keys and values in object literal properties
+    '@typescript-eslint/key-spacing': [2, {
+      beforeColon: false,
+      afterColon: true
+    }],
     // requires that `.toString()` is only called on objects which provide useful information when stringified
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position

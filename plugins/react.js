@@ -19,6 +19,13 @@ module.exports = {
     }
   },
   rules: {
+    // enforces using semantic DOM elements over the ARIA role property.
+    'jsx-a11y/prefer-tag-over-role': 0,
+    // enforce that aria-hidden="true" is not set on focusable elements.
+    'jsx-a11y/no-aria-hidden-on-focusable': 2,
+    // enforces descriptive text for anchor tags.
+    'jsx-a11y/anchor-ambiguous-text': 1,
+
     // enforces consistent naming for boolean props
     'react/boolean-prop-naming': 1,
     // forbid "button" element without an explicit "type" attribute
@@ -118,7 +125,7 @@ module.exports = {
     // prevent JSX prop spreading
     'react/jsx-props-no-spreading': 0,
     // enforce default props alphabetical sorting
-    'react/jsx-sort-default-props': 0,
+    'react/sort-default-props': 0,
     // enforce props alphabetical sorting
     'react/jsx-sort-props': 0,
     // validate whitespace in and around the JSX opening and closing brackets
@@ -161,6 +168,8 @@ module.exports = {
     'react/no-multi-comp': 0,
     // enforces the absence of a namespace in React elements (e.g. `<svg:circle />`)
     'react/no-namespace': 2,
+    // disallow usage of referential-type variables as default param in functional components
+    'react/no-object-type-as-default-prop': 0,
     // flag shouldComponentUpdate when extending PureComponent
     'react/no-redundant-should-component-update': 2,
     // prevent usage of the return value of React.render
