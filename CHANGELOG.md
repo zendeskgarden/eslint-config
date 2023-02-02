@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [32.0.0](https://github.com/zendeskgarden/eslint-config/compare/v31.0.0...v32.0.0) (2023-02-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rules:** adds new rules missed in v31 (#205)
+
+* **rules:** adds new rules missed in v31 ([#205](https://github.com/zendeskgarden/eslint-config/issues/205)) ([02bba24](https://github.com/zendeskgarden/eslint-config/commit/02bba24b89bb9c7ed1d5f9bf82f82dbfdb4b7f59))
+
 ## [31.0.0](https://github.com/zendeskgarden/eslint-config/compare/v30.0.0...v31.0.0) (2023-01-31)
 
 
