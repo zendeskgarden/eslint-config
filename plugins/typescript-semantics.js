@@ -31,6 +31,8 @@ module.exports = {
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position
     '@typescript-eslint/no-confusing-void-expression': 2,
+    // disallows duplicate union or intersection type members
+    '@typescript-eslint/no-duplicate-type-constituents': 2,
     // requires Promise-like values to be handled appropriately
     '@typescript-eslint/no-floating-promises': 2,
     // disallow iterating over an array with a for-in loop
@@ -60,6 +62,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 2,
     // disallows calling an any type value
     '@typescript-eslint/no-unsafe-call': 2,
+    // disallow literals where enums are expected
+    '@typescript-eslint/no-unsafe-enum-comparison': 2,
     // disallows member access on any typed variables
     '@typescript-eslint/no-unsafe-member-access': 2,
     // disallows returning any from a function
