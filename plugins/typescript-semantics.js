@@ -23,8 +23,6 @@ module.exports = {
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
-    // suggest `NonNullable<unknown>` as an alternative for `{}` and `Object`
-    '@typescript-eslint/ban-types': 1,
     // enforce dot notation whenever possible
     '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
     // enforce consistent spacing between keys and values in object literal properties
