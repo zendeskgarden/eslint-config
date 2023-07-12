@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [33.0.0](https://github.com/zendeskgarden/eslint-config/compare/v32.0.0...v33.0.0) (2023-07-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update all non-major dependencies (#208)
+- sets @typescript-eslint/no-duplicate-type-constituents to error
+- sets @typescript-eslint/no-unsafe-enum-comparison to error
+
+* **deps:** update all non-major dependencies ([#208](https://github.com/zendeskgarden/eslint-config/pull/208)) ([7fc46aa](https://github.com/zendeskgarden/eslint-config/commit/7fc46aa5627d1da0a335f93547f6b89e4f3765f2))
+
 ## [32.0.0](https://github.com/zendeskgarden/eslint-config/compare/v31.0.0...v32.0.0) (2023-02-02)
 
 
