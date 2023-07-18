@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [34.0.0](https://github.com/zendeskgarden/eslint-config/compare/v33.0.0...v34.0.0) (2023-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** previously `@typescript-eslint` deprecated rules were deleted. See https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#rule-breaking-changes
+
+* **deps:** update typescript-eslint monorepo to v6 (major) ([#211](https://github.com/zendeskgarden/eslint-config/issues/211)) ([944909a](https://github.com/zendeskgarden/eslint-config/commit/944909ab11393652a200caf998b3e1c13438e517))
+
 ## [33.0.0](https://github.com/zendeskgarden/eslint-config/compare/v32.0.0...v33.0.0) (2023-07-12)
 
 
