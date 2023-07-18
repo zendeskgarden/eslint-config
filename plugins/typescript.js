@@ -32,7 +32,6 @@ module.exports = {
     'no-dupe-args': 0,
     'no-dupe-class-members': 0,
     'no-dupe-keys': 0,
-    'no-duplicate-imports': 0,
     'no-empty-function': 0,
     'no-extra-parens': 0,
     'no-extra-semi': 0,
@@ -144,8 +143,6 @@ module.exports = {
     '@typescript-eslint/no-confusing-non-null-assertion': 2,
     // disallow duplicate class members
     '@typescript-eslint/no-dupe-class-members': es6['no-dupe-class-members'],
-    // disallow duplicate imports
-    '@typescript-eslint/no-duplicate-imports': es6['no-duplicate-imports'],
     // disallow the delete operator with computed key expressions
     '@typescript-eslint/no-dynamic-delete': 2,
     // disallow empty functions
@@ -162,8 +159,6 @@ module.exports = {
     '@typescript-eslint/no-extra-semi': possibleErrors['no-extra-semi'],
     // forbids the use of classes as namespaces
     '@typescript-eslint/no-extraneous-class': 2,
-    // disallow usage of the implicit `any` type in catch clauses
-    '@typescript-eslint/no-implicit-any-catch': 1,
     // disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
     '@typescript-eslint/no-inferrable-types': 2,
     // disallow `this` keywords outside of classes or class-like objects
@@ -187,8 +182,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
     // disallows non-null assertions using the `!` postfix operator
     '@typescript-eslint/no-non-null-assertion': 0,
-    // disallow the use of parameter properties in class constructors
-    '@typescript-eslint/no-parameter-properties': 1,
     // disallow variable redeclaration
     '@typescript-eslint/no-redeclare': bestPractices['no-redeclare'],
     // disallows invocation of `require()`
@@ -242,8 +235,6 @@ module.exports = {
     '@typescript-eslint/quotes': stylisticIssues.quotes,
     // require or disallow semicolons instead of ASI
     '@typescript-eslint/semi': stylisticIssues.semi,
-    // enforces that members of a type union/intersection are sorted alphabetically
-    '@typescript-eslint/sort-type-union-intersection-members': 0,
     // enforces consistent spacing before function parenthesis
     '@typescript-eslint/space-before-function-paren':
       stylisticIssues['space-before-function-paren'],
