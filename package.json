@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "format": "prettier-package-json --write",
-    "lint": "eslint index.js plugins/*.js rules/*.js",
+    "lint": "eslint index.js plugins/*.js rules/*.js --max-warnings 0",
     "prepare": "husky install",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "yarn lint && yarn format && git diff --quiet"
@@ -29,8 +29,8 @@
   "devDependencies": {
     "@babel/core": "7.22.9",
     "@babel/eslint-parser": "7.22.9",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "6.1.0",
+    "@typescript-eslint/parser": "6.1.0",
     "eslint": "8.45.0",
     "eslint-plugin-jest": "27.2.3",
     "eslint-plugin-jsx-a11y": "6.7.1",
