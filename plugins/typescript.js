@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'brace-style': 0,
+    'class-methods-use-this': 0,
     'comma-dangle': 0,
     'comma-spacing': 0,
     'constructor-super': 0,
@@ -76,6 +77,9 @@ module.exports = {
     '@typescript-eslint/brace-style': stylisticIssues['brace-style'],
     // ensures that literals on classes are exposed in a consistent style
     '@typescript-eslint/class-literal-property-style': 2,
+    // enforce that class methods utilize `this`
+    '@typescript-eslint/class-methods-use-this':
+      bestPractices['class-methods-use-this'],
     // require or disallow trailing comma
     '@typescript-eslint/comma-dangle': stylisticIssues['comma-dangle'],
     // enforces consistent spacing before and after commas
