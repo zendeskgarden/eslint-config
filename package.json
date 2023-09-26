@@ -19,7 +19,7 @@
     "lint": "eslint index.js plugins/*.js rules/*.js --max-warnings 0",
     "prepare": "husky install",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
-    "test": "yarn lint && yarn format && git diff --quiet"
+    "test": "npm run format && npm run lint && git diff --quiet"
   },
   "peerDependencies": {
     "@babel/eslint-parser": "^7.15.0",
