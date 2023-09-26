@@ -128,8 +128,8 @@ module.exports = {
     'no-negated-condition': 2,
     // disallow nested ternary expressions
     'no-nested-ternary': 2,
-    // disallow use of the `Object` constructor
-    'no-new-object': 2,
+    // disallow calls to the `Object` constructor without an argument
+    'no-object-constructor': 2,
     // disallow use of unary operators, `++` and `--`
     'no-plusplus': 0,
     // disallow use of certain syntax in code

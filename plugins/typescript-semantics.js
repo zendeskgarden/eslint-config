@@ -17,7 +17,6 @@ module.exports = {
     'dot-notation': 0,
     'key-spacing': 0,
     'no-implied-eval': 0,
-    'no-return-await': 0,
     'no-throw-literal': 0,
     'require-await': 0,
 
@@ -96,8 +95,6 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': 2,
     // enforce template literal expressions to be of string type
     '@typescript-eslint/restrict-template-expressions': 2,
-    // enforces consistent returning of awaited values
-    '@typescript-eslint/return-await': bestPractices['no-return-await'],
     // restricts the types allowed in boolean expressions
     '@typescript-eslint/strict-boolean-expressions': 1,
     // exhaustiveness checking in switch with union type

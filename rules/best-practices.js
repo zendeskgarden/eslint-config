@@ -119,8 +119,6 @@ module.exports = {
     'no-restricted-properties': 0,
     // disallow use of assignment in `return` statement
     'no-return-assign': 2,
-    // disallow unnecessary `return await`
-    'no-return-await': 2,
     // disallow use of `javascript:` urls.
     'no-script-url': 2,
     // disallow assignments where both sides are exactly the same
