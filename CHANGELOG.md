@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [35.0.0](https://github.com/zendeskgarden/eslint-config/compare/v34.0.0...v35.0.0) (2023-09-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** updated peer dependency requirements
+
+- removed deprecated and added new `no-object-constructor` `eslint` 8.50.0 rule
+- added new `class-methods-use-this` `@typescript-eslint/eslint-plugin` 6.2.0 rule
+- upgraded from `yarn` to `npm`
+
+* **deps:** update all non-major dependencies ([#212](https://github.com/zendeskgarden/eslint-config/issues/212)) ([6865e54](https://github.com/zendeskgarden/eslint-config/commit/6865e54c781893ed7b85643dc9e0061f2bfdfcf8))
+
 ## [34.0.0](https://github.com/zendeskgarden/eslint-config/compare/v33.0.0...v34.0.0) (2023-07-18)
 
 
