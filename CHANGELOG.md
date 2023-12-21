@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [36.0.0](https://github.com/zendeskgarden/eslint-config/compare/v35.0.0...v36.0.0) (2023-12-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** updated peer dependency requirements
+
+- removed deprecated `eslint` 8.56.0 formatting rules; see https://eslint.org/blog/2023/10/deprecating-formatting-rules/
+- added new `@typescript-eslint/eslint-plugin` 6.15.0 rules: `no-unsafe-unary-minus`, `no-useless-template-literals`, `prefer-destructuring`
+
+* **deps:** update all non-major dependencies ([#214](https://github.com/zendeskgarden/eslint-config/issues/214)) ([d710a79](https://github.com/zendeskgarden/eslint-config/commit/d710a793c68e6d4ff489ddd1560bd34256fd699c))
+
 ## [35.0.0](https://github.com/zendeskgarden/eslint-config/compare/v34.0.0...v35.0.0) (2023-09-26)
 
 
