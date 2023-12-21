@@ -16,26 +16,18 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   rules: {
     // Disable ESLint rules that are handled by TypeScript
-    'brace-style': 0,
     'class-methods-use-this': 0,
-    'comma-dangle': 0,
-    'comma-spacing': 0,
     'constructor-super': 0,
     'default-param-last': 0,
-    'func-call-spacing': 0,
     'getter-return': 0,
-    'indent': 0,
     'init-declarations': 0,
     'keyword-spacing': 0,
-    'lines-between-class-members': 0,
     'no-array-constructor': 0,
     'no-const-assign': 0,
     'no-dupe-args': 0,
     'no-dupe-class-members': 0,
     'no-dupe-keys': 0,
     'no-empty-function': 0,
-    'no-extra-parens': 0,
-    'no-extra-semi': 0,
     'no-func-assign': 0,
     'no-import-assign': 0,
     'no-invalid-this': 0,
@@ -56,11 +48,6 @@ module.exports = {
     'no-unsafe-negation': 0,
     'no-unused-expressions': 0,
     'no-unused-vars': 0,
-    'object-curly-spacing': 0,
-    'quotes': 0,
-    'semi': 0,
-    'space-before-function-paren': 0,
-    'space-infix-ops': 0,
     'valid-typeof': 0,
 
     // require that member overloads be consecutive
@@ -73,17 +60,11 @@ module.exports = {
     '@typescript-eslint/ban-tslint-comment': 1,
     // bans specific types from being used
     '@typescript-eslint/ban-types': 2,
-    // enforce consistent brace style for blocks
-    '@typescript-eslint/brace-style': stylisticIssues['brace-style'],
     // ensures that literals on classes are exposed in a consistent style
     '@typescript-eslint/class-literal-property-style': 2,
     // enforce that class methods utilize `this`
     '@typescript-eslint/class-methods-use-this':
       bestPractices['class-methods-use-this'],
-    // require or disallow trailing comma
-    '@typescript-eslint/comma-dangle': stylisticIssues['comma-dangle'],
-    // enforces consistent spacing before and after commas
-    '@typescript-eslint/comma-spacing': stylisticIssues['comma-spacing'],
     // enforce or disallow the use of the record type
     '@typescript-eslint/consistent-indexed-object-style': 2,
     // enforces consistent usage of type assertions
@@ -104,18 +85,10 @@ module.exports = {
     ],
     // require explicit return and argument types on exported functions' and classes' public class methods
     '@typescript-eslint/explicit-module-boundary-types': 2,
-    // require or disallow spacing between function identifiers and their invocations
-    '@typescript-eslint/func-call-spacing':
-      stylisticIssues['func-call-spacing'],
-    // enforce consistent indentation
-    '@typescript-eslint/indent': stylisticIssues.indent,
     // require or disallow initialization in variable declarations
     '@typescript-eslint/init-declarations': variables['init-declarations'],
     // enforce consistent spacing before and after keywords
     '@typescript-eslint/keyword-spacing': stylisticIssues['keyword-spacing'],
-    // require or disallow an empty line between class members
-    '@typescript-eslint/lines-between-class-members':
-      stylisticIssues['lines-between-class-members'],
     // require a specific member delimiter style for interfaces and type literals
     '@typescript-eslint/member-delimiter-style': 2,
     // require a consistent member declaration order
@@ -157,10 +130,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 2,
     // disallow extra non-null assertion
     '@typescript-eslint/no-extra-non-null-assertion': 2,
-    // disallow unnecessary parentheses
-    '@typescript-eslint/no-extra-parens': possibleErrors['no-extra-parens'],
-    // disallow unnecessary semicolons
-    '@typescript-eslint/no-extra-semi': possibleErrors['no-extra-semi'],
     // forbids the use of classes as namespaces
     '@typescript-eslint/no-extraneous-class': 2,
     // disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
@@ -216,9 +185,6 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': es6['no-useless-constructor'],
     // disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 2,
-    // enforce consistent spacing inside braces
-    '@typescript-eslint/object-curly-spacing':
-      stylisticIssues['object-curly-spacing'],
     // prefer usage of `as const` over literal type
     '@typescript-eslint/prefer-as-const': 2,
     // prefer initializing each enums member value
@@ -235,15 +201,6 @@ module.exports = {
     '@typescript-eslint/prefer-optional-chain': 0,
     // recommends using `@ts-expect-error` over `@ts-ignore`
     '@typescript-eslint/prefer-ts-expect-error': 2,
-    // enforce the consistent use of either backticks, double, or single quotes
-    '@typescript-eslint/quotes': stylisticIssues.quotes,
-    // require or disallow semicolons instead of ASI
-    '@typescript-eslint/semi': stylisticIssues.semi,
-    // enforces consistent spacing before function parenthesis
-    '@typescript-eslint/space-before-function-paren':
-      stylisticIssues['space-before-function-paren'],
-    // ensure there are spaces around infix operators
-    '@typescript-eslint/space-infix-ops': stylisticIssues['space-infix-ops'],
     // sets preference level for triple slash directives versus ES6-style import declarations
     '@typescript-eslint/triple-slash-reference': 2,
     // require consistent spacing around type annotations

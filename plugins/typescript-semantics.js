@@ -6,8 +6,8 @@
  */
 
 const bestPractices = require('../rules/best-practices').rules;
+const es6 = require('../rules/es6').rules;
 const possibleErrors = require('../rules/possible-errors').rules;
-const stylisticIssues = require('../rules/stylistic-issues').rules;
 
 module.exports = {
   plugins: ['@typescript-eslint'],
@@ -15,17 +15,15 @@ module.exports = {
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'dot-notation': 0,
-    'key-spacing': 0,
     'no-implied-eval': 0,
     'no-throw-literal': 0,
+    'prefer-destructuring': 0,
     'require-await': 0,
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
     // enforce dot notation whenever possible
     '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
-    // enforce consistent spacing between keys and values in object literal properties
-    '@typescript-eslint/key-spacing': stylisticIssues['key-spacing'],
     // requires that `.toString()` is only called on objects which provide useful information when stringified
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position
@@ -67,8 +65,14 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 2,
     // disallows returning any from a function
     '@typescript-eslint/no-unsafe-return': 2,
+    // require unary negation to take a number
+    '@typescript-eslint/no-unsafe-unary-minus': 2,
+    // disallow unnecessary template literals
+    '@typescript-eslint/no-useless-template-literals': 2,
     // prefers a non-null assertion over explicit type cast when possible
     '@typescript-eslint/non-nullable-type-assertion-style': 1,
+    // require destructuring from arrays and/or objects
+    '@typescript-eslint/prefer-destructuring': es6['prefer-destructuring'],
     // enforce includes method over `indexOf` method
     '@typescript-eslint/prefer-includes': 2,
     // enforce the usage of the nullish coalescing operator instead of logical chaining
