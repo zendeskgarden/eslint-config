@@ -27,8 +27,6 @@ module.exports = {
     'default-case-last': 2,
     // enforce default parameters to be last
     'default-param-last': 2,
-    // enforces consistent newlines before or after dots
-    'dot-location': [2, 'property'],
     // encourages use of dot notation whenever possible
     'dot-notation': [2, { allowKeywords: true }],
     // require the use of `===` and `!==`
@@ -69,8 +67,6 @@ module.exports = {
     'no-extra-label': 2,
     // disallow fallthrough of `case` statements
     'no-fallthrough': 2,
-    // disallow the use of leading or trailing decimal points in numeric literals
-    'no-floating-decimal': 2,
     // disallow assignments to native objects or read-only global variables
     'no-global-assign': 2,
     // disallow the type conversions with shorter notations
@@ -91,8 +87,6 @@ module.exports = {
     'no-loop-func': 2,
     // disallow the use of magic numbers
     'no-magic-numbers': 0,
-    // disallow use of multiple spaces
-    'no-multi-spaces': 2,
     // disallow use of multiline strings
     'no-multi-str': 2,
     // disallow use of `new` operator when not part of the assignment or comparison
@@ -168,8 +162,6 @@ module.exports = {
     'require-unicode-regexp': 2,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 2,
-    // require immediate function invocation to be wrapped in parentheses
-    'wrap-iife': [2, 'any'],
     // require or disallow Yoda conditions
     'yoda': 2
   }

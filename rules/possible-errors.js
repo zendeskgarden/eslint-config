@@ -43,10 +43,6 @@ module.exports = {
     'no-ex-assign': 2,
     // disallow double-negation boolean casts in a boolean context
     'no-extra-boolean-cast': 2,
-    // disallow unnecessary parentheses
-    'no-extra-parens': [2, 'functions'],
-    // disallow unnecessary semicolons
-    'no-extra-semi': 2,
     // disallow overwriting functions written as function declarations
     'no-func-assign': 2,
     // disallow assigning to imported bindings
