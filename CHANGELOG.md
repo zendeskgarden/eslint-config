@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [37.0.0](https://github.com/zendeskgarden/eslint-config/compare/v36.0.0...v37.0.0) (2024-01-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** updated dependency requirements
+
+- added new `@typescript-eslint/eslint-plugin` 6.19.0 rules: `no-array-delete` and `prefer-promise-reject-errors`
+
+* **deps:** update all non-major dependencies ([#215](https://github.com/zendeskgarden/eslint-config/issues/215)) ([5341cb6](https://github.com/zendeskgarden/eslint-config/commit/5341cb6125f21e27e5b99af759ffe44de431b9db))
+
 ## [36.0.0](https://github.com/zendeskgarden/eslint-config/compare/v35.0.0...v36.0.0) (2023-12-21)
 
 
