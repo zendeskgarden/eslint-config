@@ -18,12 +18,15 @@ module.exports = {
     'no-implied-eval': 0,
     'no-throw-literal': 0,
     'prefer-destructuring': 0,
+    'prefer-promise-reject-errors': 0,
     'require-await': 0,
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
     // enforce dot notation whenever possible
     '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
+    // disallow using the `delete` operator on array values
+    '@typescript-eslint/no-array-delete': 2,
     // requires that `.toString()` is only called on objects which provide useful information when stringified
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position
@@ -77,6 +80,9 @@ module.exports = {
     '@typescript-eslint/prefer-includes': 2,
     // enforce the usage of the nullish coalescing operator instead of logical chaining
     '@typescript-eslint/prefer-nullish-coalescing': 0,
+    // require using Error objects as Promise rejection reasons
+    '@typescript-eslint/prefer-promise-reject-errors':
+      bestPractices['prefer-promise-reject-errors'],
     // requires that private members are marked as `readonly` if they're never modified outside of the constructor
     '@typescript-eslint/prefer-readonly': 2,
     // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
