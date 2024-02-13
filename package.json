@@ -17,7 +17,7 @@
   "scripts": {
     "format": "prettier-package-json --write",
     "lint": "eslint index.js plugins/*.js rules/*.js --max-warnings 0",
-    "prepare": "husky install",
+    "prepare": "husky",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "npm run format && npm run lint && git diff --quiet"
   },
