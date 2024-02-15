@@ -189,8 +189,6 @@ module.exports = {
     '@typescript-eslint/prefer-as-const': 2,
     // prefer initializing each enums member value
     '@typescript-eslint/prefer-enum-initializers': 2,
-    // prefer `Array.find()` when finding an element in an array
-    '@typescript-eslint/prefer-find': 2,
     // prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated
     '@typescript-eslint/prefer-for-of': 2,
     // use function types instead of interfaces with call signatures
