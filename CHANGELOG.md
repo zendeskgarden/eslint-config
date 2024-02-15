@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [38.0.0](https://github.com/zendeskgarden/eslint-config/compare/v37.0.0...v38.0.0) (2024-02-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** updated dependency requirements
+
+- bumped `@typescript-eslint/eslint-plugin` and `@typescript-eslint/eslint-parser` minimum version requirements for ESLint, NodeJS, and TS
+* **deps:** updated dependency requirements
+    
+- added new `@typescript-eslint/eslint-plugin` 6.21.0 rules: `prefer-find`
+    
+
+* **deps:** update all non-major dependencies ([#222](https://github.com/zendeskgarden/eslint-config/issues/222)) ([510138d](https://github.com/zendeskgarden/eslint-config/commit/510138d401367b5c9a4cadc7716b406fbc55b664))
+* **deps:** update typescript-eslint monorepo to v7 ([#223](https://github.com/zendeskgarden/eslint-config/issues/223)) ([baf9c81](https://github.com/zendeskgarden/eslint-config/commit/baf9c810b230e9bec5f49c688227af79252e7b81))
+
 ## [37.0.0](https://github.com/zendeskgarden/eslint-config/compare/v36.0.0...v37.0.0) (2024-01-19)
 
 
