@@ -208,6 +208,8 @@ module.exports = {
     // requires type annotations to exist
     '@typescript-eslint/typedef': 2,
     // warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
-    '@typescript-eslint/unified-signatures': 2
+    '@typescript-eslint/unified-signatures': 2,
+    // requires type annotation of catch() parameter remain unknown
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2
   }
 };
