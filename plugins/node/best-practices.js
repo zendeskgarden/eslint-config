@@ -6,9 +6,9 @@
  */
 
 module.exports = {
-  plugins: ['node'],
+  plugins: ['n'],
   rules: {
     // disallow deprecated APIs
-    'node/no-deprecated-api': 2
+    'n/no-deprecated-api': 2
   }
 };
