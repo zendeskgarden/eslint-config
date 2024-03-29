@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [39.0.0](https://github.com/zendeskgarden/eslint-config/compare/v38.0.0...v39.0.0) (2024-03-29)
+
 ## [38.0.0](https://github.com/zendeskgarden/eslint-config/compare/v37.0.0...v38.0.0) (2024-02-15)
 
 
