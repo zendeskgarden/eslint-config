@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [39.0.1](https://github.com/zendeskgarden/eslint-config/compare/v39.0.0...v39.0.1) (2024-04-01)
+
+
+### Bug Fixes
+
+* moves use-unknown-in-catch-callback-variable to semantics ([#227](https://github.com/zendeskgarden/eslint-config/issues/227)) ([5b47440](https://github.com/zendeskgarden/eslint-config/commit/5b47440f5eb3504d0ffa5b7ef30d3858fdb90898))
+
 ## [39.0.0](https://github.com/zendeskgarden/eslint-config/compare/v38.0.0...v39.0.0) (2024-03-29)
 
 ## [38.0.0](https://github.com/zendeskgarden/eslint-config/compare/v37.0.0...v38.0.0) (2024-02-15)
