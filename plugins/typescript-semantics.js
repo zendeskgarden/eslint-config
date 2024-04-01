@@ -110,6 +110,8 @@ module.exports = {
     // exhaustiveness checking in switch with union type
     '@typescript-eslint/switch-exhaustiveness-check': 2,
     // enforces unbound methods are called with their expected scope
-    '@typescript-eslint/unbound-method': 2
+    '@typescript-eslint/unbound-method': 2,
+    // requires type annotation of catch() parameter remain unknown
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2
   }
 };
