@@ -24,7 +24,7 @@
   "peerDependencies": {
     "@babel/eslint-parser": "^7.15.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-n": "^14.0.0"
+    "eslint-plugin-n": "^14.0.0 || ^17.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.3",
@@ -34,7 +34,7 @@
     "eslint": "8.57.0",
     "eslint-plugin-jest": "27.9.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
-    "eslint-plugin-n": "14.0.0",
+    "eslint-plugin-n": "17.5.1",
     "eslint-plugin-notice": "0.9.10",
     "eslint-plugin-react": "7.34.1",
     "eslint-plugin-react-hooks": "4.6.0",
