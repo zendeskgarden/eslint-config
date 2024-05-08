@@ -22,9 +22,18 @@
     "test": "npm run format && npm run lint && git diff --quiet"
   },
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.15.0",
-    "eslint": "^8.56.0 || ^9.0.0",
+    "@babel/eslint-parser": "^7.24.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-n": "^17.0.0"
+  },
+  "optionalDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint-plugin-jest": "^28.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-notice": "^0.9.10",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.3",

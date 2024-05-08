@@ -19,8 +19,6 @@ module.exports = {
     'no-dupe-class-members': 2,
     // disallow duplicate module imports
     'no-duplicate-imports': [2, { includeExports: true }],
-    // disallow use of the `new` operator with the `Symbol` object
-    'no-new-symbol': 2,
     // disallow specified names in exports
     'no-restricted-exports': 0,
     // restrict usage of specified node imports

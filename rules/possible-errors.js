@@ -23,6 +23,8 @@ module.exports = {
     'no-console': 1,
     // disallow use of constant expressions in conditions
     'no-constant-condition': 1,
+    // disallow expressions where the operation doesn't affect the value
+    'no-constant-binary-expression': 2,
     // disallow control characters in regular expressions
     'no-control-regex': 2,
     // disallow use of `debugger`
