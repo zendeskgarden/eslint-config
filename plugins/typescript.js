@@ -34,7 +34,7 @@ module.exports = {
     'no-loop-func': 0,
     'no-loss-of-precision': 0,
     'no-magic-numbers': 0,
-    'no-new-symbol': 0,
+    'no-new-native-nonconstructor': 0,
     'no-obj-calls': 0,
     'no-redeclare': 0,
     'no-restricted-imports': 0,
