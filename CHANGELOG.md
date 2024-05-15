@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [40.0.0](https://github.com/zendeskgarden/eslint-config/compare/v39.0.1...v40.0.0) (2024-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** updated dependency requirements
+
+`@typescript-eslint/eslint-plugin`:
+- removes rule `no-new-symbol`
+- adds `no-new-native-nonconstructor`
+* **deps:** update dependency eslint-plugin-n to v17 (#231)
+
+* **deps:** update all non-major dependencies ([#228](https://github.com/zendeskgarden/eslint-config/issues/228)) ([bc1d75d](https://github.com/zendeskgarden/eslint-config/commit/bc1d75d471bb5dcf45b156a1af9f313499d9b516))
+* **deps:** update dependency eslint-plugin-n to v17 ([#231](https://github.com/zendeskgarden/eslint-config/issues/231)) ([53aac80](https://github.com/zendeskgarden/eslint-config/commit/53aac80c0819d08b5cb6a30a803c29742119009c))
+
 ### [39.0.1](https://github.com/zendeskgarden/eslint-config/compare/v39.0.0...v39.0.1) (2024-04-01)
 
 
