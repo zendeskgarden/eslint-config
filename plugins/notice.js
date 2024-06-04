@@ -7,13 +7,21 @@ const TEMPLATE = `/**
 
 `;
 
-module.exports = {
-  plugins: ['notice'],
+import noticePlugin from 'eslint-plugin-notice';
+
+export default {
+  plugins: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    notice: noticePlugin
+  },
   rules: {
     // throw an error when a file doesn't have a copyright notice
-    'notice/notice': [2, {
-      template: TEMPLATE,
-      onNonMatchingHeader: 'replace'
-    }]
+    'notice/notice': [
+      2,
+      {
+        template: TEMPLATE,
+        onNonMatchingHeader: 'replace'
+      }
+    ]
   }
 };

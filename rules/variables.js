@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
+export default {
   rules: {
     // enforce or disallow variable initializations at definition
     'init-declarations': 0,
@@ -28,10 +28,13 @@ module.exports = {
     // disallow use of `undefined` variable
     'no-undefined': 0,
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': [2, {
-      vars: 'local',
-      args: 'after-used'
-    }],
+    'no-unused-vars': [
+      2,
+      {
+        vars: 'local',
+        args: 'after-used'
+      }
+    ],
     // disallow use of variables before they are defined
     'no-use-before-define': 2
   }

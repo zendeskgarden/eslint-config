@@ -5,10 +5,10 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
+export default {
   rules: {
     // require camel case names
-    'camelcase': [2, { properties: 'never' }],
+    camelcase: [2, { properties: 'never' }],
     // enforce or disallow capitalization of the first letter of a comment
     'capitalize-comments': 0,
     // enforces consistent naming when capturing the current execution context

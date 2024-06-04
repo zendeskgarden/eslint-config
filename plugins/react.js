@@ -5,12 +5,25 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
-  plugins: ['react', 'react-hooks', 'jsx-a11y'],
-  extends: ['plugin:jsx-a11y/recommended'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import reactPlugin from 'eslint-plugin-react';
+
+export default {
+  plugins: {
+    /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+    react: reactPlugin,
+    'react-hooks': reactHooksPlugin,
+    'jsx-a11y': jsxA11yPlugin
+    /* eslint-enable @typescript-eslint/no-unsafe-assignment */
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  ...jsxA11yPlugin.recommended,
+  languageOptions: {
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true
+      }
     }
   },
   settings: {

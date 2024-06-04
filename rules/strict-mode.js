@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
+export default {
   rules: {
     // controls location of Use Strict directives (controlled by babel)
     strict: [2, 'never']

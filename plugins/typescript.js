@@ -5,15 +5,29 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const bestPractices = require('../rules/best-practices').rules;
-const es6 = require('../rules/es6').rules;
-const possibleErrors = require('../rules/possible-errors').rules;
-const stylisticIssues = require('../rules/stylistic-issues').rules;
-const variables = require('../rules/variables').rules;
+import eslintBestPractices from '../rules/best-practices.js';
+import eslintES6 from '../rules/es6.js';
+import eslintPossibleErrors from '../rules/possible-errors.js';
+import eslintStylisticIssues from '../rules/stylistic-issues.js';
+import eslintVariables from '../rules/variables.js';
+import tseslint from 'typescript-eslint';
 
-module.exports = {
-  plugins: ['@typescript-eslint'],
-  parser: '@typescript-eslint/parser',
+const bestPractices = eslintBestPractices.rules;
+const es6 = eslintES6.rules;
+const possibleErrors = eslintPossibleErrors.rules;
+const stylisticIssues = eslintStylisticIssues.rules;
+const variables = eslintVariables.rules;
+
+export default {
+  plugins: {
+    '@typescript-eslint': tseslint.plugin
+  },
+  languageOptions: {
+    parser: tseslint.parser,
+    parserOptions: {
+      project: true
+    }
+  },
   rules: {
     // Disable ESLint rules that are handled by TypeScript
     'class-methods-use-this': 0,

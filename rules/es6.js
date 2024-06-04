@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
+export default {
   rules: {
     // require braces in arrow function body
     'arrow-body-style': 0,

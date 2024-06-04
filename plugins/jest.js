@@ -5,9 +5,18 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
-  plugins: ['jest'],
-  env: { 'jest/globals': true },
+import globals from 'globals';
+import jestPlugin from 'eslint-plugin-jest';
+
+export default {
+  plugins: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    jest: jestPlugin
+  },
+  languageOptions: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+    globals: globals.jest
+  },
   rules: {
     // have control over `test` and `it` usages
     'jest/consistent-test-it': 0,

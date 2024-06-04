@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
+export default {
   rules: {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 2,
@@ -16,11 +16,11 @@ module.exports = {
     // enforce that class methods utilize `this`
     'class-methods-use-this': 2,
     // specify the maximum cyclomatic complexity allowed in a program
-    'complexity': [0, 11],
+    complexity: [0, 11],
     // require `return` statements to either always or never specify values
     'consistent-return': 2,
     // specify curly brace conventions for all control statements
-    'curly': [2, 'multi-line'],
+    curly: [2, 'multi-line'],
     // require `default` case in `switch` statements
     'default-case': 0,
     // enforce default clauses in switch statements to be last
@@ -30,7 +30,7 @@ module.exports = {
     // encourages use of dot notation whenever possible
     'dot-notation': [2, { allowKeywords: true }],
     // require the use of `===` and `!==`
-    'eqeqeq': 2,
+    eqeqeq: 2,
     // require grouped accessor pairs in object literals and classes
     'grouped-accessor-pairs': [2, 'getBeforeSet'],
     // make sure `for-in` loops have an `if` statement
@@ -142,10 +142,13 @@ module.exports = {
     // disallow use of `void` operator
     'no-void': 0,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': [0, {
-      terms: ['todo', 'fixme'],
-      location: 'start'
-    }],
+    'no-warning-comments': [
+      0,
+      {
+        terms: ['todo', 'fixme'],
+        location: 'start'
+      }
+    ],
     // disallow use of the `with` statement
     'no-with': 2,
     // enforce using named capture group in regular expression
@@ -155,7 +158,7 @@ module.exports = {
     // disallow use of the `RegExp` constructor in favor of regular expression literals
     'prefer-regex-literals': 2,
     // require use of the second argument for `parseInt()`
-    'radix': 2,
+    radix: 2,
     // disallow async functions which have no `await` expression
     'require-await': 2,
     // enforce the use of u flag on RegExp
@@ -163,6 +166,6 @@ module.exports = {
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 2,
     // require or disallow Yoda conditions
-    'yoda': 2
+    yoda: 2
   }
 };
