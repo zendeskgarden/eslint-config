@@ -22,6 +22,10 @@ export default {
     'jest/consistent-test-it': 0,
     // enforce assertion to be made in a test body
     'jest/expect-expect': 2,
+    // enforces a maximum number assertion calls in a test body
+    'max-expects': 0,
+    // enforces a maximum depth to nested describe calls
+    'max-nested-describe': 0,
     // disallow alias methods
     'jest/no-alias-methods': 2,
     // disallow commented out tests
@@ -30,6 +34,8 @@ export default {
     'jest/no-conditional-expect': 0,
     // disallow conditionals in test
     'jest/no-conditional-in-test': 0,
+    // isallow confusing usages of jest.setTimeout
+    'jest/no-confusing-set-timeout': 2,
     // disallow use of deprecated functions
     'jest/no-deprecated-functions': 2,
     // disallow disabled tests
@@ -54,6 +60,8 @@ export default {
     'jest/no-large-snapshots': 0,
     // disallow manually importing from `__mocks__`
     'jest/no-mocks-import': 2,
+    // disallow specific `jest.` methods
+    'jest/no-restricted-jest-methods': 0,
     // disallow specific matchers & modifiers
     'jest/no-restricted-matchers': 0,
     // disallow using `expect` outside of `it` or `test` blocks
@@ -66,16 +74,26 @@ export default {
     'jest/no-untyped-mock-factory': 2,
     // suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     'jest/prefer-called-with': 0,
+    // suggest using the built-in comparison matchers
+    'jest/prefer-comparison-matcher': 2,
     // prefer using `.each` rather than manual loops
     'jest/prefer-each': 2,
+    // suggest using the built-in equality matchers
+    'jest/prefer-equality-matcher': 2,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
     'jest/prefer-expect-assertions': 0,
     // suggest `await expect(...).resolves` over `expect(await ...)` syntax
     'jest/prefer-expect-resolves': 2,
+    // prefer having hooks in a consistent order
+    'jest/prefer-hooks-in-order': 2,
     // suggest having hooks before any test cases
     'jest/prefer-hooks-on-top': 0,
+    // prefer importing Jest globals
+    'jest/prefer-importing-jest-globals': 0,
     // enforce lowercase test names
     'jest/prefer-lowercase-title': [1, { ignore: ['describe'] }],
+    // prefer mock resolved/rejected shorthands for promises
+    'jest/prefer-mock-promise-shorthand': 1,
     // suggest having a hint for snapshots
     'jest/prefer-snapshot-hint': 1,
     // suggest using `jest.spyOn()`

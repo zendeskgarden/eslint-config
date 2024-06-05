@@ -6,22 +6,16 @@
  */
 
 import babelParser from '@babel/eslint-parser';
-import eslintBestPractices from './rules/best-practices.js';
-import eslintES6 from './rules/es6.js';
-import eslintPossibleErrors from './rules/possible-errors.js';
-import eslintStrictMode from './rules/strict-mode.js';
-import eslintStylisticIssues from './rules/stylistic-issues.js';
-import eslintVariables from './rules/variables.js';
+import eslintLayoutFormatting from './rules/layout-formatting.js';
+import eslintPossibleProblems from './rules/possible-problems.js';
+import eslintSuggestions from './rules/suggestions.js';
 import globals from 'globals';
 import nodePlugin from './plugins/node.js';
 
 export default [
-  eslintPossibleErrors,
-  eslintBestPractices,
-  eslintStrictMode,
-  eslintVariables,
-  eslintStylisticIssues,
-  eslintES6,
+  eslintLayoutFormatting,
+  eslintPossibleProblems,
+  eslintSuggestions,
   nodePlugin,
   {
     languageOptions: {

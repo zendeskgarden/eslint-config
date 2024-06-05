@@ -29,7 +29,7 @@ export default {
     // require error handling in callbacks
     'n/handle-callback-err': 0,
     // suggest correct usage of hashbang
-    'n/shebang': 0,
+    'n/hashbang': 0,
     // ensure Node.js-style error-first callback pattern is followed
     'n/no-callback-literal': 1,
     // disallow deprecated APIs

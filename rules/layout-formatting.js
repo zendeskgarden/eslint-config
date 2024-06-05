@@ -7,7 +7,7 @@
 
 export default {
   rules: {
-    // controls location of Use Strict directives (controlled by babel)
-    strict: [2, 'never']
+    // require or disallow Unicode byte order mark (BOM)
+    'unicode-bom': 2
   }
 };

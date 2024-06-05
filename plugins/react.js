@@ -32,6 +32,8 @@ export default {
     }
   },
   rules: {
+    // disallow `aria-hidden="true"` from being set on focusable elements
+    'jsx-a11y/no-aria-hidden-on-focusable': 2,
     // enforces using semantic DOM elements over the ARIA role property.
     'jsx-a11y/prefer-tag-over-role': 2,
 
@@ -39,6 +41,8 @@ export default {
     'react/boolean-prop-naming': 1,
     // forbid "button" element without an explicit "type" attribute
     'react/button-has-type': 2,
+    // enforce using `onChange` or `readonly` attribute when checked is used
+    'react/checked-requires-onchange-or-readonly': 2,
     // enforce all defaultProps are defined and not "required" in propTypes
     'react/default-props-match-prop-types': 0,
     // enforce consistent usage of destructuring assignment of props, state, and context
@@ -115,6 +119,8 @@ export default {
     'react/jsx-no-constructed-context-values': 2,
     // enforce no duplicate props
     'react/jsx-no-duplicate-props': 2,
+    // disallow problematic leaked values from being rendered
+    'react/jsx-no-leaked-render': 2,
     // prevent using string literals in React component definition
     'react/jsx-no-literals': 0,
     // forbid `javascript:` URLs
@@ -195,6 +201,8 @@ export default {
     'react/no-unknown-property': 2,
     // prevent usage of unsafe lifecycle methods
     'react/no-unsafe': 2,
+    // disallow creating unstable components inside components
+    'react/no-unstable-nested-components': 2,
     // Prevent declaring unused methods of component class
     'react/no-unused-class-component-methods': 2,
     // prevent definitions of unused prop types
