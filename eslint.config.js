@@ -7,7 +7,7 @@
 
 import config from './index.js';
 import jestPlugin from './plugins/jest.js';
-// import noticePlugin from './plugins/notice.js';
+import noticePlugin from './plugins/notice.js';
 import reactPlugin from './plugins/react.js';
 import typescriptPlugin from './plugins/typescript.js';
 import typescriptTypeCheckedPlugin from './plugins/typescript-type-checked.js';
@@ -15,7 +15,7 @@ import typescriptTypeCheckedPlugin from './plugins/typescript-type-checked.js';
 export default [
   ...config,
   jestPlugin,
-  // noticePlugin,
+  noticePlugin,
   reactPlugin,
   typescriptPlugin,
   typescriptTypeCheckedPlugin,

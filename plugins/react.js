@@ -5,6 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+import { fixupPluginRules } from '@eslint/compat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
@@ -13,12 +14,11 @@ export default {
   plugins: {
     /* eslint-disable @typescript-eslint/no-unsafe-assignment */
     react: reactPlugin,
-    'react-hooks': reactHooksPlugin,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    'react-hooks': fixupPluginRules(reactHooksPlugin), // TODO remove fixup when eslint-plugin-react-hooks 5.x is released
     'jsx-a11y': jsxA11yPlugin
     /* eslint-enable @typescript-eslint/no-unsafe-assignment */
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  ...jsxA11yPlugin.recommended,
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {
@@ -31,7 +31,10 @@ export default {
       version: 'detect'
     }
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   rules: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    ...jsxA11yPlugin.configs.recommended.rules,
     // disallow `aria-hidden="true"` from being set on focusable elements
     'jsx-a11y/no-aria-hidden-on-focusable': 2,
     // enforces using semantic DOM elements over the ARIA role property.

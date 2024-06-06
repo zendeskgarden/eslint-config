@@ -108,9 +108,6 @@ export default {
     // disallow generic `Array` constructors
     '@typescript-eslint/no-array-constructor':
       eslintRules['no-array-constructor'],
-    // disallow generic `Array` constructors
-    '@typescript-eslint/no-array-constructor':
-      eslintRules['no-array-constructor'],
     // disallow non-null assertion in locations that may be confusing
     '@typescript-eslint/no-confusing-non-null-assertion': 2,
     // disallow duplicate class members
@@ -203,8 +200,6 @@ export default {
     '@typescript-eslint/sort-type-constituents': 0,
     // sets preference level for triple slash directives versus ES6-style import declarations
     '@typescript-eslint/triple-slash-reference': 2,
-    // require consistent spacing around type annotations
-    '@typescript-eslint/type-annotation-spacing': 2,
     // requires type annotations to exist
     '@typescript-eslint/typedef': 2,
     // warns for any two overloads that could be unified into one by using a union or an optional/rest parameter

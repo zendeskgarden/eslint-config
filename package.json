@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "7.24.6",
+    "@eslint/compat": "1.0.3",
     "eslint-plugin-jest": "28.5.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-n": "17.7.0",
