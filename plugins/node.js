@@ -39,7 +39,7 @@ export default {
     // disallow `require()` expressions which import extraneous modules
     'n/no-extraneous-require': 0,
     // disallow `import` declarations which import non-existence modules
-    'n/no-missing-import': 0,
+    'n/no-missing-import': 2,
     // disallow `require()` expressions which import non-existence modules
     'n/no-missing-require': 2,
     // disallow mixing regular variable and `require` declarations
