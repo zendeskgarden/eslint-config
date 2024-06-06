@@ -10,11 +10,9 @@ import nodePlugin from 'eslint-plugin-n';
 
 export default {
   plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     n: nodePlugin
   },
   languageOptions: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
     globals: globals.node
   },
   rules: {

@@ -10,11 +10,9 @@ import jestPlugin from 'eslint-plugin-jest';
 
 export default {
   plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     jest: jestPlugin
   },
   languageOptions: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
     globals: globals.jest
   },
   rules: {

@@ -19,14 +19,10 @@ export default [
   nodePlugin,
   {
     languageOptions: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       globals: {
-        /* eslint-disable @typescript-eslint/no-unsafe-member-access */
         ...globals.browser,
         ...globals.es2020
-        /* eslint-enable @typescript-eslint/no-unsafe-member-access */
       },
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       parser: babelParser,
       parserOptions: {
         ecmaFeatures: {

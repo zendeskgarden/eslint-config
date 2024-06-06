@@ -12,12 +12,10 @@ import reactPlugin from 'eslint-plugin-react';
 
 export default {
   plugins: {
-    /* eslint-disable @typescript-eslint/no-unsafe-assignment */
     react: reactPlugin,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    'react-hooks': fixupPluginRules(reactHooksPlugin), // TODO remove fixup when eslint-plugin-react-hooks 5.x is released
+    // TODO remove fixup when eslint-plugin-react-hooks 5.x is released
+    'react-hooks': fixupPluginRules(reactHooksPlugin),
     'jsx-a11y': jsxA11yPlugin
-    /* eslint-enable @typescript-eslint/no-unsafe-assignment */
   },
   languageOptions: {
     parserOptions: {
@@ -31,9 +29,7 @@ export default {
       version: 'detect'
     }
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   rules: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     ...jsxA11yPlugin.configs.recommended.rules,
     // disallow `aria-hidden="true"` from being set on focusable elements
     'jsx-a11y/no-aria-hidden-on-focusable': 2,
