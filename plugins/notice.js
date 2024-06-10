@@ -7,28 +7,11 @@ const TEMPLATE = `/**
 
 `;
 
-import { fixupPluginRules } from '@eslint/compat';
 import noticePlugin from 'eslint-plugin-notice';
-
-// TODO remove when https://github.com/nickdeis/eslint-plugin-notice/pull/21 is released
-const fixupNoticePlugin = fixupPluginRules(noticePlugin);
-const _noticePlugin = {
-  ...fixupNoticePlugin,
-  rules: {
-    ...fixupNoticePlugin.rules,
-    notice: {
-      ...fixupNoticePlugin.rules.notice,
-      meta: {
-        ...fixupNoticePlugin.rules.notice.meta,
-        schema: false
-      }
-    }
-  }
-};
 
 export default {
   plugins: {
-    notice: _noticePlugin
+    notice: noticePlugin
   },
   rules: {
     // throw an error when a file doesn't have a copyright notice
