@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [41.0.0](https://github.com/zendeskgarden/eslint-config/compare/v40.0.0...v41.0.0) (2024-06-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** the upgrade to ESLint v9 requires the new [flat config format](https://eslint.org/docs/latest/use/migrate-to-9.0.0#flat-config). Additional features include:
+
+- updated rule parity with eslint and all bundled plugins – jest, jsx-a11y, node, react, react-hooks, and typescript-eslint
+- moved plugin peer dependencies to direct dependencies, per updated eslint documentation
+
+See the updated [README](https://github.com/zendeskgarden/eslint-config?tab=readme-ov-file#readme) for details.
+
+* **deps:** update dependency eslint to v9 ([#229](https://github.com/zendeskgarden/eslint-config/issues/229)) ([29526b6](https://github.com/zendeskgarden/eslint-config/commit/29526b6484e45b00d42bf3819c917ded66fb5ef0))
+
 ## [40.0.0](https://github.com/zendeskgarden/eslint-config/compare/v39.0.1...v40.0.0) (2024-05-15)
 
 
