@@ -1,11 +1,9 @@
-# Garden ESLint Config [![npm version][npm version badge]][npm version link] [![Build Status][build status badge]][build status link] [![Dependency Status][dependency status badge]][dependency status link]
+# Garden ESLint Config [![npm version][npm version badge]][npm version link] [![Build Status][build status badge]][build status link]
 
 [npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/eslint-config
 [npm version link]: https://www.npmjs.com/package/@zendeskgarden/eslint-config
 [build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/eslint-config/main?label=build
 [build status link]: https://circleci.com/gh/zendeskgarden/eslint-config/tree/main
-[dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/eslint-config?label=dependencies
-[dependency status link]: https://david-dm.org/zendeskgarden/eslint-config?type=dev
 
 > :seedling: Garden is the design system by Zendesk
 
@@ -16,22 +14,22 @@ selection of associated [plugins](#plugins).
 ## Installation
 
 ```sh
-npm install eslint @babel/eslint-parser eslint-plugin-node @zendeskgarden/eslint-config
+npm install eslint @zendeskgarden/eslint-config
 ```
 
 ## Usage
 
-Add a `.eslintrc.json` to your project with an `extends` property like this:
+Add a `eslint.config.mjs` to your project like this:
 
-```json
-{
-  "extends": "@zendeskgarden"
-}
+```js
+import config from '@zendeskgarden/eslint-config';
+
+export default config;
 ```
 
 Now Garden linting rules will apply to your project. See the [ESLint
-Documentation](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
-for more details on extending shareable configuration files.
+Documentation](https://eslint.org/docs/latest/extend/shareable-configs#using-a-shareable-config)
+for more details on using shareable configuration files.
 
 ### Plugins
 
@@ -43,104 +41,102 @@ Install the following dependency in addition to those [listed](#installation)
 above.
 
 ```sh
-npm install jest eslint-plugin-jest
+npm install jest
 ```
 
-Extend the base configuration.
+Update the default configuration.
 
-```json
-{
-  "extends": ["@zendeskgarden", "@zendeskgarden/eslint-config/plugins/jest"]
-}
+```js
+import config from '@zendeskgarden/eslint-config';
+import jestPlugin from '@zendeskgarden/eslint-config/plugins/jest.js';
+
+export default [...config, jestPlugin];
 ```
 
 In some cases, it may be useful to limit the scope of the Jest rules via
-`overrides`.
+`files`.
 
-```json
-{
-  "extends": "@zendeskgarden",
-  "overrides": [
-    {
-      "files": ["*.spec.*"],
-      "extends": "@zendeskgarden/eslint-config/plugins/jest"
-    }
-  ]
-}
+```js
+export default [
+  ...config,
+  {
+    files: ['**/*.spec.*'],
+    ...jestPlugin
+  }
+];
 ```
 
 #### React
 
 The React plugin bundles rules for React, React Hooks, and JSX accessibility.
-Install the following dependencies in addition to those
-[listed](#installation) above.
+Install the following dependency in addition to those [listed](#installation)
+above.
 
 ```sh
-npm install eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm install react
 ```
 
-Extend the base configuration.
+Update the default configuration.
 
-```json
-{
-  "extends": ["@zendeskgarden", "@zendeskgarden/eslint-config/plugins/react"]
-}
+```js
+import config from '@zendeskgarden/eslint-config';
+import reactPlugin from '@zendeskgarden/eslint-config/plugins/react.js';
+
+export default [...config, reactPlugin];
 ```
 
 #### TypeScript
 
-Install the following dependencies in addition to those
-[listed](#installation) above.
+Install the following dependency in addition to those [listed](#installation)
+above.
 
 ```sh
-npm install typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm install typescript
 ```
 
-Extend the base configuration.
+Update the default configuration.
 
-```json
-{
-  "extends": [
-    "@zendeskgarden",
-    "@zendeskgarden/eslint-config/plugins/typescript"
-  ]
-}
+```js
+import config from '@zendeskgarden/eslint-config';
+import typescriptPlugin from '@zendeskgarden/eslint-config/plugins/typescript.js';
+
+export default [...config, typescriptPlugin];
 ```
 
 For mixed JS and TS codebases, it may be useful to limit the scope of the
-TypeScript rules via `overrides`.
+TypeScript rules via `files`.
 
-```json
-{
-  "extends": "@zendeskgarden",
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "extends": "@zendeskgarden/eslint-config/plugins/typescript"
-    }
-  ]
-}
+```js
+export default [
+  ...config,
+  {
+    files: ['**/*.{ts, tsx}'],
+    ...typescriptPlugin
+  }
+];
 ```
 
 The `typescript` plugin covers rules for syntax checking. An additional
-`typescript-semantics` plugin provides rules based on semantics. The
-`typescript-semantics` plugin requires type information in order to execute.
-Set `parserOptions.project` to a valid TSConfig for the project. See
-[typescript-eslint
-documentation](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md)
+`typescript-type-checked` plugin provides rules based on semantics. The
+`typescript-type-checked` plugin requires type information in order to execute.
+Set `languageOptions.parserOptions.project` to a valid TSConfig for the project. See
+[typescript-eslint documentation](https://typescript-eslint.io/getting-started/typed-linting)
 for details.
 
-```json
-{
-  "extends": [
-    "@zendeskgarden",
-    "@zendeskgarden/eslint-config/plugins/typescript",
-    "@zendeskgarden/eslint-config/plugins/typescript-semantics"
-  ],
-  "parserOptions": {
-    "project": ["./tsconfig.json"]
+```js
+export default [
+  ...config,
+  typescriptPlugin,
+  typescriptTypeCheckedPlugin,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.json'],
+        requireConfigFile: false
+      }
+    }
   }
-}
+];
 ```
 
 ## Resources
@@ -167,6 +163,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2021 Zendesk
+Copyright 2024 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)

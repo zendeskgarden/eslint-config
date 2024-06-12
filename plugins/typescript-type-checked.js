@@ -5,15 +5,30 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const bestPractices = require('../rules/best-practices').rules;
-const es6 = require('../rules/es6').rules;
-const possibleErrors = require('../rules/possible-errors').rules;
+import eslintLayoutFormatting from '../rules/layout-formatting.js';
+import eslintPossibleProblems from '../rules/possible-problems.js';
+import eslintSuggestions from '../rules/suggestions.js';
+import tseslint from 'typescript-eslint';
 
-module.exports = {
-  plugins: ['@typescript-eslint'],
-  parser: '@typescript-eslint/parser',
+const eslintRules = {
+  ...eslintLayoutFormatting.rules,
+  ...eslintPossibleProblems.rules,
+  ...eslintSuggestions.rules
+};
+
+export default {
+  plugins: {
+    '@typescript-eslint': tseslint.plugin
+  },
+  languageOptions: {
+    parser: tseslint.parser,
+    parserOptions: {
+      project: true
+    }
+  },
   rules: {
     // Disable ESLint rules that are handled by TypeScript
+    'consistent-return': 0,
     'dot-notation': 0,
     'no-implied-eval': 0,
     'no-throw-literal': 0,
@@ -23,8 +38,30 @@ module.exports = {
 
     // disallows awaiting a value that is not a `Thenable`
     '@typescript-eslint/await-thenable': 2,
+    // require `return` statements to either always or never specify values
+    '@typescript-eslint/consistent-return': eslintRules['consistent-return'],
+    // enforce consistent usage of type exports
+    '@typescript-eslint/consistent-type-exports': 2,
     // enforce dot notation whenever possible
-    '@typescript-eslint/dot-notation': bestPractices['dot-notation'],
+    '@typescript-eslint/dot-notation': eslintRules['dot-notation'],
+    // enforce naming conventions for everything across a codebase
+    '@typescript-eslint/naming-convention': [
+      2,
+      {
+        selector: 'default',
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        prefix: ['I']
+      },
+      {
+        selector: 'objectLiteralProperty',
+        format: null
+      }
+    ],
     // disallow using the `delete` operator on array values
     '@typescript-eslint/no-array-delete': 2,
     // requires that `.toString()` is only called on objects which provide useful information when stringified
@@ -38,20 +75,24 @@ module.exports = {
     // disallow iterating over an array with a for-in loop
     '@typescript-eslint/no-for-in-array': 2,
     // disallow the use of `eval()`-like methods
-    '@typescript-eslint/no-implied-eval': bestPractices['no-implied-eval'],
+    '@typescript-eslint/no-implied-eval': eslintRules['no-implied-eval'],
+    // disallow the `void` operator except when used to discard a value
+    '@typescript-eslint/no-meaningless-void-operator': 2,
     // avoid using promises in places not designed to handle them
     '@typescript-eslint/no-misused-promises': 2,
+    // disallow enums from having both number and string members
+    '@typescript-eslint/no-mixed-enums': 2,
     // disallow members of unions and intersections that do nothing or override type information
     '@typescript-eslint/no-redundant-type-constituents': 2,
-    // disallow throwing literals as exceptions
-    '@typescript-eslint/no-throw-literal': bestPractices['no-throw-literal'],
     // flags unnecessary equality comparisons against boolean literals
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 2,
     // prevents conditionals where the type is always truthy or always falsy
     '@typescript-eslint/no-unnecessary-condition':
-      possibleErrors['no-constant-condition'],
+      eslintRules['no-constant-condition'],
     // warns when a namespace qualifier is unnecessary
     '@typescript-eslint/no-unnecessary-qualifier': 1,
+    // disallow unnecessary template expressions
+    '@typescript-eslint/no-unnecessary-template-expression': 2,
     // enforces that type arguments will not be used if not required
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     // warns if a type assertion does not change the type of an expression
@@ -70,19 +111,24 @@ module.exports = {
     '@typescript-eslint/no-unsafe-return': 2,
     // require unary negation to take a number
     '@typescript-eslint/no-unsafe-unary-minus': 2,
-    // disallow unnecessary template literals
-    '@typescript-eslint/no-useless-template-literals': 2,
     // prefers a non-null assertion over explicit type cast when possible
     '@typescript-eslint/non-nullable-type-assertion-style': 1,
+    // disallow throwing non-`Error` values as exceptions
+    '@typescript-eslint/only-throw-error': eslintRules['no-throw-literal'],
     // require destructuring from arrays and/or objects
-    '@typescript-eslint/prefer-destructuring': es6['prefer-destructuring'],
+    '@typescript-eslint/prefer-destructuring':
+      eslintRules['prefer-destructuring'],
+    // enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result
+    '@typescript-eslint/prefer-find': 2,
     // enforce includes method over `indexOf` method
     '@typescript-eslint/prefer-includes': 2,
     // enforce the usage of the nullish coalescing operator instead of logical chaining
     '@typescript-eslint/prefer-nullish-coalescing': 0,
+    // enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects
+    '@typescript-eslint/prefer-optional-chain': 2,
     // require using Error objects as Promise rejection reasons
     '@typescript-eslint/prefer-promise-reject-errors':
-      bestPractices['prefer-promise-reject-errors'],
+      eslintRules['prefer-promise-reject-errors'],
     // requires that private members are marked as `readonly` if they're never modified outside of the constructor
     '@typescript-eslint/prefer-readonly': 2,
     // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
@@ -100,11 +146,13 @@ module.exports = {
     // requires `Array#sort` calls to always provide a `compareFunction`
     '@typescript-eslint/require-array-sort-compare': 1,
     // disallow async functions which have no `await` expression
-    '@typescript-eslint/require-await': bestPractices['require-await'],
+    '@typescript-eslint/require-await': eslintRules['require-await'],
     // when adding two variables, operands must both be of type number or of type string
     '@typescript-eslint/restrict-plus-operands': 2,
     // enforce template literal expressions to be of string type
     '@typescript-eslint/restrict-template-expressions': 2,
+    // enforce consistent returning of awaited values
+    '@typescript-eslint/return-await': 2,
     // restricts the types allowed in boolean expressions
     '@typescript-eslint/strict-boolean-expressions': 1,
     // exhaustiveness checking in switch with union type

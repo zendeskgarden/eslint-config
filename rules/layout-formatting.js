@@ -5,10 +5,9 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-module.exports = {
-  plugins: ['n'],
+export default {
   rules: {
-    // disallow deprecated APIs
-    'n/no-deprecated-api': 2
+    // require or disallow Unicode byte order mark (BOM)
+    'unicode-bom': 2
   }
 };
