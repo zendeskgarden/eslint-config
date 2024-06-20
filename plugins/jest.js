@@ -88,6 +88,8 @@ export default {
     'jest/prefer-hooks-on-top': 0,
     // prefer importing Jest globals
     'jest/prefer-importing-jest-globals': 0,
+    // prefer `jest.mocked()` over `fn as jest.Mock`
+    'jest/prefer-jest-mocked': 2,
     // enforce lowercase test names
     'jest/prefer-lowercase-title': [1, { ignore: ['describe'] }],
     // prefer mock resolved/rejected shorthands for promises
