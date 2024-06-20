@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [42.0.0](https://github.com/zendeskgarden/eslint-config/compare/v41.0.0...v42.0.0) (2024-06-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** add new `jest/prefer-jest-mocked` rule
+
+* **deps:** update all non-major dependencies ([#233](https://github.com/zendeskgarden/eslint-config/issues/233)) ([18e50b2](https://github.com/zendeskgarden/eslint-config/commit/18e50b25e90adbc45837bc19f4463e4cc69a8444))
+
 ## [41.0.0](https://github.com/zendeskgarden/eslint-config/compare/v40.0.0...v41.0.0) (2024-06-12)
 
 
