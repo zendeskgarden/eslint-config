@@ -36,6 +36,15 @@ jobs:
       - *attach_workspace
       - run: npm test
 
+  deploy:
+    <<: *executor
+    environment:
+      NODE_DEBUG: gh-pages
+    steps:
+      - *attach_workspace
+      - run: npm run build:demo
+      - run: scripts/deploy.mjs
+
   publish:
     <<: *executor
     steps:
@@ -52,6 +61,10 @@ workflows:
           requires:
             - build
           <<: *filters_tags
+      - deploy:
+          requires:
+            - test
+          context: writer
       - publish:
           requires:
             - test
