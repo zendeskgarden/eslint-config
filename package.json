@@ -16,7 +16,6 @@
     "rules"
   ],
   "scripts": {
-    "build:demo": "npm run start build",
     "format": "prettier-package-json --write",
     "lint": "eslint eslint.config.js index.js plugins/*.js rules/*.js --max-warnings 0",
     "prepare": "husky",
@@ -42,7 +41,7 @@
   "devDependencies": {
     "@babel/core": "7.24.7",
     "@eslint/config-inspector": "0.5.0",
-    "@zendeskgarden/scripts": "2.1.0",
+    "@zendeskgarden/scripts": "2.3.0",
     "envalid": "8.0.0",
     "eslint": "9.5.0",
     "husky": "9.0.11",
