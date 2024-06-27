@@ -42,7 +42,12 @@ jobs:
       NODE_DEBUG: gh-pages
     steps:
       - *attach_workspace
-      - run: npm run build:demo
+      - run: |
+          if [ $CIRCLE_BRANCH == main ]; then
+            npm exec @eslint/config-inspector build --base eslint-config
+          else
+            npm exec @eslint/config-inspector build
+          fi
       - run: scripts/deploy.mjs
 
   publish:

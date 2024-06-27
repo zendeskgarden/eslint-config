@@ -35,7 +35,7 @@ envalid.cleanEnv(process.env, {
     let url;
 
     if (branch === 'main') {
-      url = await githubPages({ dir });
+      url = await githubPages({ dir, disableJekyll: true });
     } else {
       const bandwidth = await netlifyBandwidth();
       const usage = await cmdDu(dir);
