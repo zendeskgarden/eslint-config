@@ -43,7 +43,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: |
-          if [ $CIRCLE_BRANCH == main ]; then
+          if [ $CIRCLE_BRANCH == jzempel/fix-gh-pages ]; then
             npm exec @eslint/config-inspector build --base eslint-config
           else
             npm exec @eslint/config-inspector build
