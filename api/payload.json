@@ -2237,7 +2237,8 @@
     },
     {
       "plugins": {
-        "@typescript-eslint": {}
+        "@typescript-eslint": {},
+        "deprecation": {}
       },
       "languageOptions": {
         "parser": "typescript-eslint/parser",
@@ -2334,7 +2335,8 @@
         "@typescript-eslint/strict-boolean-expressions": 1,
         "@typescript-eslint/switch-exhaustiveness-check": 2,
         "@typescript-eslint/unbound-method": 2,
-        "@typescript-eslint/use-unknown-in-catch-callback-variable": 2
+        "@typescript-eslint/use-unknown-in-catch-callback-variable": 2,
+        "deprecation/deprecation": "warn"
       },
       "index": 13
     },
@@ -9677,6 +9679,16 @@
       "hasSuggestions": true,
       "name": "@typescript-eslint/use-unknown-in-catch-callback-variable",
       "plugin": "@typescript-eslint"
+    },
+    "deprecation/deprecation": {
+      "type": "problem",
+      "docs": {
+        "description": "Do not use deprecated APIs.",
+        "requiresTypeChecking": true,
+        "url": "https://github.com/gund/eslint-plugin-deprecation"
+      },
+      "name": "deprecation/deprecation",
+      "plugin": "deprecation"
     }
   },
   "files": [
@@ -9790,7 +9802,7 @@
     }
   ],
   "meta": {
-    "lastUpdate": 1719524272176,
+    "lastUpdate": 1723481843752,
     "basePath": "",
     "configPath": ""
   }
