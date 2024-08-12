@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [43.0.0](https://github.com/zendeskgarden/eslint-config/compare/v42.0.0...v43.0.0) (2024-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* throws a warning for any `@deprecated` usage
+
+### Features
+
+* add `config-inspector` deploy ([#234](https://github.com/zendeskgarden/eslint-config/issues/234)) ([5738853](https://github.com/zendeskgarden/eslint-config/commit/5738853fb8114a58c4813910707ede451f9cff67))
+* add deprecation plugin ([#236](https://github.com/zendeskgarden/eslint-config/issues/236)) ([ba2738b](https://github.com/zendeskgarden/eslint-config/commit/ba2738b86bc67ed4f14b065f5207404b53dfe351))
+
+
+### Bug Fixes
+
+* **scripts:** conditional branch deploy with Jekyll disabled ([#235](https://github.com/zendeskgarden/eslint-config/issues/235)) ([006359a](https://github.com/zendeskgarden/eslint-config/commit/006359a3aaaaf051f583c490102d0b2094c79232))
+
 ## [42.0.0](https://github.com/zendeskgarden/eslint-config/compare/v41.0.0...v42.0.0) (2024-06-20)
 
 
