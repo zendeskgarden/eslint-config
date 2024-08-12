@@ -5,9 +5,11 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+import deprecationPlugin from 'eslint-plugin-deprecation';
 import eslintLayoutFormatting from '../rules/layout-formatting.js';
 import eslintPossibleProblems from '../rules/possible-problems.js';
 import eslintSuggestions from '../rules/suggestions.js';
+import { fixupPluginRules } from '@eslint/compat';
 import tseslint from 'typescript-eslint';
 
 const eslintRules = {
@@ -18,7 +20,8 @@ const eslintRules = {
 
 export default {
   plugins: {
-    '@typescript-eslint': tseslint.plugin
+    '@typescript-eslint': tseslint.plugin,
+    deprecation: fixupPluginRules(deprecationPlugin)
   },
   languageOptions: {
     parser: tseslint.parser,
@@ -160,6 +163,8 @@ export default {
     // enforces unbound methods are called with their expected scope
     '@typescript-eslint/unbound-method': 2,
     // requires type annotation of catch() parameter remain unknown
-    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2,
+    // disallow usage of deprecated APIs
+    'deprecation/deprecation': 'warn'
   }
 };
