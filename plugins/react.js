@@ -5,7 +5,6 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { fixupPluginRules } from '@eslint/compat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
@@ -13,8 +12,7 @@ import reactPlugin from 'eslint-plugin-react';
 export default {
   plugins: {
     react: reactPlugin,
-    // TODO remove fixup when eslint-plugin-react-hooks 5.x is released
-    'react-hooks': fixupPluginRules(reactHooksPlugin),
+    'react-hooks': reactHooksPlugin,
     'jsx-a11y': jsxA11yPlugin
   },
   languageOptions: {
@@ -58,6 +56,8 @@ export default {
     'react/forbid-foreign-prop-types': 0,
     // forbid certain propTypes
     'react/forbid-prop-types': 0,
+    // require all forwardRef components include a ref parameter
+    'react/forward-ref-uses-ref': 2,
     // standardize the way function components get defined
     'react/function-component-definition': [
       1,
