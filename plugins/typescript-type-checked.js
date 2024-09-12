@@ -5,11 +5,9 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import deprecationPlugin from 'eslint-plugin-deprecation';
 import eslintLayoutFormatting from '../rules/layout-formatting.js';
 import eslintPossibleProblems from '../rules/possible-problems.js';
 import eslintSuggestions from '../rules/suggestions.js';
-import { fixupPluginRules } from '@eslint/compat';
 import tseslint from 'typescript-eslint';
 
 const eslintRules = {
@@ -20,8 +18,7 @@ const eslintRules = {
 
 export default {
   plugins: {
-    '@typescript-eslint': tseslint.plugin,
-    deprecation: fixupPluginRules(deprecationPlugin)
+    '@typescript-eslint': tseslint.plugin
   },
   languageOptions: {
     parser: tseslint.parser,
@@ -71,6 +68,8 @@ export default {
     '@typescript-eslint/no-base-to-string': 2,
     // requires expressions of type void to appear in statement position
     '@typescript-eslint/no-confusing-void-expression': 2,
+    // disallow using code marked as `@deprecated`
+    '@typescript-eslint/no-deprecated': 1,
     // disallows duplicate union or intersection type members
     '@typescript-eslint/no-duplicate-type-constituents': 2,
     // requires Promise-like values to be handled appropriately
@@ -165,8 +164,6 @@ export default {
     // enforces unbound methods are called with their expected scope
     '@typescript-eslint/unbound-method': 2,
     // requires type annotation of catch() parameter remain unknown
-    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2,
-    // disallow usage of deprecated APIs
-    'deprecation/deprecation': 'warn'
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 2
   }
 };
