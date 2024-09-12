@@ -121,6 +121,8 @@ export default {
     '@typescript-eslint/no-empty-function': eslintRules['no-empty-function'],
     // disallow the declaration of empty interfaces
     '@typescript-eslint/no-empty-interface': 2,
+    // disallow accidentally using the "empty object" type
+    '@typescript-eslint/no-empty-object-type': 2,
     // disallow usage of the `any` type
     '@typescript-eslint/no-explicit-any': 2,
     // disallow extra non-null assertion
@@ -163,10 +165,14 @@ export default {
     '@typescript-eslint/no-shadow': eslintRules['no-shadow'],
     // disallow aliasing `this`
     '@typescript-eslint/no-this-alias': 2,
+    // disallow unnecessary assignment of constructor property parameter
+    '@typescript-eslint/no-unnecessary-parameter-property-assignment': 2,
     // disallows unnecessary constraints on generic type
     '@typescript-eslint/no-unnecessary-type-constraint': 2,
     // disallows erging between classes and interfaces
     '@typescript-eslint/no-unsafe-declaration-merging': 2,
+    // disallow using the unsafe built-in Function type
+    '@typescript-eslint/no-unsafe-function-type': 2,
     // disallow unused expressions
     '@typescript-eslint/no-unused-expressions':
       eslintRules['no-unused-expressions'],
@@ -182,6 +188,8 @@ export default {
     '@typescript-eslint/no-useless-empty-export': 2,
     // disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 2,
+    // disallow using confusing built-in primitive class wrappers
+    '@typescript-eslint/no-wrapper-object-types': 2,
     // require or disallow parameter properties in class constructors
     '@typescript-eslint/parameter-properties': 0,
     // prefer usage of `as const` over literal type

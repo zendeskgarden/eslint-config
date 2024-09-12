@@ -100,6 +100,8 @@ export default {
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     // warns if a type assertion does not change the type of an expression
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
+    // disallow type parameters that aren't used multiple times
+    '@typescript-eslint/no-unnecessary-type-parameters': 1,
     // disallows calling an function with an any type value
     '@typescript-eslint/no-unsafe-argument': 2,
     // disallows assigning any to variables and properties
