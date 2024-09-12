@@ -2118,7 +2118,7 @@
       "languageOptions": {
         "parser": "typescript-eslint/parser",
         "parserOptions": {
-          "project": true
+          "projectService": true
         }
       },
       "rules": {
@@ -2138,7 +2138,6 @@
         "no-import-assign": 0,
         "no-invalid-this": 0,
         "no-loop-func": 0,
-        "no-loss-of-precision": 0,
         "no-magic-numbers": 0,
         "no-obj-calls": 0,
         "no-redeclare": 0,
@@ -2158,7 +2157,6 @@
         "@typescript-eslint/array-type": 1,
         "@typescript-eslint/ban-ts-comment": 2,
         "@typescript-eslint/ban-tslint-comment": 1,
-        "@typescript-eslint/ban-types": 2,
         "@typescript-eslint/class-literal-property-style": 2,
         "@typescript-eslint/class-methods-use-this": 2,
         "@typescript-eslint/consistent-generic-constructors": 2,
@@ -2188,7 +2186,6 @@
         "@typescript-eslint/no-duplicate-enum-values": 2,
         "@typescript-eslint/no-dynamic-delete": 2,
         "@typescript-eslint/no-empty-function": 2,
-        "@typescript-eslint/no-empty-interface": 2,
         "@typescript-eslint/no-empty-object-type": 2,
         "@typescript-eslint/no-explicit-any": 2,
         "@typescript-eslint/no-extra-non-null-assertion": 2,
@@ -2198,7 +2195,6 @@
         "@typescript-eslint/no-invalid-this": 2,
         "@typescript-eslint/no-invalid-void-type": 2,
         "@typescript-eslint/no-loop-func": 2,
-        "@typescript-eslint/no-loss-of-precision": 1,
         "@typescript-eslint/no-magic-numbers": 0,
         "@typescript-eslint/no-misused-new": 2,
         "@typescript-eslint/no-namespace": 2,
@@ -2208,6 +2204,7 @@
         "@typescript-eslint/no-redeclare": 2,
         "@typescript-eslint/no-require-imports": 2,
         "@typescript-eslint/no-restricted-imports": 0,
+        "@typescript-eslint/no-restricted-types": 2,
         "@typescript-eslint/no-shadow": 2,
         "@typescript-eslint/no-this-alias": 2,
         "@typescript-eslint/no-unnecessary-parameter-property-assignment": 2,
@@ -2230,7 +2227,6 @@
         "@typescript-eslint/no-use-before-define": 2,
         "@typescript-eslint/no-useless-constructor": 2,
         "@typescript-eslint/no-useless-empty-export": 2,
-        "@typescript-eslint/no-var-requires": 2,
         "@typescript-eslint/no-wrapper-object-types": 2,
         "@typescript-eslint/parameter-properties": 0,
         "@typescript-eslint/prefer-as-const": 2,
@@ -2248,8 +2244,7 @@
     },
     {
       "plugins": {
-        "@typescript-eslint": {},
-        "deprecation": {}
+        "@typescript-eslint": {}
       },
       "languageOptions": {
         "parser": "typescript-eslint/parser",
@@ -2302,6 +2297,7 @@
         "@typescript-eslint/no-array-delete": 2,
         "@typescript-eslint/no-base-to-string": 2,
         "@typescript-eslint/no-confusing-void-expression": 2,
+        "@typescript-eslint/no-deprecated": 1,
         "@typescript-eslint/no-duplicate-type-constituents": 2,
         "@typescript-eslint/no-floating-promises": 2,
         "@typescript-eslint/no-for-in-array": 2,
@@ -2347,18 +2343,23 @@
         "@typescript-eslint/strict-boolean-expressions": 1,
         "@typescript-eslint/switch-exhaustiveness-check": 2,
         "@typescript-eslint/unbound-method": 2,
-        "@typescript-eslint/use-unknown-in-catch-callback-variable": 2,
-        "deprecation/deprecation": "warn"
+        "@typescript-eslint/use-unknown-in-catch-callback-variable": 2
       },
       "index": 13
     },
     {
       "languageOptions": {
         "parserOptions": {
-          "project": [
-            "./tsconfig.mock.json"
-          ],
-          "requireConfigFile": false
+          "projectService": {
+            "allowDefaultProject": [
+              "eslint.config.js",
+              "index.js",
+              "plugins/*.js",
+              "rules/*.js"
+            ],
+            "defaultProject": "tsconfig.mock.json",
+            "maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING": 11
+          }
         }
       },
       "index": 14
@@ -8156,48 +8157,6 @@
       "name": "@typescript-eslint/ban-tslint-comment",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/ban-types": {
-      "type": "suggestion",
-      "docs": {
-        "description": "Disallow certain types",
-        "recommended": "recommended",
-        "url": "https://typescript-eslint.io/rules/ban-types"
-      },
-      "fixable": "code",
-      "hasSuggestions": true,
-      "name": "@typescript-eslint/ban-types",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/block-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/block-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Disallow or enforce spaces inside of blocks after opening block and before closing block",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/block-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/block-spacing",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/brace-style": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/brace-style"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent brace style for blocks",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/brace-style"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/brace-style",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/class-literal-property-style": {
       "type": "problem",
       "docs": {
@@ -8218,36 +8177,6 @@
         "url": "https://typescript-eslint.io/rules/class-methods-use-this"
       },
       "name": "@typescript-eslint/class-methods-use-this",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/comma-dangle": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/comma-dangle"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require or disallow trailing commas",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/comma-dangle"
-      },
-      "fixable": "code",
-      "name": "@typescript-eslint/comma-dangle",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/comma-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/comma-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing before and after commas",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/comma-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/comma-spacing",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/consistent-generic-constructors": {
@@ -8379,36 +8308,6 @@
       "name": "@typescript-eslint/explicit-module-boundary-types",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/func-call-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/func-call-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require or disallow spacing between function identifiers and their invocations",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/func-call-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/func-call-spacing",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/indent": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/indent"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent indentation",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/indent"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/indent",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/init-declarations": {
       "type": "suggestion",
       "docs": {
@@ -8419,66 +8318,6 @@
       "name": "@typescript-eslint/init-declarations",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/key-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/key-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing between property names and type annotations in types and interfaces",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/key-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/key-spacing",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/keyword-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/keyword-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing before and after keywords",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/keyword-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/keyword-spacing",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/lines-around-comment": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/lines-around-comment"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require empty lines around comments",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/lines-around-comment"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/lines-around-comment",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/lines-between-class-members": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/lines-between-class-members"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require or disallow an empty line between class members",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/lines-between-class-members"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/lines-between-class-members",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/max-params": {
       "type": "suggestion",
       "docs": {
@@ -8487,20 +8326,6 @@
         "url": "https://typescript-eslint.io/rules/max-params"
       },
       "name": "@typescript-eslint/max-params",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/member-delimiter-style": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/member-delimiter-style"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require a specific member delimiter style for interfaces and type literals",
-        "url": "https://typescript-eslint.io/rules/member-delimiter-style"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/member-delimiter-style",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/member-ordering": {
@@ -8549,7 +8374,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow using the `delete` operator on array values",
-        "recommended": "strict",
+        "recommended": "recommended",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/no-array-delete"
       },
@@ -8589,6 +8414,17 @@
       "fixable": "code",
       "hasSuggestions": true,
       "name": "@typescript-eslint/no-confusing-void-expression",
+      "plugin": "@typescript-eslint"
+    },
+    "@typescript-eslint/no-deprecated": {
+      "docs": {
+        "description": "Disallow using code marked as `@deprecated`",
+        "recommended": "strict",
+        "requiresTypeChecking": true,
+        "url": "https://typescript-eslint.io/rules/no-deprecated"
+      },
+      "type": "problem",
+      "name": "@typescript-eslint/no-deprecated",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/no-dupe-class-members": {
@@ -8650,9 +8486,12 @@
       "type": "suggestion",
       "docs": {
         "description": "Disallow the declaration of empty interfaces",
-        "recommended": "stylistic",
         "url": "https://typescript-eslint.io/rules/no-empty-interface"
       },
+      "deprecated": true,
+      "replacedBy": [
+        "@typescript-eslint/no-empty-object-type"
+      ],
       "fixable": "code",
       "hasSuggestions": true,
       "name": "@typescript-eslint/no-empty-interface",
@@ -8662,6 +8501,7 @@
       "type": "suggestion",
       "docs": {
         "description": "Disallow accidentally using the \"empty object\" type",
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-empty-object-type"
       },
       "hasSuggestions": true,
@@ -8689,36 +8529,6 @@
       },
       "fixable": "code",
       "name": "@typescript-eslint/no-extra-non-null-assertion",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/no-extra-parens": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/no-extra-parens"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Disallow unnecessary parentheses",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/no-extra-parens"
-      },
-      "fixable": "code",
-      "name": "@typescript-eslint/no-extra-parens",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/no-extra-semi": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/no-extra-semi"
-      ],
-      "type": "suggestion",
-      "docs": {
-        "description": "Disallow unnecessary semicolons",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/no-extra-semi"
-      },
-      "fixable": "code",
-      "name": "@typescript-eslint/no-extra-semi",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/no-extraneous-class": {
@@ -8819,9 +8629,9 @@
     },
     "@typescript-eslint/no-loss-of-precision": {
       "type": "problem",
+      "deprecated": true,
       "docs": {
         "description": "Disallow literal numbers that lose precision",
-        "recommended": "recommended",
         "extendsBaseRule": true,
         "url": "https://typescript-eslint.io/rules/no-loss-of-precision"
       },
@@ -8951,6 +8761,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow invocation of `require()`",
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-require-imports"
       },
       "name": "@typescript-eslint/no-require-imports",
@@ -8964,6 +8775,17 @@
         "url": "https://typescript-eslint.io/rules/no-restricted-imports"
       },
       "name": "@typescript-eslint/no-restricted-imports",
+      "plugin": "@typescript-eslint"
+    },
+    "@typescript-eslint/no-restricted-types": {
+      "type": "suggestion",
+      "docs": {
+        "description": "Disallow certain types",
+        "url": "https://typescript-eslint.io/rules/no-restricted-types"
+      },
+      "fixable": "code",
+      "hasSuggestions": true,
+      "name": "@typescript-eslint/no-restricted-types",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/no-shadow": {
@@ -8984,21 +8806,6 @@
         "url": "https://typescript-eslint.io/rules/no-this-alias"
       },
       "name": "@typescript-eslint/no-this-alias",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/no-throw-literal": {
-      "type": "problem",
-      "deprecated": true,
-      "replacedBy": [
-        "@typescript-eslint/only-throw-error"
-      ],
-      "docs": {
-        "description": "Disallow throwing literals as exceptions",
-        "extendsBaseRule": true,
-        "requiresTypeChecking": true,
-        "url": "https://typescript-eslint.io/rules/no-throw-literal"
-      },
-      "name": "@typescript-eslint/no-throw-literal",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/no-type-alias": {
@@ -9104,8 +8911,9 @@
     },
     "@typescript-eslint/no-unnecessary-type-parameters": {
       "docs": {
-        "description": "Disallow type parameters that only appear once",
+        "description": "Disallow type parameters that aren't used multiple times",
         "requiresTypeChecking": true,
+        "recommended": "strict",
         "url": "https://typescript-eslint.io/rules/no-unnecessary-type-parameters"
       },
       "type": "problem",
@@ -9172,6 +8980,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow using the unsafe built-in Function type",
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-unsafe-function-type"
       },
       "fixable": "code",
@@ -9204,6 +9013,7 @@
       "type": "problem",
       "docs": {
         "description": "Require unary negation to take a number",
+        "recommended": "recommended",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/no-unsafe-unary-minus"
       },
@@ -9215,6 +9025,7 @@
       "docs": {
         "description": "Disallow unused expressions",
         "extendsBaseRule": true,
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-unused-expressions"
       },
       "name": "@typescript-eslint/no-unused-expressions",
@@ -9263,26 +9074,14 @@
       "name": "@typescript-eslint/no-useless-empty-export",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/no-useless-template-literals": {
-      "fixable": "code",
-      "type": "suggestion",
-      "docs": {
-        "description": "Disallow unnecessary template expressions",
-        "requiresTypeChecking": true,
-        "url": "https://typescript-eslint.io/rules/no-useless-template-literals"
-      },
+    "@typescript-eslint/no-var-requires": {
       "deprecated": true,
       "replacedBy": [
-        "@typescript-eslint/no-unnecessary-template-expression"
+        "@typescript-eslint/no-require-imports"
       ],
-      "name": "@typescript-eslint/no-useless-template-literals",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/no-var-requires": {
       "type": "problem",
       "docs": {
         "description": "Disallow `require` statements except in import statements",
-        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-var-requires"
       },
       "name": "@typescript-eslint/no-var-requires",
@@ -9292,6 +9091,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow using confusing built-in primitive class wrappers",
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-wrapper-object-types"
       },
       "fixable": "code",
@@ -9310,47 +9110,16 @@
       "name": "@typescript-eslint/non-nullable-type-assertion-style",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/object-curly-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/object-curly-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing inside braces",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/object-curly-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/object-curly-spacing",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/only-throw-error": {
       "type": "problem",
       "docs": {
         "description": "Disallow throwing non-`Error` values as exceptions",
-        "recommended": "strict",
+        "recommended": "recommended",
         "extendsBaseRule": "no-throw-literal",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/only-throw-error"
       },
       "name": "@typescript-eslint/only-throw-error",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/padding-line-between-statements": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/padding-line-between-statements"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require or disallow padding lines between statements",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/padding-line-between-statements"
-      },
-      "fixable": "whitespace",
-      "hasSuggestions": false,
-      "name": "@typescript-eslint/padding-line-between-statements",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/parameter-properties": {
@@ -9399,6 +9168,7 @@
     "@typescript-eslint/prefer-find": {
       "docs": {
         "description": "Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result",
+        "recommended": "stylistic",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/prefer-find"
       },
@@ -9432,7 +9202,7 @@
       "type": "suggestion",
       "docs": {
         "description": "Enforce `includes` method over `indexOf` method",
-        "recommended": "strict",
+        "recommended": "stylistic",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/prefer-includes"
       },
@@ -9455,7 +9225,7 @@
       "type": "suggestion",
       "docs": {
         "description": "Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules",
-        "recommended": "stylistic",
+        "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/prefer-namespace-keyword"
       },
       "fixable": "code",
@@ -9491,7 +9261,7 @@
       "type": "suggestion",
       "docs": {
         "description": "Require using Error objects as Promise rejection reasons",
-        "recommended": "strict",
+        "recommended": "recommended",
         "extendsBaseRule": true,
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/prefer-promise-reject-errors"
@@ -9537,6 +9307,7 @@
       "fixable": "code",
       "docs": {
         "description": "Enforce `RegExp#exec` over `String#match` if no global flag is provided",
+        "recommended": "stylistic",
         "requiresTypeChecking": true,
         "url": "https://typescript-eslint.io/rules/prefer-regexp-exec"
       },
@@ -9592,21 +9363,6 @@
       "name": "@typescript-eslint/promise-function-async",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/quotes": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/quotes"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce the consistent use of either backticks, double, or single quotes",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/quotes"
-      },
-      "fixable": "code",
-      "name": "@typescript-eslint/quotes",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/require-array-sort-compare": {
       "type": "problem",
       "docs": {
@@ -9626,6 +9382,7 @@
         "extendsBaseRule": true,
         "url": "https://typescript-eslint.io/rules/require-await"
       },
+      "hasSuggestions": true,
       "name": "@typescript-eslint/require-await",
       "plugin": "@typescript-eslint"
     },
@@ -9679,27 +9436,17 @@
         "description": "Enforce consistent awaiting of returned promises",
         "requiresTypeChecking": true,
         "extendsBaseRule": "no-return-await",
+        "recommended": {
+          "strict": [
+            "error-handling-correctness-only"
+          ]
+        },
         "url": "https://typescript-eslint.io/rules/return-await"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "type": "problem",
       "name": "@typescript-eslint/return-await",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/semi": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/semi"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require or disallow semicolons instead of ASI",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/semi"
-      },
-      "fixable": "code",
-      "name": "@typescript-eslint/semi",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/sort-type-constituents": {
@@ -9716,51 +9463,6 @@
       "fixable": "code",
       "hasSuggestions": true,
       "name": "@typescript-eslint/sort-type-constituents",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/space-before-blocks": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/space-before-blocks"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing before blocks",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/space-before-blocks"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/space-before-blocks",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/space-before-function-paren": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/space-before-function-paren"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Enforce consistent spacing before function parenthesis",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/space-before-function-paren"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/space-before-function-paren",
-      "plugin": "@typescript-eslint"
-    },
-    "@typescript-eslint/space-infix-ops": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/space-infix-ops"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require spacing around infix operators",
-        "extendsBaseRule": true,
-        "url": "https://typescript-eslint.io/rules/space-infix-ops"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/space-infix-ops",
       "plugin": "@typescript-eslint"
     },
     "@typescript-eslint/strict-boolean-expressions": {
@@ -9796,20 +9498,6 @@
       "name": "@typescript-eslint/triple-slash-reference",
       "plugin": "@typescript-eslint"
     },
-    "@typescript-eslint/type-annotation-spacing": {
-      "deprecated": true,
-      "replacedBy": [
-        "@stylistic/ts/type-annotation-spacing"
-      ],
-      "type": "layout",
-      "docs": {
-        "description": "Require consistent spacing around type annotations",
-        "url": "https://typescript-eslint.io/rules/type-annotation-spacing"
-      },
-      "fixable": "whitespace",
-      "name": "@typescript-eslint/type-annotation-spacing",
-      "plugin": "@typescript-eslint"
-    },
     "@typescript-eslint/typedef": {
       "docs": {
         "description": "Require type annotations in certain places",
@@ -9842,7 +9530,7 @@
     },
     "@typescript-eslint/use-unknown-in-catch-callback-variable": {
       "docs": {
-        "description": "Enforce typing arguments in `.catch()` callbacks as `unknown`",
+        "description": "Enforce typing arguments in Promise rejection callbacks as `unknown`",
         "requiresTypeChecking": true,
         "recommended": "strict",
         "url": "https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable"
@@ -9852,16 +9540,6 @@
       "hasSuggestions": true,
       "name": "@typescript-eslint/use-unknown-in-catch-callback-variable",
       "plugin": "@typescript-eslint"
-    },
-    "deprecation/deprecation": {
-      "type": "problem",
-      "docs": {
-        "description": "Do not use deprecated APIs.",
-        "requiresTypeChecking": true,
-        "url": "https://github.com/gund/eslint-plugin-deprecation"
-      },
-      "name": "deprecation/deprecation",
-      "plugin": "deprecation"
     }
   },
   "files": [
@@ -9975,7 +9653,7 @@
     }
   ],
   "meta": {
-    "lastUpdate": 1726149468731,
+    "lastUpdate": 1726168219627,
     "basePath": "",
     "configPath": ""
   }
