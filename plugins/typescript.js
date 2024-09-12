@@ -23,7 +23,7 @@ export default {
   languageOptions: {
     parser: tseslint.parser,
     parserOptions: {
-      project: true
+      projectService: true
     }
   },
   rules: {
@@ -44,7 +44,6 @@ export default {
     'no-import-assign': 0,
     'no-invalid-this': 0,
     'no-loop-func': 0,
-    'no-loss-of-precision': 0,
     'no-magic-numbers': 0,
     'no-obj-calls': 0,
     'no-redeclare': 0,
@@ -69,8 +68,6 @@ export default {
     '@typescript-eslint/ban-ts-comment': 2,
     // bans `// tslint:<rule-flag>` comments from being used
     '@typescript-eslint/ban-tslint-comment': 1,
-    // bans specific types from being used
-    '@typescript-eslint/ban-types': 2,
     // ensures that literals on classes are exposed in a consistent style
     '@typescript-eslint/class-literal-property-style': 2,
     // enforce that class methods utilize `this`
@@ -119,8 +116,6 @@ export default {
     '@typescript-eslint/no-dynamic-delete': 2,
     // disallow empty functions
     '@typescript-eslint/no-empty-function': eslintRules['no-empty-function'],
-    // disallow the declaration of empty interfaces
-    '@typescript-eslint/no-empty-interface': 2,
     // disallow accidentally using the "empty object" type
     '@typescript-eslint/no-empty-object-type': 2,
     // disallow usage of the `any` type
@@ -139,9 +134,6 @@ export default {
     '@typescript-eslint/no-invalid-void-type': 2,
     // disallow function declarations that contain unsafe references inside loop statements
     '@typescript-eslint/no-loop-func': eslintRules['no-loop-func'],
-    // disallow literal numbers that lose precision
-    '@typescript-eslint/no-loss-of-precision':
-      eslintRules['no-loss-of-precision'],
     // disallow magic numbers
     '@typescript-eslint/no-magic-numbers': eslintRules['no-magic-numbers'],
     // enforce valid definition of `new` and `constructor`
@@ -161,6 +153,8 @@ export default {
     // restrict usage of specified node imports
     '@typescript-eslint/no-restricted-imports':
       eslintRules['no-restricted-imports'],
+    // disallow certain types
+    '@typescript-eslint/no-restricted-types': 2,
     // disallow variable declarations from shadowing variables declared in the outer scope
     '@typescript-eslint/no-shadow': eslintRules['no-shadow'],
     // disallow aliasing `this`
@@ -186,8 +180,6 @@ export default {
       eslintRules['no-useless-constructor'],
     // disallow unnecessary empty export
     '@typescript-eslint/no-useless-empty-export': 2,
-    // disallows the use of require statements except in import statements
-    '@typescript-eslint/no-var-requires': 2,
     // disallow using confusing built-in primitive class wrappers
     '@typescript-eslint/no-wrapper-object-types': 2,
     // require or disallow parameter properties in class constructors

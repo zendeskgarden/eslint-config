@@ -22,8 +22,16 @@ export default [
   {
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.mock.json'],
-        requireConfigFile: false
+        projectService: {
+          allowDefaultProject: [
+            'eslint.config.js',
+            'index.js',
+            'plugins/*.js',
+            'rules/*.js'
+          ],
+          defaultProject: 'tsconfig.mock.json',
+          maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING: 11
+        }
       }
     }
   },
