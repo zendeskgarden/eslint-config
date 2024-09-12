@@ -1,6 +1,41 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [44.0.0](https://github.com/zendeskgarden/eslint-config/compare/v43.0.0...v44.0.0) (2024-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** rules were removed, added, and enabled for the typescript plugins.
+
+- `typescript`
+  - `ban-types` (removed)
+  - `no-empty-interface` (removed)
+  - `no-loss-of-precision` (removed)
+  - `no-restricted-types` (added: error)
+  - `no-var-requires` (removed)
+- `typescript-type-checked`
+  - `deprecation/deprecation` (removed)
+  - `no-deprecated` (added: warning)
+* **deps:** adds and enables new plugin rules.
+
+- `react` plugin
+  - `react/forward-ref-uses-ref`
+- `typescript` plugin
+  - `@typescript-eslint/no-empty-object-type`
+  - `@typescript-eslint/no-unnecessary-parameter-property-assignment`
+  - `@typescript-eslint/no-unsafe-function-type`
+  - `@typescript-eslint/no-wrapper-object-types`
+- `typescript-type-checked` plugin
+  - `@typescript-eslint/no-unnecessary-type-parameters` (warning)
+
+* **deps:** update all non-major dependencies ([#237](https://github.com/zendeskgarden/eslint-config/issues/237)) ([e68a82a](https://github.com/zendeskgarden/eslint-config/commit/e68a82a0f97cd4a5dbfe23df9a18d379e2bd30b2))
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript-eslint to v8 ([#239](https://github.com/zendeskgarden/eslint-config/issues/239)) ([9884229](https://github.com/zendeskgarden/eslint-config/commit/9884229e36be008091fcab372317e6d32a430f6f))
 
 ## [43.0.0](https://github.com/zendeskgarden/eslint-config/compare/v42.0.0...v43.0.0) (2024-08-12)
 
