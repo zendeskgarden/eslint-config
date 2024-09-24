@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [44.0.1](https://github.com/zendeskgarden/eslint-config/compare/v44.0.0...v44.0.1) (2024-09-24)
+
+
+### Bug Fixes
+
+* **react:** plugin rules eslint v9 compatibility for `react-hooks` ([#240](https://github.com/zendeskgarden/eslint-config/issues/240)) ([41c291d](https://github.com/zendeskgarden/eslint-config/commit/41c291d3ecd99d86a0bfe3407bf8e04bcbfb6863))
+
 ## [44.0.0](https://github.com/zendeskgarden/eslint-config/compare/v43.0.0...v44.0.0) (2024-09-12)
 
 
