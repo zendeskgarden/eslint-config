@@ -5,6 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+import { fixupPluginRules } from '@eslint/compat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
@@ -12,7 +13,8 @@ import reactPlugin from 'eslint-plugin-react';
 export default {
   plugins: {
     react: reactPlugin,
-    'react-hooks': reactHooksPlugin,
+    // TODO remove fixup when eslint-plugin-react-hooks 5.x is released
+    'react-hooks': fixupPluginRules(reactHooksPlugin),
     'jsx-a11y': jsxA11yPlugin
   },
   languageOptions: {
