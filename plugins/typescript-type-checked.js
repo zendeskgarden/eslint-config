@@ -113,6 +113,8 @@ export default {
     '@typescript-eslint/no-unsafe-member-access': 2,
     // disallows returning any from a function
     '@typescript-eslint/no-unsafe-return': 2,
+    // disallow type assertions that narrow a type
+    '@typescript-eslint/no-unsafe-type-assertion': 2,
     // require unary negation to take a number
     '@typescript-eslint/no-unsafe-unary-minus': 2,
     // prefers a non-null assertion over explicit type cast when possible
@@ -147,6 +149,8 @@ export default {
     '@typescript-eslint/prefer-string-starts-ends-with': 2,
     // requires any function or method that returns a Promise to be marked async
     '@typescript-eslint/promise-function-async': 2,
+    // enforce that `get()` types should be assignable to their equivalent `set()` type
+    '@typescript-eslint/related-getter-setter-pairs': 2,
     // requires `Array#sort` calls to always provide a `compareFunction`
     '@typescript-eslint/require-array-sort-compare': 1,
     // disallow async functions which have no `await` expression
