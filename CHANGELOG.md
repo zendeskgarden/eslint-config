@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [45.0.0](https://github.com/zendeskgarden/eslint-config/compare/v44.0.1...v45.0.0) (2024-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** adds new `typescript-type-checked` rules added in `typescript-eslint` v8.15.0...
+- `@typescript-eslint/no-unsafe-type-assertion`
+- `@typescript-eslint/related-getter-setter-pairs`
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#242](https://github.com/zendeskgarden/eslint-config/issues/242)) ([2d3819b](https://github.com/zendeskgarden/eslint-config/commit/2d3819bec4606b81cce9da0682ddef8ae36fc5b8))
+* **deps:** update react monorepo (major) ([#243](https://github.com/zendeskgarden/eslint-config/issues/243)) ([09bbd82](https://github.com/zendeskgarden/eslint-config/commit/09bbd823095c44d78c1fd6d48de55341665dd664))
+
 ## [44.0.1](https://github.com/zendeskgarden/eslint-config/compare/v44.0.0...v44.0.1) (2024-09-24)
 
 
