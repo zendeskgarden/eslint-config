@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.26.0",
-    "@eslint/config-inspector": "0.6.0",
+    "@eslint/config-inspector": "1.2.0",
     "@zendeskgarden/scripts": "2.4.3",
     "commit-and-tag-version": "12.5.0",
     "envalid": "8.0.0",
