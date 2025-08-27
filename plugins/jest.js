@@ -76,6 +76,8 @@ export default {
     'jest/prefer-comparison-matcher': 2,
     // prefer using `.each` rather than manual loops
     'jest/prefer-each': 2,
+    // prefer having the last statement in a test be an assertion
+    'jest/prefer-ending-with-an-expect': 0,
     // suggest using the built-in equality matchers
     'jest/prefer-equality-matcher': 2,
     // suggest using `expect.assertions()` OR `expect.hasAssertions()`
