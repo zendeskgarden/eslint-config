@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [46.0.0](https://github.com/zendeskgarden/eslint-config/compare/v45.0.0...v46.0.0) (2025-08-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* adds the following rules set to 'error'
+
+- `no-unassigned-vars`
+- `n/no-top-level-await`
+- TypeScript plugin
+  - `@typescript-eslint/no-misused-spread`
+  - `@typescript-eslint/no-unnecessary-type-conversion`
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### Features
+
+* update all non-major dependencies ([#249](https://github.com/zendeskgarden/eslint-config/issues/249)) ([ac5b30e](https://github.com/zendeskgarden/eslint-config/commit/ac5b30efd3abf01fca2201e661997f655bbb0387))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to v29 ([#254](https://github.com/zendeskgarden/eslint-config/issues/254)) ([8967bf3](https://github.com/zendeskgarden/eslint-config/commit/8967bf3a8dd56463a9381063e5d6eb583af970ad))
+* **deps:** update dependency globals to v16 ([#252](https://github.com/zendeskgarden/eslint-config/issues/252)) ([e944fb4](https://github.com/zendeskgarden/eslint-config/commit/e944fb454c5dac21f4eb201c031fa7df4404c4ae))
+
 ## [45.0.0](https://github.com/zendeskgarden/eslint-config/compare/v44.0.1...v45.0.0) (2024-12-17)
 
 
