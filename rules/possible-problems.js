@@ -91,6 +91,8 @@ export default {
     'no-template-curly-in-string': 2,
     // disallow to use `this`/`super` before `super()` calling in constructors
     'no-this-before-super': 2,
+    // disallow `let` or `var` variables that are read but never assigned
+    'no-unassigned-vars': 2,
     // disallow use of undeclared variables unless mentioned in a `/*global*/` block
     'no-undef': 2,
     // avoid code that looks like two expressions but is actually one

@@ -58,6 +58,8 @@ export default {
     'n/no-restricted-require': 0,
     // disallow use of synchronous methods
     'n/no-sync': 0,
+    // disallow top-level `await` in published modules
+    'n/no-top-level-await': 2,
     // disallow `bin` files that npm ignores
     'n/no-unpublished-bin': 2,
     // disallow `import` declarations which import private modules

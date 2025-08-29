@@ -21,7 +21,7 @@ export default [
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.es2020
+        ...globals.es2025
       },
       parser: babelParser,
       parserOptions: {

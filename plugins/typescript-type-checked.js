@@ -82,6 +82,8 @@ export default {
     '@typescript-eslint/no-meaningless-void-operator': 2,
     // avoid using promises in places not designed to handle them
     '@typescript-eslint/no-misused-promises': 2,
+    // disallow using the spread operator when it might cause unexpected behavior
+    '@typescript-eslint/no-misused-spread': 2,
     // disallow enums from having both number and string members
     '@typescript-eslint/no-mixed-enums': 2,
     // disallow members of unions and intersections that do nothing or override type information
@@ -99,6 +101,8 @@ export default {
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     // warns if a type assertion does not change the type of an expression
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
+    // disallow conversion idioms when they do not change the type or value of the expression
+    '@typescript-eslint/no-unnecessary-type-conversion': 2,
     // disallow type parameters that aren't used multiple times
     '@typescript-eslint/no-unnecessary-type-parameters': 1,
     // disallows calling an function with an any type value
