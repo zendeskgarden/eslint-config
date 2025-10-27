@@ -1,1 +1,0 @@
-import{g as o,n as r,c as t,o as n,x as s}from"./CmtEZGNH.js";const p=o({__name:"index",setup(a){return r().replace("/configs"),(e,l)=>(n(),t("div",null,[s(e.$slots,"default")]))}});export{p as default};
