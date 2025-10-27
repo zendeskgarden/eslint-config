@@ -28,7 +28,7 @@ export default {
     }
   },
   rules: {
-    ...jsxA11yPlugin.configs.recommended.rules,
+    ...jsxA11yPlugin.flatConfigs.recommended.rules,
     // disallow `aria-hidden="true"` from being set on focusable elements
     'jsx-a11y/no-aria-hidden-on-focusable': 2,
     // enforces using semantic DOM elements over the ARIA role property.
