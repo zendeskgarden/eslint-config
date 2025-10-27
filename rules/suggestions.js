@@ -267,6 +267,8 @@ export default {
     'prefer-spread': 1,
     // suggest using template literals instead of strings concatenation
     'prefer-template': 2,
+    // Disallow losing originally caught error when re-throwing custom errors
+    'preserve-caught-error': 1,
     // require use of the second argument for `parseInt()`
     radix: 2,
     // disallow async functions which have no `await` expression

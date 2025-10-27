@@ -196,12 +196,8 @@ export default {
     '@typescript-eslint/prefer-literal-enum-member': 1,
     // require the use of the `namespace` keyword instead of the `module` keyword to declare custom TypeScript modules
     '@typescript-eslint/prefer-namespace-keyword': 2,
-    // enforce constituents of a type union/intersection to be sorted alphabetically
-    '@typescript-eslint/sort-type-constituents': 0,
     // sets preference level for triple slash directives versus ES6-style import declarations
     '@typescript-eslint/triple-slash-reference': 2,
-    // requires type annotations to exist
-    '@typescript-eslint/typedef': 2,
     // warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
     '@typescript-eslint/unified-signatures': 2
   }

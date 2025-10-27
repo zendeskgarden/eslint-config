@@ -28,7 +28,7 @@ export default {
     }
   },
   rules: {
-    ...jsxA11yPlugin.configs.recommended.rules,
+    ...jsxA11yPlugin.flatConfigs.recommended.rules,
     // disallow `aria-hidden="true"` from being set on focusable elements
     'jsx-a11y/no-aria-hidden-on-focusable': 2,
     // enforces using semantic DOM elements over the ARIA role property.
@@ -119,7 +119,10 @@ export default {
     // enforce no duplicate props
     'react/jsx-no-duplicate-props': 2,
     // disallow problematic leaked values from being rendered
-    'react/jsx-no-leaked-render': 2,
+    'react/jsx-no-leaked-render': [
+      2,
+      { validStrategies: ['coerce', 'ternary'] }
+    ],
     // prevent using string literals in React component definition
     'react/jsx-no-literals': 0,
     // forbid `javascript:` URLs
