@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [47.0.0](https://github.com/zendeskgarden/eslint-config/compare/v46.0.0...v47.0.0) (2025-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* noted by the following...
+
+- add `preserve-caught-error` as a warning (breaking when `--max-warnings=0`)
+- reverse strategy for `react/no-leaked-render` to be Garden-preferred `['coerce', 'ternary']` (potential unexpected code updates with autofix)
+- remove deprecated rules `@typescript-eslint/sort-type-constituents` and `@typescript-eslint/typedef`
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Zempel <jzempel@gmail.com>
+
+### Features
+
+* update all non-major dependencies ([#255](https://github.com/zendeskgarden/eslint-config/issues/255)) ([1c032a9](https://github.com/zendeskgarden/eslint-config/commit/1c032a9151079441c3931966bae3f5c030f4cf81))
+
 ## [46.0.0](https://github.com/zendeskgarden/eslint-config/compare/v45.0.0...v46.0.0) (2025-08-29)
 
 
