@@ -1,0 +1,1 @@
+import{F as e,K as t,R as n,W as r,w as i}from"./Bf-bIFmc.js";var a=n({__name:`index`,setup(n){return i().replace(`/configs`),(n,i)=>(r(),e(`div`,null,[t(n.$slots,`default`)]))}});export{a as default};
