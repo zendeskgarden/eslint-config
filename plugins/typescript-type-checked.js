@@ -21,10 +21,7 @@ export default {
     '@typescript-eslint': tseslint.plugin
   },
   languageOptions: {
-    parser: tseslint.parser,
-    parserOptions: {
-      project: true
-    }
+    parser: tseslint.parser
   },
   rules: {
     // Disable ESLint rules that are handled by TypeScript
