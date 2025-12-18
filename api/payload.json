@@ -40,10 +40,20 @@
       }
     },
     {
+      "name": "gitignore",
+      "ignores": [
+        "**/.eslint-config-inspector",
+        "**/node_modules",
+        "**/yarn.lock",
+        "**/*.log"
+      ],
+      "index": 4
+    },
+    {
       "rules": {
         "unicode-bom": 2
       },
-      "index": 4
+      "index": 5
     },
     {
       "rules": {
@@ -126,7 +136,7 @@
         "use-isnan": 2,
         "valid-typeof": 2
       },
-      "index": 5
+      "index": 6
     },
     {
       "rules": {
@@ -326,7 +336,7 @@
         "vars-on-top": 2,
         "yoda": 2
       },
-      "index": 6
+      "index": 7
     },
     {
       "plugins": {
@@ -488,7 +498,7 @@
         "n/prefer-promises/fs": 1,
         "n/process-exit-as-throw": 2
       },
-      "index": 7
+      "index": 8
     },
     {
       "languageOptions": {
@@ -1737,7 +1747,7 @@
       "linterOptions": {
         "reportUnusedDisableDirectives": true
       },
-      "index": 8
+      "index": 9
     },
     {
       "plugins": {
@@ -1823,7 +1833,7 @@
         "jest/valid-expect-in-promise": 2,
         "jest/valid-title": 2
       },
-      "index": 9
+      "index": 10
     },
     {
       "plugins": {
@@ -1838,7 +1848,7 @@
           }
         ]
       },
-      "index": 10
+      "index": 11
     },
     {
       "plugins": {
@@ -2183,7 +2193,7 @@
         "react-hooks/rules-of-hooks": 2,
         "react-hooks/exhaustive-deps": 1
       },
-      "index": 11
+      "index": 12
     },
     {
       "plugins": {
@@ -2312,7 +2322,7 @@
         "@typescript-eslint/triple-slash-reference": 2,
         "@typescript-eslint/unified-signatures": 2
       },
-      "index": 12
+      "index": 13
     },
     {
       "plugins": {
@@ -2418,7 +2428,7 @@
         "@typescript-eslint/unbound-method": 2,
         "@typescript-eslint/use-unknown-in-catch-callback-variable": 2
       },
-      "index": 13
+      "index": 14
     },
     {
       "languageOptions": {
@@ -2435,7 +2445,7 @@
           }
         }
       },
-      "index": 14
+      "index": 15
     },
     {
       "rules": {
@@ -2448,7 +2458,7 @@
         "@typescript-eslint/no-unsafe-return": "off",
         "jest/require-hook": "off"
       },
-      "index": 15
+      "index": 16
     }
   ],
   "rules": {
@@ -12510,7 +12520,7 @@
     }
   ],
   "meta": {
-    "lastUpdate": 1766030901863,
+    "lastUpdate": 1766091895113,
     "basePath": "",
     "configPath": ""
   }
