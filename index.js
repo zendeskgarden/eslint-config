@@ -9,10 +9,12 @@ import babelParser from '@babel/eslint-parser';
 import eslintLayoutFormatting from './rules/layout-formatting.js';
 import eslintPossibleProblems from './rules/possible-problems.js';
 import eslintSuggestions from './rules/suggestions.js';
+import gitignore from 'eslint-config-flat-gitignore';
 import globals from 'globals';
 import nodePlugin from './plugins/node.js';
 
 export default [
+  gitignore(),
   eslintLayoutFormatting,
   eslintPossibleProblems,
   eslintSuggestions,
