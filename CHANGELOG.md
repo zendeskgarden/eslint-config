@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [47.1.0](https://github.com/zendeskgarden/eslint-config/compare/v47.0.0...v47.1.0) (2025-12-18)
+
+
+### Features
+
+* add automatic `.gitignore` pattern support via `eslint-config-flat-gitignore` ([#258](https://github.com/zendeskgarden/eslint-config/issues/258)) ([8e3e196](https://github.com/zendeskgarden/eslint-config/commit/8e3e196dc1049d7681652fe5a97b512c2ffd73e5))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#257](https://github.com/zendeskgarden/eslint-config/issues/257)) ([4bff6f4](https://github.com/zendeskgarden/eslint-config/commit/4bff6f438591f226d8f9d8a83082d7788488df0c))
+
 ## [47.0.0](https://github.com/zendeskgarden/eslint-config/compare/v46.0.0...v47.0.0) (2025-10-27)
 
 
