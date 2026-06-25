@@ -5,15 +5,17 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// Patch legacy rule APIs removed in ESLint v10 until these plugins ship native support.
+import { fixupPluginRules } from '@eslint/compat';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
 
 export default {
   plugins: {
-    react: reactPlugin,
+    react: fixupPluginRules(reactPlugin),
     'react-hooks': reactHooksPlugin,
-    'jsx-a11y': jsxA11yPlugin
+    'jsx-a11y': fixupPluginRules(jsxA11yPlugin)
   },
   languageOptions: {
     parserOptions: {
@@ -147,8 +149,6 @@ export default {
     'react/jsx-tag-spacing': 2,
     // prevent React to be marked as unused
     'react/jsx-uses-react': 2,
-    // prevent variables used in JSX to be marked as unused
-    'react/jsx-uses-vars': 2,
     // prevent missing parentheses around multilines JSX
     'react/jsx-wrap-multilines': 2,
     // reports when this.state is accessed within setState

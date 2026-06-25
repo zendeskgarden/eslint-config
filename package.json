@@ -1,6 +1,6 @@
 {
   "name": "@zendeskgarden/eslint-config",
-  "version": "47.1.0",
+  "version": "48.0.0",
   "description": "Garden ESLint config",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
@@ -24,22 +24,23 @@
     "test": "npm run format && npm run lint && git diff --quiet"
   },
   "dependencies": {
-    "@babel/eslint-parser": "7.28.5",
-    "eslint-config-flat-gitignore": "2.1.0",
-    "eslint-plugin-jest": "29.5.0",
+    "@babel/eslint-parser": "7.29.7",
+    "@eslint/compat": "2.1.0",
+    "eslint-config-flat-gitignore": "2.3.0",
+    "eslint-plugin-jest": "29.15.2",
     "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-n": "17.23.1",
+    "eslint-plugin-n": "18.2.0",
     "eslint-plugin-notice": "1.0.0",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-hooks": "7.1.1",
     "globals": "16.5.0",
-    "typescript-eslint": "8.50.0"
+    "typescript-eslint": "8.62.0"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0 || ^10.0.0"
+    "eslint": "^10.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
+    "@babel/core": "7.29.7",
     "@eslint/config-inspector": "1.4.2",
     "@zendeskgarden/scripts": "2.5.1",
     "commit-and-tag-version": "12.6.1",
@@ -56,6 +57,9 @@
     "garden",
     "zendesk"
   ],
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
+  },
   "publishConfig": {
     "access": "public"
   }

@@ -7,11 +7,13 @@ const TEMPLATE = `/**
 
 `;
 
+// Patch legacy rule APIs removed in ESLint v10 until the plugin ships native support.
+import { fixupPluginRules } from '@eslint/compat';
 import noticePlugin from 'eslint-plugin-notice';
 
 export default {
   plugins: {
-    notice: noticePlugin
+    notice: fixupPluginRules(noticePlugin)
   },
   rules: {
     // throw an error when a file doesn't have a copyright notice
