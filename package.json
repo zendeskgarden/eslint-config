@@ -50,7 +50,7 @@
     "jest": "30.2.0",
     "prettier-package-json": "2.8.0",
     "react": "19.2.3",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "keywords": [
     "eslint",
