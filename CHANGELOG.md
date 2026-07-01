@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [48.0.0](https://github.com/zendeskgarden/eslint-config/compare/v47.1.0...v48.0.0) (2026-07-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* bump eslint and related packages to v10 (#268)
+
+### Features
+
+* bump eslint and related packages to v10 ([#268](https://github.com/zendeskgarden/eslint-config/issues/268)) ([731ac22](https://github.com/zendeskgarden/eslint-config/commit/731ac2203c07a507aba50564d6e3860f91eaee4b))
+
 ## [47.1.0](https://github.com/zendeskgarden/eslint-config/compare/v47.0.0...v47.1.0) (2025-12-18)
 
 
