@@ -2140,7 +2140,6 @@
         "react/jsx-sort-props": 0,
         "react/jsx-tag-spacing": 2,
         "react/jsx-uses-react": 2,
-        "react/jsx-uses-vars": 2,
         "react/jsx-wrap-multilines": 2,
         "react/no-access-state-in-setstate": 2,
         "react/no-adjacent-inline-elements": 2,
@@ -2798,15 +2797,13 @@
         "url": "https://eslint.org/docs/latest/rules/capitalized-comments"
       },
       "fixable": "code",
+      "defaultOptions": [
+        "always"
+      ],
       "name": "capitalized-comments",
       "plugin": "eslint"
     },
     "class-methods-use-this": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "defaultOptions": [
         {
@@ -2817,6 +2814,10 @@
       ],
       "docs": {
         "description": "Enforce that class methods utilize `this`",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/class-methods-use-this"
       },
@@ -3038,14 +3039,13 @@
       "plugin": "eslint"
     },
     "default-param-last": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "docs": {
         "description": "Enforce default parameters to be last",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/default-param-last"
@@ -3141,6 +3141,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/eqeqeq"
       },
+      "defaultOptions": [
+        "always"
+      ],
       "fixable": "code",
       "name": "eqeqeq",
       "plugin": "eslint"
@@ -3195,6 +3198,9 @@
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/func-name-matching"
       },
+      "defaultOptions": [
+        "always"
+      ],
       "name": "func-name-matching",
       "plugin": "eslint"
     },
@@ -3213,11 +3219,6 @@
       "plugin": "eslint"
     },
     "func-style": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "defaultOptions": [
         "expression",
@@ -3229,6 +3230,10 @@
       ],
       "docs": {
         "description": "Enforce the consistent use of either `function` declarations or expressions assigned to variables",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/func-style"
@@ -3599,17 +3604,19 @@
     },
     "init-declarations": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Require or disallow initialization in variable declarations",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/init-declarations"
       },
+      "defaultOptions": [
+        "always"
+      ],
       "name": "init-declarations",
       "plugin": "eslint"
     },
@@ -3868,6 +3875,9 @@
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/logical-assignment-operators"
       },
+      "defaultOptions": [
+        "always"
+      ],
       "fixable": "code",
       "hasSuggestions": true,
       "name": "logical-assignment-operators",
@@ -3880,6 +3890,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-classes-per-file"
       },
+      "defaultOptions": [
+        1
+      ],
       "name": "max-classes-per-file",
       "plugin": "eslint"
     },
@@ -3890,6 +3903,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-depth"
       },
+      "defaultOptions": [
+        4
+      ],
       "name": "max-depth",
       "plugin": "eslint"
     },
@@ -3930,6 +3946,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-lines"
       },
+      "defaultOptions": [
+        300
+      ],
       "name": "max-lines",
       "plugin": "eslint"
     },
@@ -3940,6 +3959,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-lines-per-function"
       },
+      "defaultOptions": [
+        50
+      ],
       "name": "max-lines-per-function",
       "plugin": "eslint"
     },
@@ -3950,21 +3972,26 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-nested-callbacks"
       },
+      "defaultOptions": [
+        10
+      ],
       "name": "max-nested-callbacks",
       "plugin": "eslint"
     },
     "max-params": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Enforce a maximum number of parameters in function definitions",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-params"
       },
+      "defaultOptions": [
+        3
+      ],
       "name": "max-params",
       "plugin": "eslint"
     },
@@ -3975,6 +4002,9 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/max-statements"
       },
+      "defaultOptions": [
+        10
+      ],
       "name": "max-statements",
       "plugin": "eslint"
     },
@@ -4236,14 +4266,13 @@
       "plugin": "eslint"
     },
     "no-array-constructor": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "docs": {
         "description": "Disallow `Array` constructors",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-array-constructor"
       },
@@ -4554,13 +4583,12 @@
     },
     "no-dupe-class-members": {
       "type": "problem",
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow duplicate class members",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": true,
         "url": "https://eslint.org/docs/latest/rules/no-dupe-class-members"
       },
@@ -4598,11 +4626,6 @@
       "plugin": "eslint"
     },
     "no-duplicate-imports": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "problem",
       "defaultOptions": [
         {
@@ -4612,6 +4635,10 @@
       ],
       "docs": {
         "description": "Disallow duplicate module imports",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-duplicate-imports"
       },
@@ -4662,11 +4689,6 @@
       "plugin": "eslint"
     },
     "no-empty-function": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "hasSuggestions": true,
       "type": "suggestion",
       "defaultOptions": [
@@ -4676,6 +4698,10 @@
       ],
       "docs": {
         "description": "Disallow empty functions",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-empty-function"
       },
@@ -5031,11 +5057,6 @@
       "plugin": "eslint"
     },
     "no-invalid-this": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "defaultOptions": [
         {
@@ -5044,6 +5065,10 @@
       ],
       "docs": {
         "description": "Disallow use of `this` in contexts where the value of `this` is `undefined`",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-invalid-this"
       },
@@ -5131,13 +5156,12 @@
     },
     "no-loop-func": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow function declarations that contain unsafe references inside loop statements",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-loop-func"
       },
@@ -5146,13 +5170,12 @@
     },
     "no-loss-of-precision": {
       "type": "problem",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow literal numbers that lose precision",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": true,
         "url": "https://eslint.org/docs/latest/rules/no-loss-of-precision"
       },
@@ -5161,17 +5184,30 @@
     },
     "no-magic-numbers": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow magic numbers",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/no-magic-numbers"
       },
+      "defaultOptions": [
+        {
+          "detectObjects": false,
+          "enforceConst": false,
+          "ignore": [],
+          "ignoreArrayIndexes": false,
+          "ignoreDefaultValues": false,
+          "ignoreClassFieldInitialValues": false,
+          "ignoreEnums": false,
+          "ignoreNumericLiteralTypes": false,
+          "ignoreReadonlyClassProperties": false,
+          "ignoreTypeIndexes": false
+        }
+      ],
       "name": "no-magic-numbers",
       "plugin": "eslint"
     },
@@ -5790,18 +5826,20 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-restricted-exports"
       },
+      "defaultOptions": [
+        {}
+      ],
       "name": "no-restricted-exports",
       "plugin": "eslint"
     },
     "no-restricted-globals": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "docs": {
         "description": "Disallow specified global variables",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-restricted-globals"
       },
@@ -5810,13 +5848,12 @@
     },
     "no-restricted-imports": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow specified modules when loaded by `import`",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-restricted-imports"
       },
@@ -5859,6 +5896,7 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-restricted-properties"
       },
+      "defaultOptions": [],
       "name": "no-restricted-properties",
       "plugin": "eslint"
     },
@@ -5869,6 +5907,7 @@
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-restricted-syntax"
       },
+      "defaultOptions": [],
       "name": "no-restricted-syntax",
       "plugin": "eslint"
     },
@@ -5965,11 +6004,6 @@
     },
     "no-shadow": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "defaultOptions": [
         {
           "allow": [],
@@ -5982,6 +6016,10 @@
       ],
       "docs": {
         "description": "Disallow variable declarations from shadowing variables declared in the outer scope",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-shadow"
       },
@@ -5992,7 +6030,7 @@
       "type": "suggestion",
       "defaultOptions": [
         {
-          "reportGlobalThis": false
+          "reportGlobalThis": true
         }
       ],
       "docs": {
@@ -6177,14 +6215,13 @@
     },
     "no-unassigned-vars": {
       "type": "problem",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Disallow `let` or `var` variables that are read but never assigned",
-        "recommended": false,
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
+        "recommended": true,
         "url": "https://eslint.org/docs/latest/rules/no-unassigned-vars"
       },
       "name": "no-unassigned-vars",
@@ -6358,14 +6395,13 @@
       "plugin": "eslint"
     },
     "no-unused-expressions": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "docs": {
         "description": "Disallow unused expressions",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-unused-expressions"
       },
@@ -6394,6 +6430,7 @@
     },
     "no-unused-private-class-members": {
       "type": "problem",
+      "hasSuggestions": true,
       "docs": {
         "description": "Disallow unused private class members",
         "recommended": true,
@@ -6410,18 +6447,28 @@
         "url": "https://eslint.org/docs/latest/rules/no-unused-vars"
       },
       "hasSuggestions": true,
+      "defaultOptions": [
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": false,
+          "caughtErrors": "all",
+          "ignoreClassWithStaticInitBlock": false,
+          "ignoreUsingDeclarations": false,
+          "reportUsedIgnorePattern": false
+        }
+      ],
       "name": "no-unused-vars",
       "plugin": "eslint"
     },
     "no-use-before-define": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "problem",
       "docs": {
         "description": "Disallow the use of variables before they are defined",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-use-before-define"
       },
@@ -6443,7 +6490,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow variable assignments when the value is not used",
-        "recommended": false,
+        "recommended": true,
         "url": "https://eslint.org/docs/latest/rules/no-useless-assignment"
       },
       "name": "no-useless-assignment",
@@ -6508,14 +6555,13 @@
       "plugin": "eslint"
     },
     "no-useless-constructor": {
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "type": "suggestion",
       "docs": {
         "description": "Disallow unnecessary constructors",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-useless-constructor"
       },
@@ -6570,13 +6616,12 @@
     },
     "no-var": {
       "type": "suggestion",
-      "dialects": [
-        "typescript",
-        "javascript"
-      ],
-      "language": "javascript",
       "docs": {
         "description": "Require `let` or `const` instead of `var`",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/no-var"
       },
@@ -6795,6 +6840,9 @@
         "url": "https://eslint.org/docs/latest/rules/object-shorthand"
       },
       "fixable": "code",
+      "defaultOptions": [
+        "always"
+      ],
       "name": "object-shorthand",
       "plugin": "eslint"
     },
@@ -6807,6 +6855,9 @@
         "url": "https://eslint.org/docs/latest/rules/one-var"
       },
       "fixable": "code",
+      "defaultOptions": [
+        "always"
+      ],
       "name": "one-var",
       "plugin": "eslint"
     },
@@ -6951,11 +7002,6 @@
     },
     "prefer-arrow-callback": {
       "type": "suggestion",
-      "dialects": [
-        "javascript",
-        "typescript"
-      ],
-      "language": "javascript",
       "defaultOptions": [
         {
           "allowNamedFunctions": false,
@@ -6964,6 +7010,10 @@
       ],
       "docs": {
         "description": "Require using arrow functions for callbacks",
+        "dialects": [
+          "JavaScript",
+          "TypeScript"
+        ],
         "recommended": false,
         "frozen": true,
         "url": "https://eslint.org/docs/latest/rules/prefer-arrow-callback"
@@ -7150,7 +7200,7 @@
       ],
       "docs": {
         "description": "Disallow losing originally caught error when re-throwing custom errors",
-        "recommended": false,
+        "recommended": true,
         "url": "https://eslint.org/docs/latest/rules/preserve-caught-error"
       },
       "hasSuggestions": true,
@@ -7221,11 +7271,8 @@
     },
     "radix": {
       "type": "suggestion",
-      "defaultOptions": [
-        "always"
-      ],
       "docs": {
-        "description": "Enforce the consistent use of the radix argument when using `parseInt()`",
+        "description": "Enforce the use of the radix argument when using `parseInt()`",
         "recommended": false,
         "url": "https://eslint.org/docs/latest/rules/radix"
       },
@@ -7953,7 +8000,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md"
       },
-      "fixable": null,
       "name": "n/callback-return",
       "plugin": "n"
     },
@@ -7986,7 +8032,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md"
       },
-      "fixable": null,
       "name": "n/global-require",
       "plugin": "n"
     },
@@ -7997,7 +8042,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md"
       },
-      "fixable": null,
       "name": "n/handle-callback-err",
       "plugin": "n"
     },
@@ -8008,7 +8052,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-callback-literal.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-callback-literal",
       "plugin": "n"
     },
@@ -8019,7 +8062,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-deprecated-api",
       "plugin": "n"
     },
@@ -8029,7 +8071,6 @@
         "recommended": true,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md"
       },
-      "fixable": null,
       "type": "problem",
       "name": "n/no-exports-assign",
       "plugin": "n"
@@ -8041,7 +8082,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-extraneous-import",
       "plugin": "n"
     },
@@ -8052,7 +8092,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-extraneous-require",
       "plugin": "n"
     },
@@ -8063,7 +8102,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-missing-import",
       "plugin": "n"
     },
@@ -8074,7 +8112,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-missing-require",
       "plugin": "n"
     },
@@ -8085,7 +8122,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md"
       },
-      "fixable": null,
       "name": "n/no-mixed-requires",
       "plugin": "n"
     },
@@ -8096,7 +8132,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md"
       },
-      "fixable": null,
       "name": "n/no-new-require",
       "plugin": "n"
     },
@@ -8107,7 +8142,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md"
       },
-      "fixable": null,
       "name": "n/no-path-concat",
       "plugin": "n"
     },
@@ -8118,7 +8152,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md"
       },
-      "fixable": null,
       "name": "n/no-process-env",
       "plugin": "n"
     },
@@ -8129,7 +8162,6 @@
         "recommended": true,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md"
       },
-      "fixable": null,
       "name": "n/no-process-exit",
       "plugin": "n"
     },
@@ -8140,7 +8172,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md"
       },
-      "fixable": null,
       "name": "n/no-restricted-import",
       "plugin": "n"
     },
@@ -8151,7 +8182,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md"
       },
-      "fixable": null,
       "name": "n/no-restricted-require",
       "plugin": "n"
     },
@@ -8162,7 +8192,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md"
       },
-      "fixable": null,
       "name": "n/no-sync",
       "plugin": "n"
     },
@@ -8172,7 +8201,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-top-level-await.md"
       },
-      "fixable": null,
       "type": "problem",
       "name": "n/no-top-level-await",
       "plugin": "n"
@@ -8180,11 +8208,9 @@
     "n/no-unpublished-bin": {
       "docs": {
         "description": "disallow `bin` files that npm ignores",
-        "recommended": true,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unpublished-bin",
       "plugin": "n"
     },
@@ -8195,7 +8221,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unpublished-import",
       "plugin": "n"
     },
@@ -8206,7 +8231,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unpublished-require",
       "plugin": "n"
     },
@@ -8217,7 +8241,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unsupported-features/es-builtins",
       "plugin": "n"
     },
@@ -8228,7 +8251,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unsupported-features/es-syntax",
       "plugin": "n"
     },
@@ -8239,7 +8261,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md"
       },
       "type": "problem",
-      "fixable": null,
       "name": "n/no-unsupported-features/node-builtins",
       "plugin": "n"
     },
@@ -8250,7 +8271,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/buffer.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/buffer",
       "plugin": "n"
     },
@@ -8261,8 +8281,17 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/console.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/console",
+      "plugin": "n"
+    },
+    "n/prefer-global/crypto": {
+      "docs": {
+        "description": "enforce either `crypto` or `require(\"crypto\").webcrypto`",
+        "recommended": false,
+        "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/crypto.md"
+      },
+      "type": "suggestion",
+      "name": "n/prefer-global/crypto",
       "plugin": "n"
     },
     "n/prefer-global/process": {
@@ -8272,7 +8301,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/process.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/process",
       "plugin": "n"
     },
@@ -8283,7 +8311,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/text-decoder.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/text-decoder",
       "plugin": "n"
     },
@@ -8294,7 +8321,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/text-encoder.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/text-encoder",
       "plugin": "n"
     },
@@ -8305,7 +8331,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/url-search-params.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/url-search-params",
       "plugin": "n"
     },
@@ -8316,8 +8341,17 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/url.md"
       },
       "type": "suggestion",
-      "fixable": null,
       "name": "n/prefer-global/url",
+      "plugin": "n"
+    },
+    "n/prefer-global/timers": {
+      "docs": {
+        "description": "enforce either global timer functions or `require(\"timers\")`",
+        "recommended": false,
+        "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-global/timers.md"
+      },
+      "type": "suggestion",
+      "name": "n/prefer-global/timers",
       "plugin": "n"
     },
     "n/prefer-node-protocol": {
@@ -8337,7 +8371,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-promises/dns.md"
       },
-      "fixable": null,
       "type": "suggestion",
       "name": "n/prefer-promises/dns",
       "plugin": "n"
@@ -8348,7 +8381,6 @@
         "recommended": false,
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-promises/fs.md"
       },
-      "fixable": null,
       "type": "suggestion",
       "name": "n/prefer-promises/fs",
       "plugin": "n"
@@ -8360,7 +8392,6 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md"
       },
       "type": "problem",
-      "fixable": null,
       "supported": false,
       "name": "n/process-exit-as-throw",
       "plugin": "n"
@@ -8383,8 +8414,11 @@
         "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-hide-core-modules.md"
       },
       "type": "problem",
-      "deprecated": true,
-      "fixable": null,
+      "deprecated": {
+        "deprecatedSince": "4.2.0",
+        "message": "This rule was based on an invalid assumption.",
+        "url": "https://github.com/mysticatea/eslint-plugin-node/issues/69"
+      },
       "name": "n/no-hide-core-modules",
       "plugin": "n"
     },
@@ -8396,17 +8430,26 @@
       },
       "type": "problem",
       "fixable": "code",
-      "deprecated": true,
-      "replacedBy": [
-        "n/hashbang"
-      ],
+      "deprecated": {
+        "deprecatedSince": "17.0.0",
+        "message": "This rule was deprecated in eslint-plugin-n v17.0.0. Please use 'n/hashbang'",
+        "url": "https://github.com/eslint-community/eslint-plugin-n/issues/196",
+        "replacedBy": [
+          {
+            "rule": {
+              "name": "n/hashbang",
+              "url": "https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md"
+            }
+          }
+        ]
+      },
       "name": "n/shebang",
       "plugin": "n"
     },
     "jest/consistent-test-it": {
       "docs": {
         "description": "Enforce `test` and `it` usage conventions",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/consistent-test-it.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/consistent-test-it.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8416,7 +8459,7 @@
     "jest/expect-expect": {
       "docs": {
         "description": "Enforce assertion to be made in a test body",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/expect-expect.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/expect-expect.md"
       },
       "type": "suggestion",
       "name": "jest/expect-expect",
@@ -8425,7 +8468,7 @@
     "jest/max-expects": {
       "docs": {
         "description": "Enforces a maximum number assertion calls in a test body",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/max-expects.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/max-expects.md"
       },
       "type": "suggestion",
       "name": "jest/max-expects",
@@ -8434,7 +8477,7 @@
     "jest/max-nested-describe": {
       "docs": {
         "description": "Enforces a maximum depth to nested describe calls",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/max-nested-describe.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/max-nested-describe.md"
       },
       "type": "suggestion",
       "name": "jest/max-nested-describe",
@@ -8443,7 +8486,7 @@
     "jest/no-alias-methods": {
       "docs": {
         "description": "Disallow alias methods",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-alias-methods.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-alias-methods.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8453,7 +8496,7 @@
     "jest/no-commented-out-tests": {
       "docs": {
         "description": "Disallow commented out tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-commented-out-tests.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-commented-out-tests.md"
       },
       "type": "suggestion",
       "name": "jest/no-commented-out-tests",
@@ -8462,7 +8505,7 @@
     "jest/no-conditional-expect": {
       "docs": {
         "description": "Disallow calling `expect` conditionally",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-conditional-expect.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-conditional-expect.md"
       },
       "type": "problem",
       "name": "jest/no-conditional-expect",
@@ -8471,7 +8514,7 @@
     "jest/no-conditional-in-test": {
       "docs": {
         "description": "Disallow conditional logic in tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-conditional-in-test.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-conditional-in-test.md"
       },
       "type": "problem",
       "name": "jest/no-conditional-in-test",
@@ -8480,7 +8523,7 @@
     "jest/no-confusing-set-timeout": {
       "docs": {
         "description": "Disallow confusing usages of jest.setTimeout",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-confusing-set-timeout.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-confusing-set-timeout.md"
       },
       "type": "problem",
       "name": "jest/no-confusing-set-timeout",
@@ -8489,7 +8532,7 @@
     "jest/no-deprecated-functions": {
       "docs": {
         "description": "Disallow use of deprecated functions",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-deprecated-functions.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-deprecated-functions.md"
       },
       "type": "suggestion",
       "fixable": "code",
@@ -8499,7 +8542,7 @@
     "jest/no-disabled-tests": {
       "docs": {
         "description": "Disallow disabled tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-disabled-tests.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-disabled-tests.md"
       },
       "type": "suggestion",
       "name": "jest/no-disabled-tests",
@@ -8508,7 +8551,7 @@
     "jest/no-done-callback": {
       "docs": {
         "description": "Disallow using a callback in asynchronous tests and hooks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-done-callback.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-done-callback.md"
       },
       "type": "suggestion",
       "hasSuggestions": true,
@@ -8518,16 +8561,26 @@
     "jest/no-duplicate-hooks": {
       "docs": {
         "description": "Disallow duplicate setup and teardown hooks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-duplicate-hooks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-duplicate-hooks.md"
       },
       "type": "suggestion",
       "name": "jest/no-duplicate-hooks",
       "plugin": "jest"
     },
+    "jest/no-error-equal": {
+      "docs": {
+        "description": "Disallow using equality matchers on error types",
+        "requiresTypeChecking": true,
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-error-equal.md"
+      },
+      "type": "suggestion",
+      "name": "jest/no-error-equal",
+      "plugin": "jest"
+    },
     "jest/no-export": {
       "docs": {
         "description": "Disallow using `exports` in files containing tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-export.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-export.md"
       },
       "type": "suggestion",
       "name": "jest/no-export",
@@ -8536,7 +8589,7 @@
     "jest/no-focused-tests": {
       "docs": {
         "description": "Disallow focused tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-focused-tests.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-focused-tests.md"
       },
       "type": "suggestion",
       "hasSuggestions": true,
@@ -8546,7 +8599,7 @@
     "jest/no-hooks": {
       "docs": {
         "description": "Disallow setup and teardown hooks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-hooks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-hooks.md"
       },
       "type": "suggestion",
       "name": "jest/no-hooks",
@@ -8555,7 +8608,7 @@
     "jest/no-identical-title": {
       "docs": {
         "description": "Disallow identical titles",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-identical-title.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-identical-title.md"
       },
       "type": "suggestion",
       "name": "jest/no-identical-title",
@@ -8564,7 +8617,7 @@
     "jest/no-interpolation-in-snapshots": {
       "docs": {
         "description": "Disallow string interpolation inside snapshots",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-interpolation-in-snapshots.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-interpolation-in-snapshots.md"
       },
       "type": "problem",
       "name": "jest/no-interpolation-in-snapshots",
@@ -8573,7 +8626,7 @@
     "jest/no-jasmine-globals": {
       "docs": {
         "description": "Disallow Jasmine globals",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-jasmine-globals.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-jasmine-globals.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8583,7 +8636,7 @@
     "jest/no-large-snapshots": {
       "docs": {
         "description": "Disallow large snapshots",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-large-snapshots.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-large-snapshots.md"
       },
       "type": "suggestion",
       "name": "jest/no-large-snapshots",
@@ -8593,7 +8646,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow manually importing from `__mocks__`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-mocks-import.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-mocks-import.md"
       },
       "name": "jest/no-mocks-import",
       "plugin": "jest"
@@ -8601,7 +8654,7 @@
     "jest/no-restricted-jest-methods": {
       "docs": {
         "description": "Disallow specific `jest.` methods",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-restricted-jest-methods.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-restricted-jest-methods.md"
       },
       "type": "suggestion",
       "name": "jest/no-restricted-jest-methods",
@@ -8610,7 +8663,7 @@
     "jest/no-restricted-matchers": {
       "docs": {
         "description": "Disallow specific matchers & modifiers",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-restricted-matchers.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-restricted-matchers.md"
       },
       "type": "suggestion",
       "name": "jest/no-restricted-matchers",
@@ -8619,7 +8672,7 @@
     "jest/no-standalone-expect": {
       "docs": {
         "description": "Disallow using `expect` outside of `it` or `test` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-standalone-expect.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-standalone-expect.md"
       },
       "type": "suggestion",
       "name": "jest/no-standalone-expect",
@@ -8628,7 +8681,7 @@
     "jest/no-test-prefixes": {
       "docs": {
         "description": "Require using `.only` and `.skip` over `f` and `x`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-test-prefixes.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-test-prefixes.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8638,16 +8691,26 @@
     "jest/no-test-return-statement": {
       "docs": {
         "description": "Disallow explicitly returning from tests",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-test-return-statement.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-test-return-statement.md"
       },
       "type": "suggestion",
       "name": "jest/no-test-return-statement",
       "plugin": "jest"
     },
+    "jest/no-unnecessary-assertion": {
+      "docs": {
+        "description": "Disallow unnecessary assertions based on types",
+        "requiresTypeChecking": true,
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-unnecessary-assertion.md"
+      },
+      "type": "suggestion",
+      "name": "jest/no-unnecessary-assertion",
+      "plugin": "jest"
+    },
     "jest/no-unneeded-async-expect-function": {
       "docs": {
         "description": "Disallow unnecessary async function wrapper for expected promises",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-unneeded-async-expect-function.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-unneeded-async-expect-function.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8657,7 +8720,7 @@
     "jest/no-untyped-mock-factory": {
       "docs": {
         "description": "Disallow using `jest.mock()` factories without an explicit type parameter",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/no-untyped-mock-factory.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/no-untyped-mock-factory.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8667,7 +8730,7 @@
     "jest/padding-around-after-all-blocks": {
       "docs": {
         "description": "Enforce padding around `afterAll` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-after-all-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-after-all-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8678,7 +8741,7 @@
     "jest/padding-around-after-each-blocks": {
       "docs": {
         "description": "Enforce padding around `afterEach` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-after-each-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-after-each-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8689,7 +8752,7 @@
     "jest/padding-around-all": {
       "docs": {
         "description": "Enforce padding around Jest functions",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-all.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-all.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8700,7 +8763,7 @@
     "jest/padding-around-before-all-blocks": {
       "docs": {
         "description": "Enforce padding around `beforeAll` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-before-all-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-before-all-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8711,7 +8774,7 @@
     "jest/padding-around-before-each-blocks": {
       "docs": {
         "description": "Enforce padding around `beforeEach` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-before-each-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-before-each-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8722,7 +8785,7 @@
     "jest/padding-around-describe-blocks": {
       "docs": {
         "description": "Enforce padding around `describe` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-describe-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-describe-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8733,7 +8796,7 @@
     "jest/padding-around-expect-groups": {
       "docs": {
         "description": "Enforce padding around `expect` groups",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-expect-groups.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-expect-groups.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8744,7 +8807,7 @@
     "jest/padding-around-test-blocks": {
       "docs": {
         "description": "Enforce padding around `test` and `it` blocks",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/padding-around-test-blocks.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/padding-around-test-blocks.md"
       },
       "fixable": "whitespace",
       "deprecated": false,
@@ -8755,7 +8818,7 @@
     "jest/prefer-called-with": {
       "docs": {
         "description": "Suggest using `toHaveBeenCalledWith()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-called-with.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-called-with.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-called-with",
@@ -8764,7 +8827,7 @@
     "jest/prefer-comparison-matcher": {
       "docs": {
         "description": "Suggest using the built-in comparison matchers",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-comparison-matcher.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-comparison-matcher.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8774,7 +8837,7 @@
     "jest/prefer-each": {
       "docs": {
         "description": "Prefer using `.each` rather than manual loops",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-each.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-each.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-each",
@@ -8783,7 +8846,7 @@
     "jest/prefer-ending-with-an-expect": {
       "docs": {
         "description": "Prefer having the last statement in a test be an assertion",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-ending-with-an-expect.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-ending-with-an-expect.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-ending-with-an-expect",
@@ -8792,7 +8855,7 @@
     "jest/prefer-equality-matcher": {
       "docs": {
         "description": "Suggest using the built-in equality matchers",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-equality-matcher.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-equality-matcher.md"
       },
       "hasSuggestions": true,
       "type": "suggestion",
@@ -8802,7 +8865,7 @@
     "jest/prefer-expect-assertions": {
       "docs": {
         "description": "Suggest using `expect.assertions()` OR `expect.hasAssertions()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-expect-assertions.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-expect-assertions.md"
       },
       "type": "suggestion",
       "hasSuggestions": true,
@@ -8812,7 +8875,7 @@
     "jest/prefer-expect-resolves": {
       "docs": {
         "description": "Prefer `await expect(...).resolves` over `expect(await ...)` syntax",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-expect-resolves.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-expect-resolves.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8822,7 +8885,7 @@
     "jest/prefer-hooks-in-order": {
       "docs": {
         "description": "Prefer having hooks in a consistent order",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-hooks-in-order.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-hooks-in-order.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-hooks-in-order",
@@ -8831,7 +8894,7 @@
     "jest/prefer-hooks-on-top": {
       "docs": {
         "description": "Suggest having hooks before any test cases",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-hooks-on-top.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-hooks-on-top.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-hooks-on-top",
@@ -8840,7 +8903,7 @@
     "jest/prefer-importing-jest-globals": {
       "docs": {
         "description": "Prefer importing Jest globals",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-importing-jest-globals.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-importing-jest-globals.md"
       },
       "fixable": "code",
       "type": "problem",
@@ -8850,7 +8913,7 @@
     "jest/prefer-jest-mocked": {
       "docs": {
         "description": "Prefer `jest.mocked()` over `fn as jest.Mock`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-jest-mocked.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-jest-mocked.md"
       },
       "type": "suggestion",
       "fixable": "code",
@@ -8861,7 +8924,7 @@
       "type": "suggestion",
       "docs": {
         "description": "Enforce lowercase test names",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-lowercase-title.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-lowercase-title.md"
       },
       "fixable": "code",
       "name": "jest/prefer-lowercase-title",
@@ -8870,17 +8933,27 @@
     "jest/prefer-mock-promise-shorthand": {
       "docs": {
         "description": "Prefer mock resolved/rejected shorthands for promises",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-mock-promise-shorthand.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-mock-promise-shorthand.md"
       },
       "type": "suggestion",
       "fixable": "code",
       "name": "jest/prefer-mock-promise-shorthand",
       "plugin": "jest"
     },
+    "jest/prefer-mock-return-shorthand": {
+      "docs": {
+        "description": "Prefer mock return shorthands",
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-mock-return-shorthand.md"
+      },
+      "type": "suggestion",
+      "fixable": "code",
+      "name": "jest/prefer-mock-return-shorthand",
+      "plugin": "jest"
+    },
     "jest/prefer-snapshot-hint": {
       "docs": {
         "description": "Prefer including a hint with external snapshots",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-snapshot-hint.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-snapshot-hint.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-snapshot-hint",
@@ -8889,7 +8962,7 @@
     "jest/prefer-spy-on": {
       "docs": {
         "description": "Suggest using `jest.spyOn()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-spy-on.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-spy-on.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8899,7 +8972,7 @@
     "jest/prefer-strict-equal": {
       "docs": {
         "description": "Suggest using `toStrictEqual()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-strict-equal.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-strict-equal.md"
       },
       "type": "suggestion",
       "hasSuggestions": true,
@@ -8909,7 +8982,7 @@
     "jest/prefer-to-be": {
       "docs": {
         "description": "Suggest using `toBe()` for primitive literals",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-to-be.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-to-be.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8919,7 +8992,7 @@
     "jest/prefer-to-contain": {
       "docs": {
         "description": "Suggest using `toContain()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-to-contain.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-to-contain.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8930,7 +9003,7 @@
       "fixable": "code",
       "docs": {
         "description": "Suggest using `toHaveBeenCalledTimes()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-to-have-been-called-times.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-to-have-been-called-times.md"
       },
       "type": "suggestion",
       "name": "jest/prefer-to-have-been-called-times",
@@ -8939,7 +9012,7 @@
     "jest/prefer-to-have-been-called": {
       "docs": {
         "description": "Suggest using `toHaveBeenCalled`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-to-have-been-called.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-to-have-been-called.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8949,7 +9022,7 @@
     "jest/prefer-to-have-length": {
       "docs": {
         "description": "Suggest using `toHaveLength()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-to-have-length.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-to-have-length.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -8959,7 +9032,7 @@
     "jest/prefer-todo": {
       "docs": {
         "description": "Suggest using `test.todo`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/prefer-todo.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/prefer-todo.md"
       },
       "fixable": "code",
       "type": "layout",
@@ -8969,7 +9042,7 @@
     "jest/require-hook": {
       "docs": {
         "description": "Require setup and teardown code to be within a hook",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/require-hook.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/require-hook.md"
       },
       "type": "suggestion",
       "name": "jest/require-hook",
@@ -8978,7 +9051,7 @@
     "jest/require-to-throw-message": {
       "docs": {
         "description": "Require a message for `toThrow()`",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/require-to-throw-message.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/require-to-throw-message.md"
       },
       "type": "suggestion",
       "name": "jest/require-to-throw-message",
@@ -8987,7 +9060,7 @@
     "jest/require-top-level-describe": {
       "docs": {
         "description": "Require test cases and hooks to be inside a `describe` block",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/require-top-level-describe.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/require-top-level-describe.md"
       },
       "type": "suggestion",
       "name": "jest/require-top-level-describe",
@@ -8999,7 +9072,7 @@
         "description": "Enforce unbound methods are called with their expected scope",
         "recommended": "recommended",
         "requiresTypeChecking": true,
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/unbound-method.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/unbound-method.md"
       },
       "name": "jest/unbound-method",
       "plugin": "jest"
@@ -9008,7 +9081,7 @@
       "type": "problem",
       "docs": {
         "description": "Enforce valid `describe()` callback",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/valid-describe-callback.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-describe-callback.md"
       },
       "name": "jest/valid-describe-callback",
       "plugin": "jest"
@@ -9016,16 +9089,26 @@
     "jest/valid-expect-in-promise": {
       "docs": {
         "description": "Require promises that have expectations in their chain to be valid",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/valid-expect-in-promise.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-expect-in-promise.md"
       },
       "type": "suggestion",
       "name": "jest/valid-expect-in-promise",
       "plugin": "jest"
     },
+    "jest/valid-expect-with-promise": {
+      "docs": {
+        "description": "Require that `resolve` and `reject` modifiers are present (and only) for promise-like types",
+        "requiresTypeChecking": true,
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-expect-with-promise.md"
+      },
+      "type": "suggestion",
+      "name": "jest/valid-expect-with-promise",
+      "plugin": "jest"
+    },
     "jest/valid-expect": {
       "docs": {
         "description": "Enforce valid `expect()` usage",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/valid-expect.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-expect.md"
       },
       "fixable": "code",
       "type": "suggestion",
@@ -9036,7 +9119,7 @@
       "type": "problem",
       "docs": {
         "description": "Disallow mocking of non-existing module paths",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/valid-mock-module-path.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-mock-module-path.md"
       },
       "name": "jest/valid-mock-module-path",
       "plugin": "jest"
@@ -9044,7 +9127,7 @@
     "jest/valid-title": {
       "docs": {
         "description": "Enforce valid titles",
-        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.5.0/docs/rules/valid-title.md"
+        "url": "https://github.com/jest-community/eslint-plugin-jest/blob/v29.15.4/docs/rules/valid-title.md"
       },
       "type": "suggestion",
       "fixable": "code",
@@ -10161,7 +10244,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates the rules of hooks",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/hooks"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10172,7 +10256,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against calling capitalized functions/methods instead of using JSX",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/capitalized-calls"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10183,7 +10268,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates that components are static, not recreated every render. Components that are recreated dynamically can reset state and trigger excessive re-rendering",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10194,7 +10280,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates usage of the useMemo() hook against common mistakes. See [`useMemo()` docs](https://react.dev/reference/react/useMemo) for more information.",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10205,40 +10292,44 @@
       "type": "problem",
       "docs": {
         "description": "Validates that useMemos always return a value and that the result of the useMemo is used by the component/hook. See [`useMemo()` docs](https://react.dev/reference/react/useMemo) for more information.",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/void-use-memo"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "name": "react-hooks/void-use-memo",
       "plugin": "react-hooks"
     },
-    "react-hooks/component-hook-factories": {
-      "type": "problem",
-      "docs": {
-        "description": "Validates against higher order functions defining nested components or hooks. Components and hooks should be defined at the module level",
-        "recommended": true
-      },
-      "fixable": "code",
-      "hasSuggestions": true,
-      "name": "react-hooks/component-hook-factories",
-      "plugin": "react-hooks"
-    },
     "react-hooks/preserve-manual-memoization": {
       "type": "problem",
       "docs": {
         "description": "Validates that existing manual memoized is preserved by the compiler. React Compiler will only compile components and hooks if its inference [matches or exceeds the existing manual memoization](https://react.dev/learn/react-compiler/introduction#what-should-i-do-about-usememo-usecallback-and-reactmemo)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "name": "react-hooks/preserve-manual-memoization",
       "plugin": "react-hooks"
     },
+    "react-hooks/memo-dependencies": {
+      "type": "problem",
+      "docs": {
+        "description": "Validates that useMemo() and useCallback() specify comprehensive dependencies without extraneous values. See [`useMemo()` docs](https://react.dev/reference/react/useMemo) for more information.",
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/memo-dependencies"
+      },
+      "fixable": "code",
+      "hasSuggestions": true,
+      "name": "react-hooks/memo-dependencies",
+      "plugin": "react-hooks"
+    },
     "react-hooks/incompatible-library": {
       "type": "problem",
       "docs": {
         "description": "Validates against usage of libraries which are incompatible with memoization (manual or automatic)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10249,7 +10340,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against mutating props, state, and other values that [are immutable](https://react.dev/reference/rules/components-and-hooks-must-be-pure#props-and-state-are-immutable)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10260,7 +10352,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against assignment/mutation of globals during render, part of ensuring that [side effects must render outside of render](https://react.dev/reference/rules/components-and-hooks-must-be-pure#side-effects-must-run-outside-of-render)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/globals"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10271,7 +10364,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates correct usage of refs, not reading/writing during render. See the \"pitfalls\" section in [`useRef()` usage](https://react.dev/reference/react/useRef#usage)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/refs"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10282,18 +10376,32 @@
       "type": "problem",
       "docs": {
         "description": "Validates that effect dependencies are memoized",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/memoized-effect-dependencies"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "name": "react-hooks/memoized-effect-dependencies",
       "plugin": "react-hooks"
     },
+    "react-hooks/exhaustive-effect-dependencies": {
+      "type": "problem",
+      "docs": {
+        "description": "Validates that effect dependencies are exhaustive and without extraneous values",
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-effect-dependencies"
+      },
+      "fixable": "code",
+      "hasSuggestions": true,
+      "name": "react-hooks/exhaustive-effect-dependencies",
+      "plugin": "react-hooks"
+    },
     "react-hooks/set-state-in-effect": {
       "type": "problem",
       "docs": {
-        "description": "Validates against calling setState synchronously in an effect, which can lead to re-renders that degrade performance",
-        "recommended": true
+        "description": "Validates against calling setState synchronously in an effect. This can indicate non-local derived data, a derived event pattern, or improper external data synchronization.",
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10304,7 +10412,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against deriving values from state in an effect",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/no-deriving-state-in-effects"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10315,7 +10424,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates usage of error boundaries instead of try/catch for errors in child components",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10326,7 +10436,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates that [components/hooks are pure](https://react.dev/reference/rules/components-and-hooks-must-be-pure) by checking that they do not call known-impure functions",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/purity"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10337,7 +10448,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against setting state during render, which can trigger additional renders and potential infinite render loops",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10348,7 +10460,8 @@
       "type": "problem",
       "docs": {
         "description": "Internal invariants",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/invariant"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10359,7 +10472,8 @@
       "type": "problem",
       "docs": {
         "description": "Unimplemented features",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/todo"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10370,7 +10484,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against invalid syntax",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/syntax"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10381,7 +10496,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates against syntax that we do not plan to support in React Compiler",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10392,7 +10508,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates the compiler configuration options",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/config"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10403,7 +10520,8 @@
       "type": "problem",
       "docs": {
         "description": "Validates configuration of [gating mode](https://react.dev/reference/react-compiler/gating)",
-        "recommended": true
+        "recommended": true,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/gating"
       },
       "fixable": "code",
       "hasSuggestions": true,
@@ -10414,44 +10532,33 @@
       "type": "problem",
       "docs": {
         "description": "Validates against suppression of other rules",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/rule-suppression"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "name": "react-hooks/rule-suppression",
       "plugin": "react-hooks"
     },
-    "react-hooks/automatic-effect-dependencies": {
-      "type": "problem",
-      "docs": {
-        "description": "Verifies that automatic effect dependencies are compiled if opted-in",
-        "recommended": false
-      },
-      "fixable": "code",
-      "hasSuggestions": true,
-      "name": "react-hooks/automatic-effect-dependencies",
-      "plugin": "react-hooks"
-    },
-    "react-hooks/fire": {
-      "type": "problem",
-      "docs": {
-        "description": "Validates usage of `fire`",
-        "recommended": false
-      },
-      "fixable": "code",
-      "hasSuggestions": true,
-      "name": "react-hooks/fire",
-      "plugin": "react-hooks"
-    },
     "react-hooks/fbt": {
       "type": "problem",
       "docs": {
         "description": "Validates usage of fbt",
-        "recommended": false
+        "recommended": false,
+        "url": "https://react.dev/reference/eslint-plugin-react-hooks/lints/fbt"
       },
       "fixable": "code",
       "hasSuggestions": true,
       "name": "react-hooks/fbt",
+      "plugin": "react-hooks"
+    },
+    "react-hooks/component-hook-factories": {
+      "type": "suggestion",
+      "docs": {
+        "description": "Deprecated: this rule has been removed in 7.1.0."
+      },
+      "deprecated": true,
+      "name": "react-hooks/component-hook-factories",
       "plugin": "react-hooks"
     },
     "jsx-a11y/accessible-emoji": {
@@ -11164,7 +11271,6 @@
         "recommended": "strict",
         "url": "https://typescript-eslint.io/rules/no-dynamic-delete"
       },
-      "fixable": "code",
       "name": "@typescript-eslint/no-dynamic-delete",
       "plugin": "@typescript-eslint"
     },
@@ -11370,6 +11476,18 @@
     },
     "@typescript-eslint/no-magic-numbers": {
       "type": "suggestion",
+      "defaultOptions": [
+        {
+          "detectObjects": false,
+          "enforceConst": false,
+          "ignore": [],
+          "ignoreArrayIndexes": false,
+          "ignoreEnums": false,
+          "ignoreNumericLiteralTypes": false,
+          "ignoreReadonlyClassProperties": false,
+          "ignoreTypeIndexes": false
+        }
+      ],
       "docs": {
         "description": "Disallow magic numbers",
         "extendsBaseRule": true,
@@ -11833,6 +11951,8 @@
         "recommended": "recommended",
         "url": "https://typescript-eslint.io/rules/no-unused-vars"
       },
+      "fixable": "code",
+      "hasSuggestions": true,
       "name": "@typescript-eslint/no-unused-vars",
       "plugin": "@typescript-eslint"
     },
@@ -12341,6 +12461,16 @@
       "name": "@typescript-eslint/strict-boolean-expressions",
       "plugin": "@typescript-eslint"
     },
+    "@typescript-eslint/strict-void-return": {
+      "type": "problem",
+      "docs": {
+        "description": "Disallow passing a value-returning function in a position accepting a void function",
+        "requiresTypeChecking": true,
+        "url": "https://typescript-eslint.io/rules/strict-void-return"
+      },
+      "name": "@typescript-eslint/strict-void-return",
+      "plugin": "@typescript-eslint"
+    },
     "@typescript-eslint/switch-exhaustiveness-check": {
       "type": "suggestion",
       "docs": {
@@ -12520,7 +12650,7 @@
     }
   ],
   "meta": {
-    "lastUpdate": 1766092049808,
+    "lastUpdate": 1782925239030,
     "basePath": "",
     "configPath": ""
   }
