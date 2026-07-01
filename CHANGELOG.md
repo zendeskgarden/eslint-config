@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [48.0.1](https://github.com/zendeskgarden/eslint-config/compare/v48.0.0...v48.0.1) (2026-07-01)
+
+
+### Bug Fixes
+
+* support Babel parser with ESLint 10 ([#269](https://github.com/zendeskgarden/eslint-config/issues/269)) ([e41255c](https://github.com/zendeskgarden/eslint-config/commit/e41255ccb04f9c185c25f2978c0f464290db0043))
+
 ## [48.0.0](https://github.com/zendeskgarden/eslint-config/compare/v47.1.0...v48.0.0) (2026-07-01)
 
 
